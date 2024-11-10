@@ -70,9 +70,9 @@ const Footer = () => {
                         </div>
                         <div className="mt-4 w-1/2">
                             <label htmlFor="subscribe" className="block text-sm font-medium text-gray-300">Subscribe to our newsletter</label>
-                            <div className="mt-1 flex rounded-md shadow-sm items-center">
-                                <input type="text" name="subscribe" id="subscribe" className="flex-1 form-input block w-full min-w-0 rounded-md border-2 border-gray-300 bg-[#003662] py-3 px-3 text-gray-900 shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" placeholder="Enter your Email" />
-                                <button type="button" className="absolute left-1/3 translate-x-1/3 border-gray-300 inline-flex items-center px-4 py-2 border  border-transparent text-sm font-medium rounded-md shadow-sm text-[#003662] bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Subscribe</button>
+                            <div className="mt-1 flex rounded-md shadow-sm items-center relative">
+                                <input type="text" name="subscribe" id="subscribe" className=" flex-1 form-input block w-full min-w-0 rounded-md border-2 border-gray-300 bg-[#003662] py-3 px-3 text-gray-900 shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" placeholder="Enter your Email" />
+                                <button type="button" className="absolute right-2  border-gray-300 inline-flex items-center px-4 py-2 border  border-transparent text-sm font-medium rounded-md shadow-sm text-[#003662] bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Subscribe</button>
                             </div>
                         </div>
                     </div>
