@@ -5,7 +5,6 @@ import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import Navbar from "@/components/landing/Navbar";
 import Footer from "@/components/landing/Footer";
 
-
 const clashDisplayFont = localFont({
   src: [
     {
@@ -32,8 +31,6 @@ const clashDisplayFont = localFont({
   variable: "--font-clash-display",
 });
 
-
-
 export const metadata: Metadata = {
   title: "AiBuildIQ",
   description: "Make The AI-Driven Solution",
@@ -55,7 +52,7 @@ export default function RootLayout({
         >
           <Navbar />
           <main className="relative overflow-hidden "> {children}</main>
-          {/* <Footer /> */}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
