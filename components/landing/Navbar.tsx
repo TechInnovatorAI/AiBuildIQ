@@ -34,7 +34,7 @@ const Navbar = () => {
     { name: "Industries", href: "/industries" },
     { name: "Technologies", href: "/technologies" },
     { name: "How it works", href: "/how-it-works" },
-    { name: "Contact Us", href: "/contact" },
+    { name: "Contact Us", href: "/contact-us" },
   ];
 
   return (
