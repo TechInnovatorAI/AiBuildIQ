@@ -3,6 +3,8 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Logo from "@/public/assets/Logo.jpg"
+import LogoTop from "@/public/assets/Logo_top.jpg"
+import LogoBottom from "@/public/assets/Logo_bottom.jpg"
 import Image from "next/image"
 
 const Navbar = () => {
@@ -21,9 +23,9 @@ const Navbar = () => {
 
   const topNavLinks = [
     { name: "About Us", href: "/about-us" },
-    { name: "Pricing Plans", href: "/pricing" },
+    { name: "Partners", href: "/partners" },
     { name: "Blogs", href: "/blogs" },
-    { name: "FAQ", href: "/faq" },
+    { name: "FAQ", href: "/faqs" },
   ];
 
   const bottomNavLinks = [
@@ -38,6 +40,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50">
       {/* Logo/Image Button - Fixed on top */}
+     
       <div className="absolute top-0 left-1/4 -translate-x-1/2 z-10">
         <button className="p-2 bg-white rounded-b-lg shadow-md">
           <Image src={Logo} alt="Logo" height={128} width={128} className="w-auto" />
@@ -45,7 +48,8 @@ const Navbar = () => {
       </div>
 
       {/* First Layer - White Background */}
-      <div className="bg-white border-b py-4">
+      <div className="bg-white border-b flex justify-between">
+
         <div className="container mx-auto flex justify-end items-center py-2">
           {/* Right side - Links and Search */}
           {!isMobile && (
@@ -84,6 +88,7 @@ const Navbar = () => {
 
       {/* Second Layer - Gray Background */}
       <div className="bg-[#004F8F] py-4">
+
         <div className="container mx-auto flex justify-end items-center py-2">
           {/* Right side - Navigation Links */}
           {!isMobile && (
