@@ -13,6 +13,9 @@ const TopImage = (
 
 const Hero = () => {
   return (
+
+    <>
+        <div className="mt-24"></div>
     <div className="relative bg-[#004F8F] min-h-screen flex items-center justify-center">
       {/* <div className="absolute -z-10 w-full ">{TopImage}</div> */}
       <div className="text-center max-w-4xl mx-auto px-4 py-16">
@@ -29,6 +32,7 @@ const Hero = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 

@@ -5,6 +5,8 @@ import Image from "next/image"
 
 const Form = () => {
   return (
+    <>
+        <div className="mt-24"></div>
     <div className="relative min-h-screen flex items-center justify-center">
       {/* <div className="absolute inset-0 -z-10"> */}
           <Image src={topImage} alt="Logo" className="absolute inset-0 -z-10 w-full " style={{objectFit: 'cover', height: '100%'}} />
@@ -39,6 +41,7 @@ const Form = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
