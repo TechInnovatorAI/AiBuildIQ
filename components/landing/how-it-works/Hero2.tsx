@@ -50,7 +50,7 @@ const Hero2 = () => {
                         width={500}
                         height={300}
                         style={{ height: '30vh', width: '100vw' }}
-                        className="rounded transition-opacity duration-300 hover:opacity-80 cursor-pointer"
+                        className="rounded border border-2 gray-200 transition-opacity duration-300 hover:opacity-80 cursor-pointer"
                     />
                 </div>
             </div>
