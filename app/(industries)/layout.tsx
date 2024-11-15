@@ -4,7 +4,7 @@ interface Props {
     children: React.ReactNode;
 }
 
-const ContactLayout = ({ children }: Props) => {
+const CreditLayout = ({ children }: Props) => {
     return (
         <>
             {children}
@@ -12,4 +12,4 @@ const ContactLayout = ({ children }: Props) => {
     )
 };
 
-export default ContactLayout
+export default CreditLayout
