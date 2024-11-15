@@ -23,14 +23,14 @@ const Hero = () => {
                     </h1>
 
                     <h2 className="text-white text-5xl md:text-6xl font-semibold mb-4 font-clash-display ">
-                        Smarter, Inclusive, Efficient Lending for Community Credit Groups
+                    Lending Made Smarter, More Inclusive, and Efficient for Community Credit Groups
                     </h2>
 
                     <p className="text-white text-lg mb-12  max-w-2xl mx-auto font-clash-display">
-                        Better serve members now and in the future with proven AI
+                    Serve members better with AI that stands the test of time
                     </p>
                     <button className="bg-white text-blue-500 py-2 px-4 rounded-full hover:bg-blue-500 hover:text-white transition duration-300">
-                        Get a Custom Analysi
+                        Get a Custom Analysis
                     </button>
                 </div>
             </div>

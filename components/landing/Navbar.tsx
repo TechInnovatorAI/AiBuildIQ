@@ -37,19 +37,19 @@ const Navbar = () => {
       sub: [
         {
           name: "Risk Evaluation",
-          href: "/risk-evaluation"
+          href: "/solutions/risk-evaluation"
         },
         {
           name: "Threat Analysis",
-          href: "/threat-analysis"
+          href: "/solutions/threat-analysis"
         },
         {
           name: "Lending Analytics",
-          href: "/lending-analytics"
+          href: "/solutions/lending-analytics"
         },
         {
           name: "Roadmap to Success",
-          href: "/roadmap-to-success"
+          href: "/solutions/roadmap-to-success"
         }
       ]
     },
@@ -59,15 +59,15 @@ const Navbar = () => {
       sub: [
         {
           name: "Community Credit Groups",
-          href: "/community-groups"
+          href: "/industries/community-credit-groups"
         },
         {
           name: "Banking Corporations",
-          href: "/banking-corporations"
+          href: "/industries/banking-corporations"
         },
         {
           name: "Focused Lenders",
-          href: "/focused-lenders"
+          href: "/industries/focused-lenders"
         }
       ]
     },
@@ -87,7 +87,7 @@ const Navbar = () => {
       </div> */}
 
       {/* First Layer - White Background */}
-      <div className="container bg-white border-b flex ">
+      <div className="bg-white border-b flex ">
         <div className="py-2 mx-auto justify-start ">
           <div
             className="h-1/4 w-[80px] rounded-full"
@@ -139,9 +139,9 @@ const Navbar = () => {
       </div>
 
       {/* Second Layer - Gray Background */}
-      <div className="container bg-[#004F8F] border-b flex ">
+      <div className="bg-[#004F8F] border-b flex ">
         <div
-          className="py-8 mx-auto justify-start w-[150px] h-full bg-white mix-blend-screen"
+          className="py-8 mx-auto justify-start w-[130px] h-full bg-white mix-blend-screen"
           style={{
             clipPath: 'polygon(0% 25%, 100% 25%, 100% 70%, 0% 70%)',
             background: 'url("assets/logo_bottom.jpg")',
