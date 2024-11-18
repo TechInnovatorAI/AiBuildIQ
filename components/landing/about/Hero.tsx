@@ -18,7 +18,7 @@ const Hero = () => {
     <div className="relative bg-[#004F8F] min-h-screen flex items-center justify-center">
       {/* <div className="absolute -z-10 w-full ">{TopImage}</div> */}
       <div className="text-center max-w-4xl mx-auto px-4 py-16">
-        <h1 className="text-white text-2xl md:text-3xl mb-6 font-clash-display ">
+        <h1 className="text-white uppercase text-2xl md:text-3xl mb-6 font-clash-display ">
         About Us
         </h1>
 

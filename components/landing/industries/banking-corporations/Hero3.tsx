@@ -13,7 +13,7 @@ const Hero3 = () => {
             <h1 className="text-[#004F8F] mx-auto text-4xl py-4 text-center w-1/3">Create a Thriving Lending Ecosystem <span className="text-black">with Best-in-Class AI Solutions</span></h1>
             <div className="flex gap-2 px-[20%] py-4">
                 {cards.map((card, index) => (
-                    <Card key={index} title={card.title} description={card.description} result={card.result} detail={card.detail} />
+                    <Card key={index} subtitle="" image="" title={card.title} description={card.description} result={card.result} detail={card.detail} />
                 ))}
             </div>
         </div>

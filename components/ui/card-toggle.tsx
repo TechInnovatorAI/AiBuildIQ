@@ -5,6 +5,7 @@ interface CardToggleProps {
     number: number;
     title: string;
     image: React.ReactNode;
+    subtitle: string;
     description: string;
     content: { title: string; description: string }[];
 }
@@ -14,6 +15,7 @@ const CardToggle: React.FC<CardToggleProps> = ({
     number,
     title,
     image,
+    subtitle,
     description,
     content,
 }) => {
@@ -28,8 +30,9 @@ const CardToggle: React.FC<CardToggleProps> = ({
             {isActive && <div className="w-[80%]  ml-auto mr-[10%] rotate-90">
                 <div className="p-4">
                     {image}
+                    {subtitle && <p className="text-2xl">{subtitle}</p>}
                     <p className="text-lg">{description}</p>
-                    {content.map((group, index) => (
+                    {content && content.map((group, index) => (
                         <div key={index}>
                             <li className="text-lg "><span className="font-bold">{group.title}</span> <span>{group.description}</span></li>
                         </div>
