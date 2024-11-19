@@ -132,6 +132,7 @@ const Hero2 = () => {
                                         <CardToggle
                                             isActive={isActiveCard === index + 1}
                                             title={card.title}
+                                            subtitle=""
                                             description={card.description}
                                             number={index + 1}
                                             image={card.svg}

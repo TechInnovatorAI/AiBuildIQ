@@ -2,6 +2,8 @@ import React from 'react';
 
 interface AiSolutionCardProps {
     title: string;
+    subtitle: string;
+    image: string;
     description: string;
     result: string;
     detail: string;
@@ -9,16 +11,22 @@ interface AiSolutionCardProps {
 
 const AiSolutionCard: React.FC<AiSolutionCardProps> = ({
     title,
+    subtitle,
+    image,
     description,
     result,
     detail
 }) => {
     return (
-        <div className="p-[5%] text-white rounded-lg bg-[#004F8F]">
-            <h2 className="text-2xl font-bold">{title}</h2>
+        <div className="relative p-[5%] text-white rounded-lg bg-[#004F8F]">
+            {image && <div></div>}
+            {title && <h2 className="text-2xl font-bold">{title}</h2>}
+            {subtitle && <h2 className="text-lg mb-2">{subtitle}</h2>}
             <p>{description}</p>
-            <p className="my-4 font-bold text-4xl">{result}</p>
-            <p>{detail}</p>
+            <div className="">
+                <p className="my-4 font-bold text-4xl">{result}</p>
+                <p>{detail}</p>
+            </div>
         </div>
     );
 };
