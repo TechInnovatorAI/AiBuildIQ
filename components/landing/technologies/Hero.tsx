@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+import Image from "next/image"
 
 const Hero = () => {
     return (
@@ -9,19 +11,16 @@ const Hero = () => {
                 <div className="foreground"></div>
                 <div className="text-center max-w-4xl mx-auto px-4 py-16">
                     <h1 className="text-white uppercase text-2xl md:text-3xl mb-6 font-clash-display ">
-                    Lending Analytics
+                    Technologies
                     </h1>
 
                     <h2 className="text-white text-5xl md:text-6xl font-semibold mb-4 font-clash-display ">
-                    Enhanced visibility and flexibility with Lending Analytics
+                    Empowering Lenders with Advanced Tech
                     </h2>
 
                     <p className="text-white text-lg mb-12  max-w-2xl mx-auto font-clash-display">
-                    Refine your lending strategy with actionable insights and reliable accuracy
+                    AIBuildIQ combines AI algorithms, real-time data processing, and actionable insights to empower lenders with faster, more accurate decisions.
                     </p>
-                    <button className="bg-white text-blue-500 py-2 px-4 rounded-full hover:bg-blue-500 hover:text-white transition duration-300">
-                    Request a Proof of Concept
-                    </button>
                 </div>
             </div>
         </>

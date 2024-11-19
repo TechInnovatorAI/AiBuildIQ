@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react';
-import rightImage2 from "@/public/assets/home/ac4ae482ba5eed6c0825bcf34417c0d6.png"
+import ReadyEvaluate from '@/components/ui/ready-evaluate';
 import rightImage1 from "@/public/assets/home/Logo_16.jpg"
 
 const Hero4 = () => {
@@ -20,18 +20,7 @@ const Hero4 = () => {
                     <Image src={rightImage1.src} alt="Image" height={400} className="rounded-lg" width={400} />
                 </div>
             </div>
-            <div className="px-[16%] py-4">
-                <div className="flex bg-[#004F8F] rounded-lg items-center px-[10%]">
-                    <div className="p-16 w-[70%]">
-                        <h1 className="text-white text-2xl">Ready to Elevate your Lending Process</h1>
-                        <p className="text-gray-300 py-4 w-2/3">Discover how our AI-powered solutions can transform your loan processing, enhance risk management, and deliver personalized customer experiences.</p>
-                        <button className="bg-white rounded-2xl p-4">Contact Us</button>
-                    </div>
-                    <div>
-                        <Image src={rightImage2} alt="Image" layout="fixed" width={200} height={200} />
-                    </div>
-                </div>
-            </div>
+            <ReadyEvaluate />
         </div>
     );
 };

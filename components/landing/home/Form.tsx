@@ -8,9 +8,7 @@ const Form = () => {
     <>
         <div className="mt-24"></div>
     <div className="relative min-h-screen flex items-center justify-center">
-      {/* <div className="absolute inset-0 -z-10"> */}
           <Image src={topImage} alt="Logo" className="absolute inset-0 -z-10 w-full " style={{objectFit: 'cover', height: '100%'}} />
-      {/* </div> */}
       <div className="text-center max-w-4xl mx-auto px-4 py-16">
         <h1 className="text-white text-2xl md:text-3xl mb-6 font-clash-display ">
         Transforming Real estate lending

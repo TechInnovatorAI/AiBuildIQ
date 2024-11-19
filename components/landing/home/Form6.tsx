@@ -1,8 +1,8 @@
 "use client"
 import React from 'react';
 import Image from "next/image"
-import leftImage from "@/public/assets/home/3a0edb327d59be865befef5f98552f0f.png"
-import rightImage from "@/public/assets/home/ac4ae482ba5eed6c0825bcf34417c0d6.png"
+import leftImage from "@/public/assets/home/AI Network Server Technology.jpg"
+import ReadyEvaluate from '@/components/ui/ready-evaluate';
 
 const letters = [
   {
@@ -28,10 +28,10 @@ const Form6 = () => {
     <div className="whiteBackground py-[5%]">
       <div className="flex container items-center py-[5%]">
         <div className="w-1/2 items-center mx-auto p-4">
-          <div className="py-16 relative justify-center h-full" style={{ clipPath: 'polygon(0% 0, 200% 0, 200% 100%, 0% 100%)', background: 'url("assets/home/3a0edb327d59be865befef5f98552f0f.png")', backgroundSize: '200% 100%', backgroundPosition: 'right' }}>
+          <div className="py-16 relative justify-center h-[50vh]" style={{ background: 'url("assets/home/AI Network Server Technology.jpg") no-repeat', backgroundSize: 'cover' }}>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 p-4">
           <div className="py-4">
             <h1 className="text-gray-300">Lorem Ipsum dolor</h1>
             <h1 className="text-[#004F8F] font-bold text-2xl">AIBuild IQ is best at</h1>
@@ -45,18 +45,7 @@ const Form6 = () => {
           ))}
         </div>
       </div>
-      <div className="px-[16%]">
-        <div className="flex bg-[#004F8F] rounded-lg items-center px-[10%]">
-          <div className="p-16 w-[70%]">
-            <h1 className="text-white text-2xl">Ready to Elevate your Lending Process</h1>
-            <p className="text-gray-300 py-4 w-2/3">Discover how our AI-powered solutions can transform your loan processing, enhance risk management, and deliver personalized customer experiences.</p>
-            <button className="bg-white rounded-2xl p-4">Explore Our Solutions</button>
-          </div>
-          <div>
-            <Image src={rightImage} alt="Image" layout="fixed" width={200} height={200} />
-          </div>
-        </div>
-      </div>
+      <ReadyEvaluate />
     </div>
   );
 };
