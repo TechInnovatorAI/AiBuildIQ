@@ -1,5 +1,5 @@
 "use client";
-import TopHero from "@/components/ui/top-hero";
+import TopHero from "@/components/custome-ui/top-hero";
 
 const Hero = () => {
   return (

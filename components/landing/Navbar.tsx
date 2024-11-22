@@ -6,6 +6,7 @@ import Logo from "@/public/assets/Logo.jpg"
 import LogoTop from "@/public/assets/Logo_top.jpg"
 import LogoBottom from "@/public/assets/logo_bottom.jpg"
 import Image from "next/image"
+import { BotOff } from "lucide-react";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -212,7 +213,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMobile && (
         <button
-          className="fixed top-4 right-4 z-50 p-2 bg-gray-100 rounded-lg"
+          className="fixed top-4 left-4 z-50 p-2 bg-gray-100 rounded-lg"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? "Close" : "Menu"}
@@ -221,9 +222,9 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isMobile && isMenuOpen && (
-        <div className="fixed inset-0 bg-white z-40 pt-16">
+        <div className="w-[40%] right-4 fixed inset-0 bg-white z-40 pt-16">
           <div className="container mx-auto px-4">
-            {[...topNavLinks, ...bottomNavLinks].map((link) => (
+            {[...topNavLinks].map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
@@ -232,6 +233,35 @@ const Navbar = () => {
               >
                 {link.name}
               </Link>
+            ))}
+            <hr className="my-4 border-t border-gray-200 w-full" />
+            {[...bottomNavLinks].map((link) => (
+              link.sub ? (
+                <div key={link.name} className="block py-2 text-gray-600 hover:text-gray-900 transition-colors duration-200" >
+                  <p className="" onClick={() => setIsToggled(link.name)}>{link.name}&#11206;</p>
+                  <div className={`${isToggled === link.name ? 'show' : 'hidden'}`}>
+                    {Array.isArray(link.sub) && link.sub.map((subLink) => (
+                      <Link
+                        key={subLink.name}
+                        href={subLink.href}
+                        className="block py-2 text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {subLink.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="block py-2 text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              )
             ))}
           </div>
         </div>

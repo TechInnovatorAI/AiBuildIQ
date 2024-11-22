@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '@/components/ui/ai-solution-card';
+import Card from '@/components/custome-ui/ai-solution-card';
 
 const Hero3 = () => {
     const cards = [

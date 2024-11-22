@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { motion } from "framer-motion";
-import Toggle from '@/components/ui/toggle';
+import Toggle from '@/components/custome-ui/toggle';
 
 const FAQs = [
   {

@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from 'react'
-import ReadyEvaluate from "@/components/ui/ready-evaluate";
-import TechBox from "@/components/ui/tech-box"
+import ReadyEvaluate from "@/components/custome-ui/ready-evaluate";
+import TechBox from "@/components/custome-ui/tech-box"
 
 const TechList = [
     {

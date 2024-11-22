@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from "next/image"
 import leftImage from "@/public/assets/home/AI Network Server Technology.jpg"
-import ReadyEvaluate from '@/components/ui/ready-evaluate';
+import ReadyEvaluate from '@/components/custome-ui/ready-evaluate';
 
 const letters = [
   {
@@ -25,10 +25,11 @@ const letters = [
 
 const Form6 = () => {
   return (
-    <div className="whiteBackground py-[5%]">
+    <>
       <div className="flex container items-center py-[5%]">
         <div className="w-1/2 items-center mx-auto p-4">
-          <div className="py-16 relative justify-center h-[50vh]" style={{ background: 'url("assets/home/AI Network Server Technology.jpg") no-repeat', backgroundSize: 'cover' }}>
+          <div className="relative py-16 relative justify-center  h-[45vh] rounded-lg" style={{ background: 'url("assets/home/AI Network Server Technology.jpg") no-repeat', backgroundSize: 'cover' }}>
+          <div className="absolute border border-gray-300 rounded-lg h-[45vh] w-full top-4 left-4 -z-10"></div>
           </div>
         </div>
         <div className="w-1/2 p-4">
@@ -45,8 +46,8 @@ const Form6 = () => {
           ))}
         </div>
       </div>
-      <ReadyEvaluate />
-    </div>
+      <ReadyEvaluate button="Contact Us" />
+    </>
   );
 };
 

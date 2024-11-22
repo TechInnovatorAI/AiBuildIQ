@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Toggle from '@/components/ui/toggle';
+import Toggle from '@/components/custome-ui/toggle';
 
 const FAQs = [
     {
