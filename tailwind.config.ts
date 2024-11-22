@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        "clash-display": ["var(--font-clash-display)"],
+        "clash-display": ["var(--)"],
       },
       colors: {
         border: "hsl(var(--border))",

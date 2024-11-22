@@ -57,7 +57,7 @@ const Hero2 = () => {
                                     <div className="bg-white border rounded-lg p-2 text-2xl mb-4 text-center text-[#004F8F] font-bold">
                                         {item.title}
                                     </div>
-                                    <p className="text-gray-600 text-center font-clash-display">{item.description}</p>
+                                    <p className="text-gray-600 text-center ">{item.description}</p>
                                 </div>
                             ))}
                         </div>

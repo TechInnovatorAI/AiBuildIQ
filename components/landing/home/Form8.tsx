@@ -10,10 +10,10 @@ const Form8 = () => {
                 <div className="relative items-center py-16 justify-center h-full">
                     <Image src={LeftImage} alt="Logo" className="absolute inset-0 -z-10 w-full h-[150%]" style={{ objectFit: 'cover' }} />
                     <div className="text-left max-w-4xl mx-auto px-4 py-14">
-                        <h1 className="text-white px-[15%] text-8xl md:text-4xl mb-6 font-clash-display ">
+                        <h1 className="text-white px-[15%] text-8xl md:text-4xl mb-6  ">
                             For More Info Contact Us Today
                         </h1>
-                        <h2 className="text-white px-[15%] text-xl md:text-md font-semibold  font-clash-display ">
+                        <h2 className="text-white px-[15%] text-xl md:text-md font-semibold   ">
                             Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt labore.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </h2>
                     </div>
@@ -27,29 +27,29 @@ const Form8 = () => {
                     <div className="flex justify-between">
                         <div className="w-1/2 mr-2">
                             <label className="block text-white">First Name</label>
-                            <input type="text" placeholder="Enter First Name" className="w-full p-2 mr-5 rounded-2xl border border-gray-400 bg-[#004F8F]" />
+                            <input type="text" placeholder="Enter First Name" className="w-full p-2 mr-5 rounded-full border border-gray-400 bg-[#004F8F]" />
                         </div>
                         <div className="w-1/2">
                             <label className="block text-white">Last Name</label>
-                            <input type="text" placeholder="Enter Last Name" className="w-full p-2 border rounded-2xl border-gray-400 bg-[#004F8F]" />
+                            <input type="text" placeholder="Enter Last Name" className="w-full p-2 border rounded-full border-gray-400 bg-[#004F8F]" />
                         </div>
                     </div>
                 </div>
                 <div className="layer3 mb-4 px-4">
                     <div className="flex justify-between">
-                        <div className="">
+                        <div className="w-1/2 mr-2">
                             <label className="block text-white">Email</label>
-                            <input type="text" placeholder="Enter Email" className="w-full p-2 rounded-2xl border border-gray-400 bg-[#004F8F]" />
+                            <input type="text" placeholder="Enter Email" className="w-full p-2 rounded-full border border-gray-400 bg-[#004F8F]" />
                         </div>
-                        <div className="">
+                        <div className="w-1/2">
                             <label className="block text-white">Mobile Number</label>
-                            <input type="text" placeholder="Enter Mobile Number" className="w-full p-2 rounded-2xl border border-gray-400 bg-[#004F8F]" />
+                            <input type="text" placeholder="Enter Mobile Number" className="w-full p-2 rounded-full border border-gray-400 bg-[#004F8F]" />
                         </div>
                     </div>
                 </div>
                 <div className="layer4 mb-4 px-4">
                     <label className="block text-white">Message or Query</label>
-                    <textarea placeholder="Type you Message or Query Herer........" className="w-full p-2 rounded-2xl border border-gray-400 bg-[#004F8F]" />
+                    <textarea placeholder="Type you Message or Query Here........" className="w-full p-4 rounded-full border border-gray-400 bg-[#004F8F]" />
                 </div>
                 <div className="layer5 px-4">
                     <button className="bg-white text-[#004F8F] p-2 w-1/3 rounded-lg">Send Message</button>

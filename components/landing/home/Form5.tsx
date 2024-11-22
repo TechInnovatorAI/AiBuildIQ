@@ -1,5 +1,13 @@
 import React from 'react';
 import Image from "next/image"
+import { Card, CardContent } from "@/components/ui/card"
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const data = [
     { letters: 'Faster Loan Approvals' },
@@ -11,26 +19,29 @@ const data = [
 ];
 
 const cards = [
-    { image: "/assets/home/stream/1.jpg", title: "Risk Evaluation"},
-    { image: "/assets/home/stream/2.jpg", title: "Risk Evaluation"},
-    { image: "/assets/home/stream/3.jpg", title: "Risk Evaluation"},
+    { image: "/assets/home/stream/1.jpg", title: "Risk Evaluation" },
+    { image: "/assets/home/stream/2.jpg", title: "Threat Analysis" },
+    { image: "/assets/home/stream/3.jpg", title: "Lending Analytics" },
 ]
 
 const Form5 = () => {
     return (
         <>
-            <div className="px-[10%] py-8 bg-gray-100">
-                <div className="text-center items-center p-8 mx-auto">
-                    <h1 className="font-bold text-2xl p-2">Why Choose AIBuildIQ?</h1>
-                    <h2 className="p-2 w-[50%] mx-auto text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h2>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    {data.map((item, index) => (
-                        <div key={index} className="bg-white flex rounded-2xl items-center">
-                            <div className="border-r w-1/4 text-2xl text-center  font-bold text-gray-300 justify-center">{index + 1}</div>
-                            <div className="items-center w-3/4 text-2xl font-bold p-3 ">{item.letters}</div>
-                        </div>
-                    ))}
+            <div className=" py-8 bg-gray-100 ">
+                <div className="container">
+                    <div className="text-center items-center p-8 mx-auto">
+                        <h1 className="font-bold text-2xl p-2">Why Choose AIBuildIQ?</h1>
+                        <h2 className="p-2 w-[50%] mx-auto text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h2>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        {data.map((item, index) => (
+                            <div key={index} className="bg-white flex rounded-2xl items-center">
+                                <div className="border-r w-1/4 text-4xl text-center  font-bold text-blue-100 justify-center">{index + 1}</div>
+                                <div className="items-center w-3/4 text-2xl font-bold p-3 ">{item.letters}</div>
+                            </div>
+                        ))}
+                    </div>
+
                 </div>
             </div>
             <div className="px-[10%] py-8 bg-gray-100">
@@ -39,29 +50,33 @@ const Form5 = () => {
                     <h2 className="p-2 w-[80%] mx-auto text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h2>
                 </div>
                 <div className="flex justify-center p-4 items-center">
-                    {/* <button onClick={handleDirectionChange}>{direction === 'left' ? 'Change to Right' : 'Change to Left'}</button> */}
-                    <div className="w-full flex items-center justify-center p-4">
-                        <div className="w-1/8 text-center ">
-                            <button className="rounded-full text-2xl p-2 text-blue-300">
-                                &larr;
-                            </button>
-                        </div>
-                        {cards.map((card, index) => (
-                            <div key={index} className="card rounded-lg py-2 w-1/4 h-[70%] text-center items-center bg-white relative ml-2 px-2 flex flex-col">
-                                <div className="mx-auto h-[180px]">
-                                    <Image src={card.image} className="mx-auto h-[180px] border-2 border-white" alt="Avatar" layout="fixed" width={300} height={150} />
-                                </div>
-                                <div className="title p-4 text-blue-300 h-1/2">
-                                    <p>{card.title}</p>
-                                </div>
-                            </div>
-                        ))}
-                        <div className="w-1/8 items-center ml-2 text-center">
-                            <button className="rounded-full p-2 text-2xl text-blue-300 ">
-                                &rarr;
-                            </button>
-                        </div>
-                    </div>
+                    <Carousel
+                        opts={{
+                            align: "start",
+                        }}
+                        className="w-[80%]"
+                    >
+                        <CarouselContent>
+                            {cards.map((card, index) => (
+                                <CarouselItem key={index} className="sm:basis-1/1 md:basis-1/2 lg:basis-1/3">
+                                    <div className="p-4">
+                                        <Card className="h-[30vh]">
+                                            <CardContent className="fle my-4 items-center justify-center p-2">
+                                                <div className="mx-auto h-[30vh]">
+                                                    <Image src={card.image} className="rounded-lg mx-auto h-[20vh] border-2 border-white w-[90%]" alt="Avatar" layout="fixed" width={300} height={150} />
+                                                    <div className="title p-4 text-center text-[#004F8F] font-bold h-1/2">
+                                                        <p>{card.title}</p>
+                                                    </div>
+                                                </div>
+                                            </CardContent>
+                                        </Card>
+                                    </div>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious className="text-[#004F8F] w-[50px] h-[50px]" />
+                        <CarouselNext className="text-[#004F8F] w-[50px] h-[50px]" />
+                    </Carousel>
                 </div>
             </div>
         </>

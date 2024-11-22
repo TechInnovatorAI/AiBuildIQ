@@ -3,7 +3,7 @@ import React from 'react';
 import {useState} from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import Blog from '@/components/ui/blog-card'
+import Blog from '@/components/custome-ui/blog-card'
 
 const CategoryList = [
     "All Blogs & Articles", "Compilance", "Credit and Risk", "Culture", "Industry", "Technology", "AiBuildIQ"

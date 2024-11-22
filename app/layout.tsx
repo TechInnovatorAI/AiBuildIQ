@@ -28,7 +28,7 @@ const clashDisplayFont = localFont({
       weight: "700",
     },
   ],
-  variable: "--font-clash-display",
+  variable: "--",
 });
 
 export const metadata: Metadata = {
@@ -44,16 +44,16 @@ export default function RootLayout({
   return (
     <html lang="en">
      <body className={clashDisplayFont.variable}>
-        <ThemeProvider
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        >
+        > */}
           <Navbar />
-          <main className="relative overflow-hidden "> {children}</main>
+          <main className="relative overflow-hidden ">{children}</main>
           <Footer />
-        </ThemeProvider>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );

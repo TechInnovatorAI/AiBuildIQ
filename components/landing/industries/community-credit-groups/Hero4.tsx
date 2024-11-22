@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react';
-import ReadyEvaluate from '@/components/ui/ready-evaluate';
+import ReadyEvaluate from '@/components/custome-ui/ready-evaluate';
 import rightImage1 from "@/public/assets/home/Logo_16.jpg"
 
 const Hero4 = () => {

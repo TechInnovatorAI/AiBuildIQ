@@ -53,8 +53,8 @@ const Hero3 = () => {
                             <div className="relative mb-4 p-2">
                                 {item.image}
                             </div>
-                            <h3 className="text-xl font-semibold mb-2 font-clash-display">{item.title}</h3>
-                            <p className="text-gray-600 font-clash-display">{item.description}</p>
+                            <h3 className="text-xl font-semibold mb-2 ">{item.title}</h3>
+                            <p className="text-gray-600 ">{item.description}</p>
 
                         </div>
                     ))}

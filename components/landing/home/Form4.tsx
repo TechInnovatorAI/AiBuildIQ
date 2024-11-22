@@ -15,7 +15,7 @@ const Form4 = () => {
                 <h2 className="text-4xl font-bold mb-4">Securing your Ideal Home has Never been Easier</h2>
                 <p className="text-md font-light mb-4">AIBuildIQ uses advanced AI technology to simplify the home loan process. No more lengthy paperwork or uncertainty </p>
                 <h2 className="text-xl text-[#004F8F] font-medium mb-4">Just Smart, Tailored Solutions for your Dream Home</h2>
-                <button className="bg-[#004F8F] text-white px-6 py-3 rounded-2xl font-bold">
+                <button className="bg-[#004F8F] text-white px-6 py-3 rounded-full font-bold">
                     Explore Solutions
                 </button>
             </div>
