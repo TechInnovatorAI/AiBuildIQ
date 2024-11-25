@@ -5,7 +5,7 @@ import ReadyEvaluate from '@/components/custome-ui/ready-evaluate';
 const Hero4 = () => {
   return (
     <div className="py-[5%]">
-      <ReadyEvaluate button="Contact Us"/>
+      <ReadyEvaluate btn="Contact Us"/>
     </div>
   );
 };
