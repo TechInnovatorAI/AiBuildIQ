@@ -46,7 +46,7 @@ const Form6 = () => {
           ))}
         </div>
       </div>
-      <ReadyEvaluate button="Contact Us" />
+      <ReadyEvaluate btn="Contact Us" />
     </>
   );
 };

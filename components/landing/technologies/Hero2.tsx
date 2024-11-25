@@ -49,7 +49,7 @@ const Hero2 = () => {
                     />
                 ))}
             </div>
-            <ReadyEvaluate />
+            <ReadyEvaluate btn="Contact Us"/>
         </div>
     );
 };

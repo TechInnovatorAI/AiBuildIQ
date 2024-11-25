@@ -20,7 +20,7 @@ const Hero4 = () => {
                     <Image src={rightImage1.src} alt="Image" height={400} className="rounded-lg" width={400} />
                 </div>
             </div>
-            <ReadyEvaluate />
+            <ReadyEvaluate btn="Contact Us"/>
         </div>
     );
 };
