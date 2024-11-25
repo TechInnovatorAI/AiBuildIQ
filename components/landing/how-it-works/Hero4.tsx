@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import ReadyEvaluate from '@/components/ui/ready-evaluate';
+import ReadyEvaluate from '@/components/custome-ui/ready-evaluate';
 
 const Hero4 = () => {
   return (

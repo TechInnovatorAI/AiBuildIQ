@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react';
 import rightImage2 from "@/public/assets/home/ac4ae482ba5eed6c0825bcf34417c0d6.png"
 import rightImage1 from "@/public/assets/home/Logo_16.jpg"
-import Card from '@/components/ui/ai-solution-card';
+import Card from '@/components/custome-ui/ai-solution-card';
 import LeftImage from "@/public/assets/home/Logo_13.jpg"
 
 const cards = [

@@ -2,9 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import CardToggle from '@/components/ui/card-toggle';
+import CardToggle from '@/components/custome-ui/card-toggle';
 import React, { useState } from 'react'
-import LendingBox from "@/components/ui/lending-box"
+import LendingBox from "@/components/custome-ui/lending-box"
 
 
 const btTSVG = (

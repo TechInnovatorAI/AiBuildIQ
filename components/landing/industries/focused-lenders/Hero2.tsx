@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import CardToggle from '@/components/ui/card-toggle';
+import CardToggle from '@/components/custome-ui/card-toggle';
 import React, { useState } from 'react'
 import LeftImage from "@/public/assets/how-it-works/3.jpg"
 
