@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import rightImage from "@/public/assets/home/Logo_16.jpg"
 

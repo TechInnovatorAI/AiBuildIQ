@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import drivenImage from "@/public/assets/home/Logo_4.jpg"
 
 const itemData = [
     {
