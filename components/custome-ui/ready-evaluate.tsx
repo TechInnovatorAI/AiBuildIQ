@@ -4,11 +4,11 @@ import Image from "next/image"
 import rightImage from "@/public/assets/home/ac4ae482ba5eed6c0825bcf34417c0d6.png"
 
 interface ReadyEvaluateProps {
-    button: string;
+    btn: string;
 }
 
 const ReadyEvaluate: React.FC<ReadyEvaluateProps> = ({
-    button
+    btn
 }) => {
     return (
         <div className="relative px-[16%] py-8">
@@ -29,7 +29,7 @@ const ReadyEvaluate: React.FC<ReadyEvaluateProps> = ({
                 <div className="p-16 w-[70%]">
                     <h1 className="text-white text-2xl">Ready to Elevate your Lending Process</h1>
                     <p className="text-gray-300 py-4 w-2/3">Discover how our AI-powered solutions can transform your loan processing, enhance risk management, and deliver personalized customer experiences.</p>
-                    <button className="bg-white rounded-full p-2 px-8 text-[#004F8F]">{button}</button>
+                    <button className="bg-white rounded-full p-2 px-8 text-[#004F8F]">{btn}</button>
                 </div>
                 <div>
                     <Image src={rightImage} alt="Image" layout="fixed" width={200} height={200} />
