@@ -25,14 +25,14 @@ const Form = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/funding-request"
-              className="px-8 py-3 bg-[#004F8F] border rounded-lg hover:bg-white-800 text-white rounded-lg transition-colors duration-200  dark:bg-[#FF5555] dark:hover:bg-[#be5555]"
+              className="px-8 py-3 bg-[#004F8F] border rounded-full hover:bg-white-800 text-white transition-colors duration-200  dark:bg-[#FF5555] dark:hover:bg-[#be5555]"
             >
               Funding Request
             </Link>
 
             <Link
               href="/solutions"
-              className="px-8 py-3 bg-white  border rounded-lg hover:bg-white-100 text-black border-2 border-black rounded-lg transition-colors duration-200   dark:bg-transparent dark:text-white dark:border-white dark:hover:bg-white/10"
+              className="px-8 py-3 bg-white  border rounded-full hover:bg-white-100 text-black border-2 border-black transition-colors duration-200   dark:bg-transparent dark:text-white dark:border-white dark:hover:bg-white/10"
             >
               Explore our solutions
             </Link>
