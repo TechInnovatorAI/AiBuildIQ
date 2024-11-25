@@ -4,8 +4,8 @@ import ReadyEvaluate from '@/components/custome-ui/ready-evaluate';
 
 const Hero4 = () => {
   return (
-    <div className="whiteBackground py-[5%]">
-      <ReadyEvaluate />
+    <div className="py-[5%]">
+      <ReadyEvaluate button="Contact Us"/>
     </div>
   );
 };
