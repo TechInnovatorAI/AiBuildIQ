@@ -28,7 +28,7 @@ const TopHero: React.FC<TopHeroProps> = ({
 
             {/* Content placeholder */}
             <div className="relative z-10 flex items-center justify-center h-[50vh]">
-                <div className="text-center max-w-4xl mx-auto px-4 py-16">
+                <div className="text-center max-w-6xl mx-auto px-4 py-16">
                     <h1 className="text-white uppercase text-sm mb-6 opacity-50">
                         {subtitle}
                     </h1>

@@ -43,8 +43,8 @@ const Form9 = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <p className="text-[#0256c5] text-4xl text-center font-bold mb-2">
-          Frequently Asked Questions
+          <p className="text-black text-4xl text-center font-bold mb-2">
+          Frequently Asked <span className="text-[#004F8F]">Questions</span>
           </p>
           <h2 className="text-md w-1/2 justify-center mx-auto text-center text-gray-900 dark:text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
