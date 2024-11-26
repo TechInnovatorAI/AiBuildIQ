@@ -1,6 +1,15 @@
 "use client";
 import React, { useState } from 'react';
 import Image from "next/image"
+import { Card, CardContent } from "@/components/ui/card"
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+import TextNominalCard from '@/components/custome-ui/testnominal-card'
 
 const cards = [
     {
@@ -36,42 +45,37 @@ const Form7 = () => {
             <div className="p-4 py-[5%]">
                 <div className="">
                     <div className="py-4 justify-center mx-auto">
-                        <h1 className="text-2xl font-bold text-center">Client’s Testimonials</h1>
+                        <h1 className="text-2xl font-bold text-center">Client’s <span className="text-[#004F8F]">Testimonials</span></h1>
                         <p className="text-md text-center w-1/3 justify-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     </div>
                     <div className="flex justify-center p-4 items-center">
-                        {/* <button onClick={handleDirectionChange}>{direction === 'left' ? 'Change to Right' : 'Change to Left'}</button> */}
-                        <div className="w-full flex items-center justify-center p-4">
-                            <div className="w-1/5 text-center ">
-                                <button className="rounded-full text-2xl p-2 text-blue-300">
-                                    &larr;
-                                </button>
-                            </div>
-                            {cards.map((card, index) => (
-                                <div key={index} className="card py-[3%] w-1/5 text-center items-center bg-white relative ml-2 px-4">
-                                    <div className="avatar mx-auto absolute left-1/2 -translate-x-1/2 translate-y-1/2 -top-1/4">
-                                        <Image src={card.avatar} className="mx-auto rounded-full border-2 border-white" alt="Avatar" layout="fixed" width={100} height={100} />
-                                    </div>
-                                    <div className="stars">
-                                        {Array.from({length: card.stars}, (_, i) => (
-                                            <span key={i} className="text-yellow-500">&#9733;</span>
-                                        ))}
-                                    </div>
-                                    <div className="description p-4">
-                                        <p>{card.description}</p>
-                                    </div>
-                                    <hr className="my-4 border-t border-gray-700 w-[5%] text-blue-300  mx-auto" />
-                                    <div className="name p-4 items-center">
-                                        <p className="font-bold">{card.name}</p>
-                                    </div>
-                                </div>
-                            ))}
-                            <div className="w-1/5 items-center ml-2 text-center">
-                                <button className="rounded-full p-2 text-2xl text-blue-300 ">
-                                    &rarr;
-                                </button>
-                            </div>
-                        </div>
+                        <Carousel
+                            opts={{
+                                align: "start",
+                            }}
+                            className="w-[80%]"
+                        >
+                            <CarouselContent>
+                                {cards.map((card, index) => (
+                                    <CarouselItem key={index} className="sm:basis-1/1 md:basis-1/2 lg:basis-1/3">
+                                        <div className="py-16 px-8">
+                                            <Card className="">
+                                                <CardContent className="flex my-8 items-center justify-center p-2">
+                                                    <TextNominalCard
+                                                        avatar={card.avatar}
+                                                        stars={card.stars}
+                                                        description={card.description}
+                                                        name={card.name}
+                                                    />
+                                                </CardContent>
+                                            </Card>
+                                        </div>
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                            <CarouselPrevious className="text-[#004F8F] w-[50px] h-[50px]" />
+                            <CarouselNext className="text-[#004F8F] w-[50px] h-[50px]" />
+                        </Carousel>
                     </div>
                 </div>
             </div>

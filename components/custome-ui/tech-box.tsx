@@ -16,32 +16,51 @@ const TechBox: React.FC<TechBoxProps> = ({
     ltr
 }) => {
     return (
-        <div className="flex container mx-auto justify-between items-center py-8">
+        <section >
             {ltr ? (<>
-                <div className="w-1/2 pl-8 py-8">
-                    <p className="text-2xl text-[#004F8F] font-bold py-4">{title}</p>
-                    <p className="text-gray-500 py-4">{description}</p>
-                    <p className="text-[#004F8F]">Read More</p>
-                </div>
-                <div className="w-1/2">
-                    <Image src={image} className="rounded-lg mx-auto h-[280px] border-2 border-white" alt="Avatar" layout="fixed" width={300} height={150} />
+                <div className="container px-[3%] flex flex-col md:flex-row items-center mb-16 gap-16">
+                    <div className="md:w-1/2">
+                        <p className="text-2xl text-[#004F8F] font-bold py-4">{title}</p>
+                        <p className="text-gray-500 py-4">{description}</p>
+                        <p className="text-[#004F8F]">Read More</p>
+                    </div>
+                    <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">
+                        <Image
+                            src={image}
+                            alt="Analysis illustration"
+                            width={500}
+                            height={300}
+                            style={{ height: '30vh', width: '85vw' }}
+                            className="rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
+                        />
+                        <div className="absolute left-[15%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '30vh', width: '85%' }}></div>
+                    </div>
                 </div>
             </>) :
                 (
                     <>
-                        <div className="w-1/2">
-                            <Image src={image} className="mx-auto h-[280px] border-2 border-white" alt="Avatar" layout="fixed" width={300} height={150} />
-                        </div>
-                        <div className="w-1/2 pl-8 py-8">
-                            <p className="text-2xl text-[#004F8F] font-bold py-4">{title}</p>
-                            <p className="text-gray-500 py-4">{description}</p>
-                            <p className="text-[#004F8F]">Read More</p>
+                        <div className="container px-[3%] flex flex-col md:flex-row items-center mb-16 gap-16">
+                            <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">
+                                <Image
+                                    src={image}
+                                    alt="Analysis illustration"
+                                    width={500}
+                                    height={300}
+                                    style={{ height: '30vh', width: '85vw' }}
+                                    className="rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
+                                />
+                                <div className="absolute left-[15%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '30vh', width: '85%' }}></div>
+                            </div>
+                            <div className="md:w-1/2">
+                                <p className="text-2xl text-[#004F8F] font-bold py-4">{title}</p>
+                                <p className="text-gray-500 py-4">{description}</p>
+                                <p className="text-[#004F8F]">Read More</p>
+                            </div>
                         </div>
                     </>
                 )
             }
-
-        </div>
+        </section>
     );
 };
 
