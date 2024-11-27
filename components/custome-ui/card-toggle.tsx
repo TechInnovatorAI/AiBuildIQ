@@ -21,13 +21,18 @@ const CardToggle: React.FC<CardToggleProps> = ({
 }) => {
 
     return (
-        <div className={`p-2`}>
-            <div className={`flex ml-[10%] items-center ${isActive ? 'border-b border-gray-200' : ''}`} >
-                <div className="flex flex-col py-2 inline-block">
-                    <p className="text-lg text-gray-300 font-bold">{`0${number}`} <span className="text-[#004F8F] font-bold">{title}</span></p>
+        <div className={`p-2 flex`}>
+            <div className="flex p-4 mr-8  mt-4 relative" >
+                <div className={`absolute ${isActive ? 'bottom-4' : 'top-16' }`}>
+                    <p className="text-lg text-gray-300 font-bold" style={{
+                        writingMode: "vertical-rl",
+                        transform: "rotate(180deg)",
+                        fontSize: "16px",
+                        textAlign: "center",
+                    }}>{`0${number}`} <span className="text-[#004F8F] font-bold">{title}</span></p>
                 </div>
             </div>
-            {isActive && <div className="w-[80%]  ml-auto mr-[10%] rotate-90">
+            {isActive && <div className={`pl-8 mx-auto mr-[10%] ${isActive ? 'border-l border-gray-200' : ''}`}>
                 <div className="p-4">
                     {image}
                     {subtitle && <p className="text-2xl">{subtitle}</p>}

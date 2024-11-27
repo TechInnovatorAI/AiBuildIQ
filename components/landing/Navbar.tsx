@@ -163,7 +163,7 @@ const Navbar = () => {
                   {link.href ? (
                     <Link
                       href={link.href}
-                      className={`text-white hover:text-white transition-colors duration-200 p-2 ${activeLink === link.name ? 'bg-blue-100' : ''}`}
+                      className={`text-white hover:text-white transition-colors duration-200 p-2 ${activeLink === link.name ? 'bg-[#003662] rounded-lg' : ''}`}
                       onMouseLeave={() => setActiveLink("")}
                     >
                       {link.name}
