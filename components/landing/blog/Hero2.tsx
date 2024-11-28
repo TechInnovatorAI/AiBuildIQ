@@ -1,8 +1,6 @@
 "use client"
 import React from 'react';
 import {useState} from 'react'
-import Image from 'next/image';
-import Link from 'next/link';
 import Blog from '@/components/custome-ui/blog-card'
 
 const CategoryList = [
@@ -103,7 +101,6 @@ const Hero2 = () => {
             <div className="items-center bg-gray-300 py-4">
                 <h1 className="text-[#004F8F] mx-auto text-4xl py-4 text-center w-1/3">Recently Uploaded <span className="text-black">Blogs and Articles</span></h1>
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-4 px-4">
-                    <div></div>
                     {recentBlog.map((recent, index) => (
                         BlogList.find(blog => blog.id === recent) && (
                             <Blog
@@ -116,7 +113,6 @@ const Hero2 = () => {
                             />
                         )
                     ))}
-                    <div></div>
                 </div>
             </div>
         </div>

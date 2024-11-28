@@ -11,7 +11,7 @@ const ReadyEvaluate: React.FC<ReadyEvaluateProps> = ({
     btn
 }) => {
     return (
-        <div className="relative px-[16%] py-8">
+        <div className="relative container py-8">
             {/* Upper wave */}
             <svg className="absolute top-0 left-0 w-full" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" >
                 <path  fill="white"  fillOpacity="0.05" d="M200,0Q400,150,600,0" />
@@ -24,8 +24,7 @@ const ReadyEvaluate: React.FC<ReadyEvaluateProps> = ({
             </svg>
 
             {/* Content placeholder */}
-            {/* <div className="px-[16%] py-8"> */}
-            <div className="flex bg-[#004F8F] rounded-lg items-center px-[10%]">
+            <div className="flex bg-[#004F8F] rounded-lg items-center px-[3%]">
                 <div className="p-16 w-[70%]">
                     <h1 className="text-white text-2xl">Ready to Elevate your Lending Process</h1>
                     <p className="text-gray-300 py-4 w-2/3">Discover how our AI-powered solutions can transform your loan processing, enhance risk management, and deliver personalized customer experiences.</p>
@@ -35,7 +34,6 @@ const ReadyEvaluate: React.FC<ReadyEvaluateProps> = ({
                     <Image src={rightImage} alt="Image" layout="fixed" width={200} height={200} />
                 </div>
             </div>
-        {/* </div> */}
         </div>
         
     );
