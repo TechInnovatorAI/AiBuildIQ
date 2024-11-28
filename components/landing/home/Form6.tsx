@@ -1,7 +1,5 @@
 "use client"
 import React from 'react';
-import Image from "next/image"
-import leftImage from "@/public/assets/home/AI Network Server Technology.jpg"
 import ReadyEvaluate from '@/components/custome-ui/ready-evaluate';
 
 const letters = [

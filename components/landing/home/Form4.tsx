@@ -1,12 +1,6 @@
 import Image from "next/image";
 import rightImage from "@/public/assets/home/Logo_16.jpg"
 
-const backShadow = (
-    <svg width="558" height="339" viewBox="0 0 558 339" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="1.93359" y="1.73975" width="555.066" height="335.882" rx="19" stroke="#DCE6EB" stroke-width="2" />
-    </svg>
-)
-
 const Form4 = () => {
     return (
         <div className="bg-white px-[10%] py-16 flex flex-row justify-center items-center rounded-lg ">

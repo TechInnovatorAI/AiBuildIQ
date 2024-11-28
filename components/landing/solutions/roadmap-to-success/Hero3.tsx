@@ -1,8 +1,6 @@
-import Image from 'next/image'
 import React from 'react';
 import SolutionCard from '@/components/custome-ui/ai-solution-card';
-import LeftImage from "@/public/assets/home/Logo_13.jpg"
-import { Card, CardContent } from "@/components/ui/card"
+import {  CardContent } from "@/components/ui/card"
 import {
     Carousel,
     CarouselContent,
@@ -104,11 +102,9 @@ const Hero3 = () => {
                                 {cards.map((card, index) => (
                                     <CarouselItem key={index} className="sm:basis-1/1 md:basis-1/2 lg:basis-1/3">
                                         <div className="py-16 px-8">
-                                            {/* <Card className=""> */}
                                             <CardContent className="flex my-8 items-center justify-center p-2">
                                                 <SolutionCard key={index} title="" image={card.image} subtitle={card.subtitle} description={card.description} result={card.result} detail={card.detail} />
                                             </CardContent>
-                                            {/* </Card> */}
                                         </div>
                                     </CarouselItem>
                                 ))}

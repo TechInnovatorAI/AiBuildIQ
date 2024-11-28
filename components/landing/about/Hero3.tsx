@@ -2,12 +2,6 @@
 import Image from "next/image";
 import rightImage from "@/public/assets/home/Logo_16.jpg"
 
-const backShadow = (
-    <svg width="558" height="339" viewBox="0 0 558 339" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="1.93359" y="1.73975" width="555.066" height="335.882" rx="19" stroke="#DCE6EB" stroke-width="2" />
-    </svg>
-)
-
 const itemData = [
     {
         image: (
@@ -50,13 +44,11 @@ const Hero3 = () => {
                 <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 gap-2">
                     {itemData.map((item, index) => (
                         <div key={index} className={`p-6 `}>
-
                             <div className="relative mb-4 p-2">
                                 {item.image}
                             </div>
-                            <h3 className="text-xl font-semibold mb-2 font-clash-display">{item.title}</h3>
-                            <p className="text-gray-600 font-clash-display">{item.description}</p>
-
+                            <h3 className="text-xl font-semibold mb-2 ">{item.title}</h3>
+                            <p className="text-gray-600">{item.description}</p>
                         </div>
                     ))}
                 </div>

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from 'react'
+import React from 'react'
 import ReadyEvaluate from "@/components/custome-ui/ready-evaluate";
 import TechBox from "@/components/custome-ui/tech-box"
 

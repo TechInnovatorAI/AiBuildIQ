@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from 'react';
-import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import {
     Carousel,
@@ -30,7 +29,6 @@ const cards = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipconsequat.",
         name: "Marvin McKinney"
     },
-    // Add more cards as needed
 ]
 
 const Form7 = () => {
