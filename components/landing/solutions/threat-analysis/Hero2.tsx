@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import CardToggle from '@/components/custome-ui/card-toggle';
 import React, { useState } from 'react'
 import FirstImage from "@/public/assets/how-it-works/3.jpg"
@@ -111,7 +110,7 @@ const Hero2 = () => {
 
     return (
         <div>
-            <div className="bg-gray-100 py-2 text-center text-sm text-gray-600 ">
+            <div className="bg-gray-100 mx-4 rounded-lg py-2 text-center text-sm text-gray-600 ">
                 <div className="inline-flex items-center">
                     <svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M28.2747 16.548C28.2138 16.4244 28.1821 16.2884 28.1821 16.1506C28.1821 16.0128 28.2138 15.8768 28.2747 15.7532L29.4191 13.4121C30.0562 12.1086 29.5514 10.5549 28.2698 9.87488L25.9679 8.65353C25.846 8.58932 25.7404 8.49794 25.6594 8.38646C25.5784 8.27497 25.5241 8.14636 25.5007 8.01055L25.0505 5.44385C24.7998 4.01479 23.4779 3.05448 22.0416 3.2577L19.4615 3.62267C19.3251 3.64239 19.186 3.63049 19.0549 3.5879C18.9238 3.5453 18.8043 3.47315 18.7056 3.37702L16.8327 1.56525C15.7899 0.556405 14.1563 0.556345 13.1135 1.56525L11.2406 3.3772C11.1418 3.47331 11.0223 3.54545 10.8912 3.58804C10.7602 3.63063 10.6211 3.64254 10.4847 3.62285L7.90458 3.25788C6.46779 3.05454 5.14635 4.01497 4.89567 5.44403L4.44548 8.01061C4.42208 8.14642 4.36779 8.27503 4.28679 8.38653C4.2058 8.49802 4.10026 8.58942 3.97834 8.65365L1.67647 9.875C0.394824 10.555 -0.110017 12.1087 0.527147 13.4122L1.67149 15.7533C1.7324 15.8769 1.76408 16.0129 1.76408 16.1507C1.76408 16.2885 1.7324 16.4245 1.67149 16.5481L0.527087 18.8892C-0.110077 20.1927 0.394764 21.7464 1.6764 22.4264L3.97828 23.6478C4.10021 23.712 4.20576 23.8033 4.28677 23.9148C4.36778 24.0263 4.42208 24.1549 4.44548 24.2907L4.89567 26.8574C5.12388 28.1584 6.2394 29.0707 7.52146 29.0706C7.64773 29.0706 7.77585 29.0617 7.90464 29.0435L10.4848 28.6785C10.6212 28.6588 10.7603 28.6707 10.8913 28.7133C11.0224 28.7559 11.1419 28.8281 11.2406 28.9242L13.1135 30.736C13.635 31.2405 14.3039 31.4926 14.9731 31.4926C15.6421 31.4925 16.3114 31.2403 16.8327 30.736L18.7056 28.9242C18.9077 28.7288 19.1831 28.6395 19.4615 28.6785L22.0416 29.0435C23.4786 29.2468 24.7998 28.2864 25.0505 26.8574L25.5007 24.2908C25.5241 24.155 25.5784 24.0264 25.6594 23.9149C25.7404 23.8034 25.846 23.712 25.9679 23.6478L28.2698 22.4264C29.5514 21.7464 30.0562 20.1927 29.4191 18.8892L28.2747 16.548ZM11.4336 8.18692C13.2226 8.18692 14.6781 9.64242 14.6781 11.4314C14.6781 13.2204 13.2226 14.6759 11.4336 14.6759C9.64462 14.6759 8.18913 13.2204 8.18913 11.4314C8.18913 9.64242 9.64462 8.18692 11.4336 8.18692ZM9.75896 22.616C9.58619 22.7888 9.35972 22.8752 9.13331 22.8752C8.90689 22.8752 8.68036 22.7888 8.50765 22.616C8.1621 22.2705 8.1621 21.7102 8.50765 21.3646L20.1871 9.68514C20.5326 9.33959 21.093 9.33959 21.4385 9.68514C21.7841 10.0307 21.7841 10.591 21.4385 10.9365L9.75896 22.616ZM18.5124 24.1144C16.7234 24.1144 15.2679 22.6589 15.2679 20.8699C15.2679 19.0809 16.7234 17.6254 18.5124 17.6254C20.3014 17.6254 21.7569 19.0809 21.7569 20.8699C21.7569 22.6589 20.3014 24.1144 18.5124 24.1144Z" fill="#004F8F" />
@@ -126,25 +125,21 @@ const Hero2 = () => {
                     <h3 className="text-center text-2xl text-[#004F8F]">Build a Resilient Lending Business
                         <span className="text-black"> with reliable, intelligent automated decision-making</span></h3>
                 </div>
-                <div className="items-top h-[70vh] items-center">
-                    <div className="relative w-full h-full">
-                        <div className="absolute top-[35%] left-[15%]">
-                            <div className="gap-2  -rotate-90">
-                                {Groups.map((card, index) => (
-                                    <div className={`bg-[#F2F4F5] w-1/2 my-4 rounded-lg ml-auto `} onClick={() => setIsActiveCard(index + 1)}>
-                                        <CardToggle
-                                            isActive={isActiveCard === index + 1}
-                                            title={card.title}
-                                            subtitle={card.subtitle}
-                                            description={card.description}
-                                            number={index + 1}
-                                            image={card.svg}
-                                            content={card.content}
-                                        />
-                                    </div>
-                                ))}
+                <div className="items-top items-center container ">
+                    <div className="gap-4 flex">
+                        {Groups.map((card, index) => (
+                            <div className={`bg-[#F2F4F5] my-4 rounded-lg mx-auto `} onClick={() => setIsActiveCard(index + 1)}>
+                                <CardToggle
+                                    isActive={isActiveCard === index + 1}
+                                    title={card.title}
+                                    subtitle={card.subtitle}
+                                    description={card.description}
+                                    number={index + 1}
+                                    image={card.svg}
+                                    content={card.content}
+                                />
                             </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
@@ -153,10 +148,10 @@ const Hero2 = () => {
                     <p className="text-[#004F8F] font-bold text-2xl">Detect all Application Threats
                         <span className="text-black"> with a single, streamlined solution.</span></p>
                 </div>
-                <div className="flex gap-8 w-2/3 mx-auto">
+                <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 w-2/3 mx-auto">
                     {smartList.map((smart, index) => (
-                        <div className="flex w-full bg-white p-4 border-gray-300 rounded-lg">
-                            <div className="p-2 font-bold text-gray-200 border-r border-gray-200">{index + 1}</div>
+                        <div className="flex bg-white p-4 border-gray-300 rounded-lg items-center">
+                            <div className="p-2 font-bold text-gray-200 border-r border-gray-200 text-xl">{index + 1}</div>
                             <div className="p-2 font-bold">{smart.text}</div>
                         </div>
                     ))}
@@ -165,29 +160,53 @@ const Hero2 = () => {
             <div>
                 <div className="flex container mx-auto justify-between items-center py-8">
                     <div className="w-1/2 pl-8 py-8">
-                        <p className="text-2xl text-[#004F8F] font-bold py-4">Exposed <span className="text-black">Identity</span></p>
+                        <p className="text-2xl text-[#004F8F] font-bold py-4 w-1/2">Exposed <span className="text-black">Identity</span></p>
                         <p className="text-gray-500 py-4">Safeguard your customers and your lending business from identity theft. Utilize thorough checks against applicant PII, analyze key identity elements, and leverage consortium data to verify your borrowers’ true identity</p>
                     </div>
-                    <div className="w-1/2">
-                        <Image src={FirstImage.src} className="mx-auto h-[280px] border-2 border-white" alt="Avatar" layout="fixed" width={300} height={150} />
+                    <div className="w-1/2 relative">
+                        <Image
+                            src={FirstImage.src}
+                            alt="Risk evaluation"
+                            width={500}
+                            height={300}
+                            layout="fixed"
+                            className="h-[280px] float-right mr-8 rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer  border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
+                        />
+                        <div className="absolute left-[25%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '230px', width: '73%' }}></div>
                     </div>
                 </div>
                 <div className="flex container mx-auto justify-between items-center py-8">
-                    <div className="w-1/2">
-                        <Image src={SecondImage.src} className="mx-auto h-[280px] border-2 border-white" alt="Avatar" layout="fixed" width={300} height={150} />
+                    <div className="w-1/2 relative">
+                        <Image
+                            src={SecondImage.src}
+                            alt="Risk evaluation"
+                            width={500}
+                            height={300}
+                            layout="fixed"
+                            className="h-[280px] float-left ml-8 rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer  border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
+                        />
+                        <div className="absolute left-[10%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '230px', width: '73%' }}></div>
                     </div>
                     <div className="w-1/2 pl-8 py-8">
-                        <p className="text-2xl text-[#004F8F] font-bold py-4">Deceptive <span className="text-black">Behavior</span></p>
+                        <p className="text-2xl text-[#004F8F] font-bold py-4 w-1/2">Deceptive <span className="text-black">Behavior</span></p>
                         <p className="text-gray-500 py-4">Detect malicious behaviors like bust-out fraud, straight roller schemes, and other first-party fraud with unmatched accuracy. Identify synthetic and third-party fraud to proactively prevent early delinquencies before they occur</p>
                     </div>
                 </div>
                 <div className="flex container mx-auto justify-between items-center py-8">
                     <div className="w-1/2 pl-8 py-8">
-                        <p className="text-2xl text-black font-bold py-4">Income <span className="text-[#004F8F]">Mismatch</span></p>
+                        <p className="text-2xl text-[#004F8F] font-bold py-4 w-1/2">Income <span className="text-[#004F8F]">Mismatch</span></p>
                         <p className="text-gray-500 py-4">Lend with confidence based on accurate income data. Gain insights into discrepancies between reported and actual income across regions, professions, employment status, and more.</p>
                     </div>
-                    <div className="w-1/2">
-                        <Image src={ThirdImage.src} className="mx-auto h-[280px] border-2 border-white" alt="Avatar" layout="fixed" width={300} height={150} />
+                    <div className="w-1/2 relative">
+                        <Image
+                            src={ThirdImage.src}
+                            alt="Risk evaluation"
+                            width={500}
+                            height={300}
+                            layout="fixed"
+                            className="h-[280px] float-right mr-8 rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer  border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
+                        />
+                        <div className="absolute left-[25%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '230px', width: '73%' }}></div>
                     </div>
                 </div>
                 <div className="w-[70%] mx-auto bg-white px-[10%] py-8">

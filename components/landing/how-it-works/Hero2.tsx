@@ -1,8 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import Toggle from '@/components/custome-ui/toggle';
 import step1 from "@/public/assets/how-it-works/1.jpg"
 import step2 from "@/public/assets/how-it-works/2.jpg"
 
