@@ -30,13 +30,13 @@ const itemData = [
 const Hero3 = () => {
     return (
         <>
-            <div className="container bg-white py-8 flex flex-row justify-center items-center rounded-lg ">
+            <div className="container bg-white py-8 md:flex  justify-center items-center rounded-lg ">
                 <div className="flex-1  flex flex-col justify-center items-start p-16">
                     <h1 className="text-md text-gray-300 font-bold mb-4">Lorem Ipsum dolor</h1>
                     <h2 className="text-4xl font-bold mb-4">We trust that AI can promote Greater Economic Equality.</h2>
                     <p className="text-md font-light mb-4">AiBuildIQ, a technology company based in the Philippines with headquarters in Manila, is powered by a team of driven, collaborative, and compassionate professionals. We’re committed to advancing economic equity by harnessing AI’s positive potential, ensuring that lending decisions reflect the inherent worth of every individual.</p>
                 </div>
-                <div className="flex-1 flex justify-end items-center p-16">
+                <div className="flex-1 flex md:justify-end sm:justify-center items-center p-16">
                     <Image src={rightImage.src} alt="Image" height={400} className="rounded-lg" width={400} />
                 </div>
             </div>

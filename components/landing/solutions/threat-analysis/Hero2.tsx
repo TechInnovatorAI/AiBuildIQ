@@ -121,12 +121,12 @@ const Hero2 = () => {
                 </div>
             </div>
             <div className="w-full bg-white px-[10%] py-8">
-                <div className="mx-auto w-[40%] my-8">
+                <div className="mx-auto md:w-[40%] my-8">
                     <h3 className="text-center text-2xl text-[#004F8F]">Build a Resilient Lending Business
                         <span className="text-black"> with reliable, intelligent automated decision-making</span></h3>
                 </div>
                 <div className="items-top items-center container ">
-                    <div className="gap-4 flex">
+                    <div className="gap-4 md:flex">
                         {Groups.map((card, index) => (
                             <div className={`bg-[#F2F4F5] my-4 rounded-lg mx-auto `} onClick={() => setIsActiveCard(index + 1)}>
                                 <CardToggle
@@ -158,12 +158,12 @@ const Hero2 = () => {
                 </div>
             </div>
             <div>
-                <div className="flex container mx-auto justify-between items-center py-8">
-                    <div className="w-1/2 pl-8 py-8">
+                <div className="md:flex container mx-auto justify-between items-center py-8">
+                    <div className="md:w-1/2 pl-8 py-8">
                         <p className="text-2xl text-[#004F8F] font-bold py-4 w-1/2">Exposed <span className="text-black">Identity</span></p>
                         <p className="text-gray-500 py-4">Safeguard your customers and your lending business from identity theft. Utilize thorough checks against applicant PII, analyze key identity elements, and leverage consortium data to verify your borrowers’ true identity</p>
                     </div>
-                    <div className="w-1/2 relative">
+                    <div className="md:w-1/2 relative">
                         <Image
                             src={FirstImage.src}
                             alt="Risk evaluation"
@@ -175,8 +175,8 @@ const Hero2 = () => {
                         <div className="absolute left-[25%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '230px', width: '73%' }}></div>
                     </div>
                 </div>
-                <div className="flex container mx-auto justify-between items-center py-8">
-                    <div className="w-1/2 relative">
+                <div className="md:flex container mx-auto justify-between items-center py-8">
+                    <div className="md:w-1/2 relative">
                         <Image
                             src={SecondImage.src}
                             alt="Risk evaluation"
@@ -187,17 +187,17 @@ const Hero2 = () => {
                         />
                         <div className="absolute left-[10%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '230px', width: '73%' }}></div>
                     </div>
-                    <div className="w-1/2 pl-8 py-8">
+                    <div className="md:w-1/2 pl-8 py-8">
                         <p className="text-2xl text-[#004F8F] font-bold py-4 w-1/2">Deceptive <span className="text-black">Behavior</span></p>
                         <p className="text-gray-500 py-4">Detect malicious behaviors like bust-out fraud, straight roller schemes, and other first-party fraud with unmatched accuracy. Identify synthetic and third-party fraud to proactively prevent early delinquencies before they occur</p>
                     </div>
                 </div>
-                <div className="flex container mx-auto justify-between items-center py-8">
-                    <div className="w-1/2 pl-8 py-8">
+                <div className="md:flex container mx-auto justify-between items-center py-8">
+                    <div className="md:w-1/2 pl-8 py-8">
                         <p className="text-2xl text-[#004F8F] font-bold py-4 w-1/2">Income <span className="text-[#004F8F]">Mismatch</span></p>
                         <p className="text-gray-500 py-4">Lend with confidence based on accurate income data. Gain insights into discrepancies between reported and actual income across regions, professions, employment status, and more.</p>
                     </div>
-                    <div className="w-1/2 relative">
+                    <div className="md:w-1/2 relative">
                         <Image
                             src={ThirdImage.src}
                             alt="Risk evaluation"

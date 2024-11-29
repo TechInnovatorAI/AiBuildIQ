@@ -120,11 +120,11 @@ const Hero2 = () => {
                 </div>
             </div>
             <div className="w-full bg-white px-[10%] py-8">
-                <div className="mx-auto w-[40%]">
+                <div className="mx-auto md:w-[40%]">
                     <h3 className="text-center text-2xl text-[#004F8F]">Achieve intelligent and flexible lending <span className="text-black"> for your bank with ease.</span></h3>
                 </div>
                 <div className="items-top items-center container ">
-                    <div className="gap-4 flex">
+                    <div className="gap-4 md:flex">
                         {Groups.map((card, index) => (
                             <div className={`bg-[#F2F4F5] my-4 rounded-lg mx-auto `} onClick={() => setIsActiveCard(index + 1)}>
                                 <CardToggle
@@ -141,14 +141,14 @@ const Hero2 = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex container mx-auto justify-between items-center mt-8 py-8 bg-gray-300 rounded-lg">
-                <div className="w-1/2 pl-8 py-8">
+            <div className="md:flex container mx-auto justify-between items-center mt-8 py-8 bg-gray-300 rounded-lg">
+                <div className="md:w-1/2 pl-8 py-8">
                     <p className="text-4xl text-[#004F8F] font-bold py-4">Revolutionizing AI Compliance  <span className="text-black">in Financial Services</span></p>
                     {textList.map((text, index) => (
                         <p key={index} className="text-gray-500">{index + 1}. {text.text}</p>
                     ))}
                 </div>
-                <div className="w-1/2 p-8">
+                <div className="md:w-1/2 p-8">
                     <Image src={LeftImage.src} className="float-right w-[80%] border-white border-2 mx-auto h-[280px] border-2 border-white rounded-lg " alt="Avatar" layout="fixed" width={300} height={150} />
                 </div>
             </div>

@@ -125,7 +125,7 @@ const Hero2 = () => {
                         <span className="text-black"> with actionable insights and reliable accuracy</span></h3>
                 </div>
                 <div className="items-top items-center container ">
-                    <div className="gap-4 flex">
+                    <div className="gap-4 md:flex">
                         {Groups.map((card, index) => (
                             <div className={`bg-[#F2F4F5] my-4 rounded-lg mx-auto `} onClick={() => setIsActiveCard(index + 1)}>
                                 <CardToggle

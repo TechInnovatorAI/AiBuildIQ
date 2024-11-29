@@ -173,7 +173,7 @@ const Hero2 = () => {
                 </div>
                 <div className="container w-[80%] grid grid-cols-2 gap-4 py-4 ">
                     {supportList.map((box, index) => (
-                        <div key={index} className="flex bg-gray-200 bg-opacity-[20%] p-4 items-center  rounded-lg">
+                        <div key={index} className="md:flex bg-gray-200 bg-opacity-[20%] p-4 items-center  rounded-lg">
                             <h3 className="text-4xl bg-gray-300 bg-opacity-[20%] p-4 mr-4 font-semibold">{box.success}</h3>
                             <p>{box.description}</p>
                         </div>

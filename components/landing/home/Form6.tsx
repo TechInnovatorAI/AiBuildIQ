@@ -24,13 +24,13 @@ const letters = [
 const Form6 = () => {
   return (
     <>
-      <div className="flex container items-center py-[5%]">
-        <div className="w-1/2 items-center mx-auto p-4">
+      <div className="md:flex container items-center py-[5%]">
+        <div className="md:w-1/2 items-center mx-auto p-4">
           <div className="relative py-16 relative justify-center  h-[45vh] rounded-lg" style={{ background: 'url("assets/home/AI Network Server Technology.jpg") no-repeat', backgroundSize: 'cover' }}>
           <div className="absolute border border-gray-300 rounded-lg h-[45vh] w-full top-4 left-4 -z-10"></div>
           </div>
         </div>
-        <div className="w-1/2 p-4">
+        <div className="md:w-1/2 p-4">
           <div className="py-4">
             <h1 className="text-gray-300">Lorem Ipsum dolor</h1>
             <h1 className="text-[#004F8F] font-bold text-2xl">AIBuild IQ is best at</h1>

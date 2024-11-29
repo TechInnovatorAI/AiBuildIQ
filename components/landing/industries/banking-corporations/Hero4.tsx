@@ -6,8 +6,8 @@ import rightImage from "@/public/assets/home/Logo_16.jpg"
 const Hero4 = () => {
     return (
         <>
-            <div className="flex container mx-auto justify-between items-center mt-8 py-8 rounded-lg">
-                <div className="w-1/2 pl-2 py-8">
+            <div className="md:flex  container mx-auto justify-center items-center mt-8 py-8 rounded-lg">
+                <div className="md:w-1/2 pl-2 py-8">
                     <h1 className="text-md  text-gray-300 font-bold mb-4">Lorem Ipsum dolor</h1>
                     <h2 className="text-4xl w-2/3 font-bold mb-4">Bankers, are you <span className="text-[#004F8F]">Prepared to Succeed?</span></h2>
                     <p className="text-md font-light mb-4">Request a no-obligation, custom proof of concept to see the real benefits and opportunities for your lending organization and members.</p>
@@ -15,7 +15,7 @@ const Hero4 = () => {
                         Lets connect
                     </button>
                 </div>
-                <div className="w-1/2 relative">
+                <div className="md:w-1/2 relative">
                     <Image
                         src={rightImage.src}
                         alt="Risk evaluation"
@@ -27,7 +27,9 @@ const Hero4 = () => {
                     <div className="absolute left-[25%] top-1/4 -z-10 rounded-lg border-2 border-gray-200" style={{ height: '230px', width: '73%' }}></div>
                 </div>
             </div>
-            <ReadyEvaluate btn="Contact Us" />
+            <div>
+                <ReadyEvaluate btn="Contact Us" />
+            </div>
         </>
     );
 };

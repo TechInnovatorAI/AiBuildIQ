@@ -41,7 +41,6 @@ const Hero2 = () => {
                         <h2 className="text-3xl font-bold mb-4 w-2/3 mx-auto">
                             Empowering lending with Smarter, More Inclusive, & Efficient AI-driven Solutions.
                         </h2>
-
                     </div>
                 </div>
 
@@ -52,7 +51,7 @@ const Hero2 = () => {
                     <div className="container mx-auto w-[70%] bg-gray-200 rounded-lg p-4">
                         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-2">
                             {itemData.map((item, index) => (
-                                <div key={index} className={`p-6 ${index > 0 ? 'border-l border-gray-400' : ''}`}>
+                                <div key={index} className={`p-6 ${index > 0 ? 'md:border-l md:border-gray-400' : ''}`}>
                                     <div className="bg-white border rounded-lg p-2 text-2xl mb-4 text-center text-[#004F8F] font-bold">
                                         {item.title}
                                     </div>

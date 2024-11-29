@@ -40,12 +40,12 @@ const ongoing = [
 
 const Hero3 = () => {
     return (
-        <div>
+        <>
             <div className="bg-[#004F8F] py-16">
                 <div className="container w-1/2 text-white font-bold  text-center text-4xl py-2">
                     Achieve rapid results with effortless integrations and quick onboarding
                 </div>
-                <div className="container w-2/3">
+                <div className="container md:w-2/3">
                     {onboarding.map((board, index) => (
                         <div className="flex mt-2 bg-gray-200 bg-opacity-[10%] rounded-lg border-gray-200 relative p-2 items-center">
                             <div className=" font-bold px-2  text-xl text-white">{board.number}</div>
@@ -55,7 +55,7 @@ const Hero3 = () => {
                     ))}
                 </div>
                 <p className="container w-2/3 text-white font-bold py-2 text-2xl mt-4">Ongoing Assistance & Analysis</p>
-                <div className="container w-2/3">
+                <div className="container md:w-2/3">
                     {ongoing.map((board, index) => (
                         <div className="flex mt-2 bg-gray-200 bg-opacity-[10%] rounded-lg border-gray-200 relative p-2 items-center">
                             <div className="font-bold px-2 text-white">{board.number}</div>
@@ -65,12 +65,12 @@ const Hero3 = () => {
                     ))}
                 </div>
             </div>
-            <div className="flex container mx-auto justify-between items-center mt-8 py-8 bg-gray-300 rounded-lg">
-                <div className="w-1/2 pl-2 py-8">
+            <div className="md:flex container mx-auto justify-between items-center mt-8 py-8 bg-gray-300 rounded-lg">
+                <div className="md:w-1/2 pl-2 py-8">
                     <p className="text-2xl text-black font-bold py-4">A Focus on <span className="text-[#004F8F]">Compliance</span></p>
                     <p className="text-gray-500">AiBuildiQ is dedicated to shaping the future of AI in lending. With over 80 years of combined expertise in legal, compliance, and policy, our team is deeply involved in discussions that ensure AI remains transparent, secure, and fair for both lenders and their customers</p>
                 </div>
-                <div className="w-1/2 p-8">
+                <div className="md:w-1/2 p-8">
                     <Image src={LeftImage.src} className="float-right w-[80%] border-white border-2 mx-auto h-[280px] border-2 border-white rounded-lg " alt="Avatar" layout="fixed" width={300} height={150} />
                 </div>
             </div>
@@ -84,7 +84,7 @@ const Hero3 = () => {
                     <p className="text-lg text-gray-600">AiBuildIQ Board Member, Former NCUA Chairman</p>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

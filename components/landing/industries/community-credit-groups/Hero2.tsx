@@ -111,11 +111,11 @@ const Hero2 = () => {
                 </div>
             </div>
             <div className="w-full bg-white px-[10%] py-8">
-                <div className="mx-auto w-[40%]">
+                <div className="mx-auto md:w-[40%]">
                     <h3 className="text-center text-2xl">Intelligent, Automated AI Lending Now Accessible to<span className="text-[#004F8F]"> Community Credit Groups of Any Size</span></h3>
                 </div>
                 <div className="items-top items-center container ">
-                    <div className="gap-4 flex">
+                    <div className="gap-4 md:flex">
                         {Groups.map((card, index) => (
                             <div className={`bg-[#F2F4F5] my-4 rounded-lg mx-auto `} onClick={() => setIsActiveCard(index + 1)}>
                                 <CardToggle
@@ -132,11 +132,11 @@ const Hero2 = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex container mx-auto justify-between items-center mt-8 py-8 rounded-lg">
-                <div className="w-1/2 p-8">
+            <div className="md:flex container mx-auto justify-center items-center mt-8 py-8 rounded-lg">
+                <div className="md:w-1/2 w-full p-8">
                     <Image src={LeftImage.src} className="float-left w-[80%] border-white border-2 mx-auto h-[280px] border-2 border-white rounded-lg " alt="Avatar" layout="fixed" width={300} height={150} />
                 </div>
-                <div className="w-1/2 pl-8 py-8">
+                <div className="md:w-1/2 w-full pl-8 py-8">
                     <h2 className="text-md font-bold text-gray-200">Lorem Ipsum dolor</h2>
                     <p className="text-2xl text-gray-600 font-bold py-4 w-[80%]">Community Credit Groups are at the <span className="text-[#004F8F]">Heart of What We Do</span></p>
                     <p className="text-gray-500">AiBuildIQ is a CUSO backed by over 70 credit union investors, led by credit union leaders on our board, and supported by passionate credit union advocates on our team. We are committed to serving all credit unions.</p>
