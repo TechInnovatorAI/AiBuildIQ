@@ -1,7 +1,15 @@
 "use client"
 import React from 'react';
-import {useState} from 'react'
+import { useState } from 'react'
 import Blog from '@/components/custome-ui/blog-card'
+import { CardContent } from "@/components/ui/card"
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const CategoryList = [
     "All Blogs & Articles", "Compilance", "Credit and Risk", "Culture", "Industry", "Technology", "AiBuildIQ"
@@ -11,7 +19,7 @@ const BlogList = [
     {
         id: 1,
         image: "/assets/how-it-works/1.jpg",
-        category: [1,3],
+        category: [1, 3],
         title: "Learning from yesterday’s credit union movement for a better tomorrow",
         description: "Every year, we celebrate International Credit Union (ICU) Day on the third Thursday of October.",
         link: ""
@@ -19,7 +27,7 @@ const BlogList = [
     {
         id: 2,
         image: "/assets/how-it-works/1.jpg",
-        category: [1,3],
+        category: [1, 3],
         title: "Alternative data is just one consideration for a lender’s credit data strategy",
         description: "Many fintechs are promoting this add-on as a panacea for any trouble related to model.",
         link: ""
@@ -27,7 +35,7 @@ const BlogList = [
     {
         id: 3,
         image: "/assets/how-it-works/1.jpg",
-        category: [1,3],
+        category: [1, 3],
         title: "how serving our communities in 2024 inspires our innovation",
         description: "Our core values are Heart, Communication, Customer Centricity, Bias for Action, and Collaboration",
         link: ""
@@ -35,7 +43,7 @@ const BlogList = [
     {
         id: 4,
         image: "/assets/how-it-works/1.jpg",
-        category: [1,3],
+        category: [1, 3],
         title: "Alternative data is just one consideration for a lender’s credit data strategy",
         description: "Many fintechs are promoting this add-on as a panacea for any trouble related to model",
         link: ""
@@ -43,7 +51,7 @@ const BlogList = [
     {
         id: 5,
         image: "/assets/how-it-works/1.jpg",
-        category: [1,3],
+        category: [1, 3],
         title: "how serving our communities in 2024 inspires our innovation",
         description: "Our core values are Heart, Communication, Customer Centricity, Bias for Action, and Collaboration",
         link: ""
@@ -51,7 +59,7 @@ const BlogList = [
     {
         id: 6,
         image: "/assets/how-it-works/1.jpg",
-        category: [1,3],
+        category: [1, 3],
         title: "Learning from yesterday’s credit union movement for a better tomorrow",
         description: "Every year, we celebrate International Credit Union (ICU) Day on the third Thursday of October.",
         link: ""
@@ -59,7 +67,7 @@ const BlogList = [
     {
         id: 7,
         image: "/assets/how-it-works/1.jpg",
-        category: [1,3],
+        category: [1, 3],
         title: "how serving our communities in 2024 inspires our innovation",
         description: "Our core values are Heart, Communication, Customer Centricity, Bias for Action, and Collaboration",
         link: ""
@@ -67,7 +75,7 @@ const BlogList = [
 ]
 
 const recentBlog = [
-    1,3,5
+    1, 3, 5
 ]
 
 const Hero2 = () => {
@@ -76,10 +84,10 @@ const Hero2 = () => {
     return (
         <div className="pt-16">
             {/* Navigation Buttons */}
-            <div className="flex container w-[80%] items-center justify-center mb-8 border-t border-b  p-4 gap-4">
+            <div className="md:flex container w-[80%] items-center justify-center mb-8 border-t border-b  p-4 gap-4">
                 <label className="uppercase font-bold">Topic: </label>
                 {CategoryList.map((category, index) => (
-                    <button onClick={()=>setActiveCategory(category)} className={`${category === activeCategory ? 'bg-gray-300 text-[#004F8F] font-bold' : ''}  text-sm py-2 px-4 rounded`}>
+                    <button onClick={() => setActiveCategory(category)} className={`${category === activeCategory ? 'bg-gray-100 text-[#004F8F] font-bold' : ''}  text-sm py-2 px-4 rounded`}>
                         {category}
                     </button>
                 ))}
@@ -98,21 +106,41 @@ const Hero2 = () => {
                 ))}
             </div>
 
-            <div className="items-center bg-gray-300 py-4">
-                <h1 className="text-[#004F8F] mx-auto text-4xl py-4 text-center w-1/3">Recently Uploaded <span className="text-black">Blogs and Articles</span></h1>
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-4 px-4">
-                    {recentBlog.map((recent, index) => (
-                        BlogList.find(blog => blog.id === recent) && (
-                            <Blog
-                                key={index}
-                                image={BlogList.find(blog => blog.id === recent)?.image || ''}
-                                category={BlogList.find(blog => blog.id === recent)?.category || []}
-                                title={BlogList.find(blog => blog.id === recent)?.title || ''}
-                                description={BlogList.find(blog => blog.id === recent)?.description || ''}
-                                link={BlogList.find(blog => blog.id === recent)?.link || ''}
-                            />
-                        )
-                    ))}
+            <div className="items-center bg-gray-100 py-4">
+                <h1 className="text-[#004F8F] mx-auto text-4xl py-4 text-center w-1/2 md:w-1/3">Recently Uploaded <span className="text-black">Blogs and Articles</span></h1>
+                <div className="w-[90%] gap-4 container ">
+                    <div className="mx-auto">
+                        <Carousel
+                            opts={{
+                                align: "start",
+                            }}
+                            className="w-[100%]"
+                        >
+                            <CarouselContent>
+                                {recentBlog.map((recent, index) => (
+                                    BlogList.find(blog => blog.id === recent) && (
+                                        <CarouselItem key={index} className="sm:basis-1/1 md:basis-1/2 lg:basis-1/3">
+                                            <div className="py-16 px-8">
+                                                <CardContent className="flex my-8 items-center justify-center p-2">
+                                                    <Blog
+                                                        key={index}
+                                                        image={BlogList.find(blog => blog.id === recent)?.image || ''}
+                                                        category={BlogList.find(blog => blog.id === recent)?.category || []}
+                                                        title={BlogList.find(blog => blog.id === recent)?.title || ''}
+                                                        description={BlogList.find(blog => blog.id === recent)?.description || ''}
+                                                        link={BlogList.find(blog => blog.id === recent)?.link || ''}
+                                                    />
+                                                </CardContent>
+                                            </div>
+                                        </CarouselItem>
+                                    )
+                                ))}
+                            </CarouselContent>
+                            <CarouselPrevious className="text-[#004F8F] w-[50px] h-[50px]" />
+                            <CarouselNext className="text-[#004F8F] w-[50px] h-[50px]" />
+                        </Carousel>
+                    </div>
+
                 </div>
             </div>
         </div>

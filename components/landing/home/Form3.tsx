@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 
 const ring = {
     top: (
@@ -11,6 +10,20 @@ const ring = {
     ),
     bottom: (
         <svg width='399' height='140' viewBox='0 -5 399 143' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <path d='M196.624 132.824C124.716 132.824 66.1507 74.5469 65.6598 2.75507H0.134583V0.9646H67.4503V1.85984C67.4503 73.103 125.409 131.033 196.624 131.033C267.838 131.033 325.797 73.0741 325.797 1.85984V0.9646H390.456V2.75507H327.587C327.096 74.5469 268.56 132.824 196.624 132.824Z' fill='#262626' />
+            <circle cx='0.134583' cy='0.9646' r='5' fill='#262626' />
+            <circle cx='390.456' cy='2.75507' r='5' fill='#262626' />
+        </svg>
+    ),
+    right: (
+        <svg width='399' height='140' viewBox='0 0 399 143' fill='none' xmlns='http://www.w3.org/2000/svg' style={{ transform: 'rotate(90deg)' }}>
+            <path d='M390.646 132.432H323.33V131.537C323.33 60.3225 265.371 2.36339 194.157 2.36339C122.942 2.36339 64.9833 60.3225 64.9833 131.566V132.461H0.353271V130.67H63.2217C63.7126 58.8785 122.249 0.601807 194.185 0.601807C266.122 0.601807 324.658 58.8497 325.149 130.67H390.674V132.461L390.646 132.432Z' fill='#262626' />
+            <circle cx='390.646' cy='132.432' r='5' fill='#262626'></circle>
+            <circle cx='0.353271' cy='130.67' r='5' fill='#262626'></circle>
+        </svg>
+    ),
+    left: (
+        <svg width='399' height='140' viewBox='0 -5 399 143' fill='none' xmlns='http://www.w3.org/2000/svg' style={{ transform: 'rotate(90deg)' }}>
             <path d='M196.624 132.824C124.716 132.824 66.1507 74.5469 65.6598 2.75507H0.134583V0.9646H67.4503V1.85984C67.4503 73.103 125.409 131.033 196.624 131.033C267.838 131.033 325.797 73.0741 325.797 1.85984V0.9646H390.456V2.75507H327.587C327.096 74.5469 268.56 132.824 196.624 132.824Z' fill='#262626' />
             <circle cx='0.134583' cy='0.9646' r='5' fill='#262626' />
             <circle cx='390.456' cy='2.75507' r='5' fill='#262626' />
@@ -75,41 +88,39 @@ const Form3 = () => {
             </div>
 
             {/* Second Layer - Cards */}
-            <div className="max-w-7xl flex mx-auto">
+            <div className="max-w-7xl w-full md:flex mx-auto py-16 justify-center">
                 {/* {workflow} */}
                 {cards.map((card, index) => (
                     <div
                         key={index}
-                        className={`items-center relative  ${index > 0 ? '-ml-16' : ''}`}
+                        className={`items-center ${index > 0 ? 'md:ml-16' : ''} `}
                     >
                         {index % 2 === 0 ? (
                             <>
-                                <div className="relative">
-                                    {ring.top}
-                                    <div className="absolute top-1/4 left-1/4 ">
-                                        <div className="bg-[#004F8F] rounded-full w-48 h-48 flex flex-col items-center justify-center z-10">
-                                            {card.svg}
-                                            <span className="text-white text-xl text-center font-bold mt-2">
-                                                {card.letter}
-                                            </span>
-                                        </div>
-                                        <div className="top-2/3 mt-4  text-center uppercase text-[#004F8F] font-bold text-2xl">step {index + 1}</div>
+                                <div className={`relative  ${index > 0 ? 'md:ml-32 md:mt-0 sm:mt-32' : ''}`}>
+                                    <div className="absolute md:-left-1/2 md:-top-1/3 md:translate-y-1/4 hidden md:block">{ring.top}</div>
+                                    <div className="absolute sm:ml-[30%] sm:mt-[5%] md:hidden">{ring.right}</div>
+                                    <div className="mx-auto bg-[#004F8F] rounded-full w-48 h-48 flex flex-col items-center justify-center z-10">
+                                        {card.svg}
+                                        <span className="text-white text-xl text-center font-bold mt-2">
+                                            {card.letter}
+                                        </span>
                                     </div>
+                                    <div className="absolute  md:left-[30%] md:-bottom-[30%] text-center uppercase text-[#004F8F] font-bold text-2xl">step {index + 1}</div>
                                 </div>
                             </>
                         ) : (
                             <>
-                                <div className="relative">
-                                    <div className="absolute -top-1/2 left-1/4 -translate-y-1/3">
-                                        <div className="mb-4 text-center uppercase text-[#004F8F] font-bold text-2xl">step {index + 1}</div>
-                                        <div className="bg-[#004F8F] rounded-full w-48 h-48 flex flex-col items-center justify-center z-10">
-                                            {card.svg}
-                                            <span className="text-white text-xl text-center font-bold mt-2">
-                                                {card.letter}
-                                            </span>
-                                        </div>
+                                <div className="relative md:top-[20%] md:left-[30%] sm:-left-[5%] sm:mt-32 md:mt-0">
+                                    <div className="absolute md:-top-1/4 md:left-[30%] left-[70%] top-[40%] text-center uppercase text-[#004F8F] font-bold text-2xl">step {index + 1}</div>
+                                    <div className="mx-auto bg-[#004F8F] rounded-full w-48 h-48 flex flex-col items-center justify-center z-10">
+                                        {card.svg}
+                                        <span className="text-white text-xl text-center font-bold mt-2">
+                                            {card.letter}
+                                        </span>
                                     </div>
-                                    <div className="mt-[40%]">{ring.bottom}</div>
+                                    <div className="absolute md:top-1/2 md:-left-1/2 hidden md:block">{ring.bottom}</div>
+                                    <div className="absolute sm:ml-[8%] sm:-mt-[25%] md:hidden">{ring.left}</div>
                                 </div>
                             </>
                         )}
