@@ -26,7 +26,7 @@ const BlogList = [
     },
     {
         id: 2,
-        image: "/assets/how-it-works/1.jpg",
+        image: "/assets/how-it-works/2.jpg",
         category: [1, 3],
         title: "Alternative data is just one consideration for a lender’s credit data strategy",
         description: "Many fintechs are promoting this add-on as a panacea for any trouble related to model.",
@@ -34,7 +34,7 @@ const BlogList = [
     },
     {
         id: 3,
-        image: "/assets/how-it-works/1.jpg",
+        image: "/assets/how-it-works/3.jpg",
         category: [1, 3],
         title: "how serving our communities in 2024 inspires our innovation",
         description: "Our core values are Heart, Communication, Customer Centricity, Bias for Action, and Collaboration",
@@ -42,7 +42,7 @@ const BlogList = [
     },
     {
         id: 4,
-        image: "/assets/how-it-works/1.jpg",
+        image: "/assets/how-it-works/2.jpg",
         category: [1, 3],
         title: "Alternative data is just one consideration for a lender’s credit data strategy",
         description: "Many fintechs are promoting this add-on as a panacea for any trouble related to model",
@@ -50,7 +50,7 @@ const BlogList = [
     },
     {
         id: 5,
-        image: "/assets/how-it-works/1.jpg",
+        image: "/assets/how-it-works/2.jpg",
         category: [1, 3],
         title: "how serving our communities in 2024 inspires our innovation",
         description: "Our core values are Heart, Communication, Customer Centricity, Bias for Action, and Collaboration",
@@ -58,7 +58,7 @@ const BlogList = [
     },
     {
         id: 6,
-        image: "/assets/how-it-works/1.jpg",
+        image: "/assets/how-it-works/3.jpg",
         category: [1, 3],
         title: "Learning from yesterday’s credit union movement for a better tomorrow",
         description: "Every year, we celebrate International Credit Union (ICU) Day on the third Thursday of October.",
@@ -66,7 +66,7 @@ const BlogList = [
     },
     {
         id: 7,
-        image: "/assets/how-it-works/1.jpg",
+        image: "/assets/how-it-works/2.jpg",
         category: [1, 3],
         title: "how serving our communities in 2024 inspires our innovation",
         description: "Our core values are Heart, Communication, Customer Centricity, Bias for Action, and Collaboration",
@@ -85,29 +85,34 @@ const Hero2 = () => {
         <div className="pt-16">
             {/* Navigation Buttons */}
             <div className="md:flex container w-[80%] items-center justify-center mb-8 border-t border-b  p-4 gap-4">
-                <label className="uppercase font-bold">Topic: </label>
+                <label className="uppercase font-bold">Topics: </label>
                 {CategoryList.map((category, index) => (
-                    <button onClick={() => setActiveCategory(category)} className={`${category === activeCategory ? 'bg-gray-100 text-[#004F8F] font-bold' : ''}  text-sm py-2 px-4 rounded`}>
+                    <button onClick={() => setActiveCategory(category)} className={`${category === activeCategory ? 'bg-gray-100 text-[#004F8F] font-bold' : ''}  text-sm py-2 px-4 rounded-lg`}>
                         {category}
                     </button>
                 ))}
             </div>
 
             {/* Card Boxes */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 py-4 container w-[80%]">
-                {BlogList.map((blog, index) => (
-                    <Blog
-                        image={blog.image}
-                        category={blog.category}
-                        title={blog.title}
-                        description={blog.description}
-                        link={blog.link}
-                    />
-                ))}
+            <div className="container w-[80%]">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 py-4">
+                    {BlogList.map((blog, index) => (
+                        <Blog
+                            image={blog.image}
+                            category={blog.category}
+                            title={blog.title}
+                            description={blog.description}
+                            link={blog.link}
+                        />
+                    ))}
+                </div>
+                <div className="flex justify-end py-4">
+                    Page <button className="rounded-full bg-gray-200 px-4">1</button> of 100
+                </div>
             </div>
 
             <div className="items-center bg-gray-100 py-4">
-                <h1 className="text-[#004F8F] mx-auto text-4xl py-4 text-center w-1/2 md:w-1/3">Recently Uploaded <span className="text-black">Blogs and Articles</span></h1>
+                <h1 className="text-[#004F8F] mx-auto text-4xl py-4 text-center w-1/2 md:w-1/3 font-bold">Recently Uploaded <span className="text-black">Blogs and Articles</span></h1>
                 <div className="w-[90%] gap-4 container ">
                     <div className="mx-auto">
                         <Carousel
@@ -140,7 +145,14 @@ const Hero2 = () => {
                             <CarouselNext className="text-[#004F8F] w-[50px] h-[50px]" />
                         </Carousel>
                     </div>
-
+                    <div className='flex justify-center pb-4'>
+                        <svg width="104" height="15" viewBox="0 0 104 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7.58747" cy="7.75934" r="6.96442" fill="#004F8F" />
+                            <circle cx="37.1968" cy="7.75934" r="6.96442" fill="white" />
+                            <circle cx="66.8023" cy="7.75934" r="6.96442" fill="white" />
+                            <circle cx="96.4117" cy="7.75934" r="6.96442" fill="white" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>

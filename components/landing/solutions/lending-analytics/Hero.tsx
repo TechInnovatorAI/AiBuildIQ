@@ -9,6 +9,7 @@ const Hero = () => {
                 title="Enhanced visibility and flexibility with Lending Analytics"
                 description="Refine your lending strategy with actionable insights and reliable accuracy"
                 button="Request a Proof of Concept"
+                isShow={true}
             />
         </div>
     );

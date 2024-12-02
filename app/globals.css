@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -36,7 +34,7 @@
 
     --radius: 0.5rem;
 
- 
+
   }
 
   .dark {
@@ -75,12 +73,14 @@
     @apply border-border;
     scroll-behavior: smooth
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   font-family: 'slick';
   font-size: 20px;
   line-height: 1;
@@ -92,7 +92,7 @@
 
 .dark-mode.slick-prev:before,
 .dark-mode.slick-next:before {
-  color: white; 
+  color: white;
 }
 
 /* width */
@@ -113,4 +113,90 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+
+
+/*  Home  */
+@media (max-width: 320px) {
+  .ring-right {
+    top: 4vh;
+  }
+  .step-right {
+    display: none;
+  }
+  .ring-left {
+    top: 5vh;
+    left: -40vw;
+  }
+  .step-left {
+    display: none;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px){
+  .ring-right {
+    left: 7vw;
+    top: 4vh;
+  }
+  .step-right {
+    display:none;
+  }
+  .ring-left {
+    top: 4vh;
+    left: -30vw;
+  }
+  .step-left {
+    display: none;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .ring-right {
+    left: 10vw;
+    top: 4vh;
+  }
+  .step-right {
+    display:block;
+    top: 10vh;
+  }
+  .ring-left {
+    top: 4vh;
+    left: -23vw;
+  }
+  .step-left {
+    display: block;
+    top:10vh;
+    left:75vw;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .ring-right {
+    left: 20vw;
+    top: 4vh;
+  }
+  .step-right {
+    display:block;
+    top: 10vh;
+    left:8vw;
+  }
+  .ring-left {
+    top: 5vh;
+    left: -3vw;
+  }
+  .step-left {
+    display: block;
+    top:10vh;
+    left:80vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .ring-right {
+    display:none
+  }
+  .ring-left {
+    display: none;
+  }
 }

@@ -9,6 +9,7 @@ const Hero = () => {
                 title=" How AIBuildIQ Works"
                 description="Streamlining the lending process with intelligent, data-driven solutions tailored for brokers and borrowers"
                 button=""
+                isShow={false}
             />
         </div>
     );

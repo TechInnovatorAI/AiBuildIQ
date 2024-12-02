@@ -57,7 +57,7 @@ const Form7 = () => {
                                 {cards.map((card, index) => (
                                     <CarouselItem key={index} className="sm:basis-1/1 md:basis-1/2 lg:basis-1/3">
                                         <div className="py-16 px-8">
-                                            <Card className="">
+                                            {/* <Card className=""> */}
                                                 <CardContent className="flex my-8 items-center justify-center p-2">
                                                     <TextNominalCard
                                                         avatar={card.avatar}
@@ -66,7 +66,7 @@ const Form7 = () => {
                                                         name={card.name}
                                                     />
                                                 </CardContent>
-                                            </Card>
+                                            {/* </Card> */}
                                         </div>
                                     </CarouselItem>
                                 ))}

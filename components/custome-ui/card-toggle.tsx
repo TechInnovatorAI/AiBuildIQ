@@ -22,12 +22,12 @@ const CardToggle: React.FC<CardToggleProps> = ({
     return (
         <div className={`p-2 flex md:h-[40vh]`}>
             <div className="flex p-4 mr-8  mt-4 relative hover:cursor-pointer" >
-                <div className={`absolute bottom-4 ${isActive ? 'rotate-180' : 'sm:-rotate-90 sm:translate-y-[50%] sm:ml-[200%] sm:translate-x-[100%]  md:rotate-180 md:translate-y-0 md:ml-0 md:translate-x-0'} `}>
+                <div className={`absolute bottom-4 ${isActive ? 'rotate-180' : '-rotate-90 translate-y-[50%] ml-[100%] translate-x-[100%]  md:rotate-180 md:translate-y-0 md:ml-0 md:translate-x-0'} `}>
                     <p className={`text-lg text-gray-300 font-bold flex `} style={{
                         writingMode: "vertical-lr"
                     }}>
-                        {`0${number}`}
-                        <span className="text-[#004F8F] font-bold">{' '}{title}</span>
+                        <span className='text-2xl'>{`0${number}`}</span>
+                        <span className="text-[#004F8F] font-bold py-4">{title}</span>
                     </p>
                 </div>
             </div>

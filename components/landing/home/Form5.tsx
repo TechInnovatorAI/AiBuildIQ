@@ -30,8 +30,8 @@ const Form5 = () => {
             <div className=" py-8 bg-gray-100 ">
                 <div className="container">
                     <div className="text-center items-center p-8 mx-auto">
-                        <h1 className="font-bold text-2xl p-2">Why Choose AIBuildIQ?</h1>
-                        <h2 className="p-2 w-[50%] mx-auto text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h2>
+                        <h1 className="font-bold text-2xl p-2">Why Choose <span className="text-[#004F8F]">AIBuildIQ?</span></h1>
+                        <h2 className="p-2 w-[80%] mx-auto text-md">Our platform is built to foster transparency, scalability, and engagement, ensuring that every step is streamlined for faster, smarter outcomes. Join us in redefining the future of lending with innovative solutions that work for you.</h2>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                         {data.map((item, index) => (
@@ -47,7 +47,7 @@ const Form5 = () => {
             <div className="px-[10%] py-8 bg-gray-100">
                 <div className="text-center items-center p-8 mx-auto">
                     <h1 className="font-bold text-2xl p-2">Streamlined <span className="text-[#004F8F]">Solutions for Financing</span></h1>
-                    <h2 className="p-2 w-[80%] mx-auto text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h2>
+                    <h2 className="p-2 w-[80%] mx-auto text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h2>
                 </div>
                 <div className="flex justify-center p-4 items-center">
                     <Carousel
@@ -77,6 +77,14 @@ const Form5 = () => {
                         <CarouselPrevious className="text-[#004F8F] w-[50px] h-[50px]" />
                         <CarouselNext className="text-[#004F8F] w-[50px] h-[50px]" />
                     </Carousel>
+                </div>
+                <div className="flex justify-center">
+                    <svg width="104" height="15" viewBox="0 0 104 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7.58747" cy="7.37067" r="6.96442" fill="#004F8F" />
+                        <circle cx="37.1968" cy="7.37067" r="6.96442" fill="white" />
+                        <circle cx="66.8023" cy="7.37067" r="6.96442" fill="white" />
+                        <circle cx="96.4117" cy="7.37067" r="6.96442" fill="white" />
+                    </svg>
                 </div>
             </div>
         </>

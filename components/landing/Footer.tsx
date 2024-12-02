@@ -63,7 +63,7 @@ const Footer = () => {
                                 <div key={index} className="w-1/3 p-4">
                                     <h3 className="text-lg font-bold mb-2">{column.title}</h3>
                                     {column.subtitles.map((subtitle, index) => (
-                                        <p key={index} className="mb-1">{subtitle}</p>
+                                        <p key={index} className="mb-1 py-2">{subtitle}</p>
                                     ))}
                                 </div>
                             ))}
@@ -79,7 +79,7 @@ const Footer = () => {
                     <div className="md:w-1/4 sm:w-full  p-4">
                         <h3 className="text-lg font-bold mb-2">{rightContent.title}</h3>
                         {rightContent.subtitles.map((subtitle, index) => (
-                            <div key={index} className="mb-2">
+                            <div key={index} className="mb-2 py-2">
                                 <p className="mb-1 font-bold">{subtitle.title}</p>
                                 <p className="mb-1">{subtitle.description}</p>
                             </div>
@@ -95,14 +95,14 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr className="my-4 border-t border-gray-700 w-full" />
-                <div className="flex flex-wrap justify-between">
+                <div className="flex justify-between">
                     <div className="w-1/2 p-4">
                         <p>&copy; 2020 - 2024 All Rights Reserved. <Link href="https://aibuildaq.com" className="underline text-gray-200 hover:text-gray-300">aibuildaq.com</Link></p>
                     </div>
-                    <div className="w-1/2 p-4 text-right">
-                        <Link href="/terms-and-conditions" className="mr-4 text-gray-200 hover:text-gray-300">Terms and Conditions</Link>
-                        <Link href="/privacy-policy" className="mr-4 text-gray-200 hover:text-gray-300">Privacy Policy</Link>
-                        <Link href="/cookie-policy" className="text-gray-200 hover:text-gray-300">Cookie Policy</Link>
+                    <div className="w-1/2 p-4 text-right lg:flex justify-end gap-4">
+                        <div><Link href="/terms-and-conditions" className="md:w-full text-gray-200 hover:text-gray-300">Terms and Conditions</Link></div>
+                        <div><Link href="/privacy-policy" className="text-gray-200 hover:text-gray-300">Privacy Policy</Link></div>
+                        <div><Link href="/cookie-policy" className="text-gray-200 hover:text-gray-300">Cookie Policy</Link></div>
                     </div>
                 </div>
             </div>

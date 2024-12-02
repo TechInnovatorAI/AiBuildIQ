@@ -76,11 +76,11 @@ const cards = [
 const Form3 = () => {
 
     return (
-        <div className=" bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+        <div className=" bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
             {/* First Layer - Title and Description */}
             <div className="text-center max-w-4xl mx-auto mb-16">
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                    Simple and Efficient Work flow of AIBuildIQ
+                    Simple and Efficient <span className="text-[#004F8F]">Work flow of AIBuildIQ</span>
                 </h2>
                 <p className="text-lg text-gray-600">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
@@ -97,22 +97,22 @@ const Form3 = () => {
                     >
                         {index % 2 === 0 ? (
                             <>
-                                <div className={`relative  ${index > 0 ? 'md:ml-32 md:mt-0 sm:mt-32' : ''}`}>
+                                <div className={`relative  ${index > 0 ? 'md:ml-32 md:mt-0 mt-32' : ''}`}>
                                     <div className="absolute md:-left-1/2 md:-top-1/3 md:translate-y-1/4 hidden md:block">{ring.top}</div>
-                                    <div className="absolute sm:ml-[30%] sm:mt-[5%] md:hidden">{ring.right}</div>
+                                    <div className="absolute mx-auto ring-right ">{ring.right}</div>
                                     <div className="mx-auto bg-[#004F8F] rounded-full w-48 h-48 flex flex-col items-center justify-center z-10">
                                         {card.svg}
                                         <span className="text-white text-xl text-center font-bold mt-2">
                                             {card.letter}
                                         </span>
                                     </div>
-                                    <div className="absolute sm:left-[20%] sm:top-[40%] md:left-[30%] md:-bottom-[30%] text-center uppercase text-[#004F8F] font-bold text-2xl">step {index + 1}</div>
+                                    <div className="absolute step-right md:left-[30%] md:-bottom-[30%] text-center uppercase text-[#004F8F] font-bold text-2xl">step {index + 1}</div>
                                 </div>
                             </>
                         ) : (
                             <>
-                                <div className="relative md:top-[20%] md:left-[30%] sm:-left-[5%] sm:mt-32 md:mt-0">
-                                    <div className="absolute md:-top-1/4 md:left-[30%] left-[70%] top-[40%] text-center uppercase text-[#004F8F] font-bold text-2xl">step {index + 1}</div>
+                                <div className="relative md:top-[20%] md:left-[30%] md:mt-0 -left-[5%] mt-32 ">
+                                    <div className="absolute step-left md:-top-1/4 md:left-[30%] sm:left-[70%] sm:top-[40%] text-center uppercase text-[#004F8F] font-bold text-2xl">step {index + 1}</div>
                                     <div className="mx-auto bg-[#004F8F] rounded-full w-48 h-48 flex flex-col items-center justify-center z-10">
                                         {card.svg}
                                         <span className="text-white text-xl text-center font-bold mt-2">
@@ -120,7 +120,7 @@ const Form3 = () => {
                                         </span>
                                     </div>
                                     <div className="absolute md:top-1/2 md:-left-1/2 hidden md:block">{ring.bottom}</div>
-                                    <div className="absolute sm:ml-[8%] sm:-mt-[25%] md:hidden">{ring.left}</div>
+                                    <div className="absolute ring-left">{ring.left}</div>
                                 </div>
                             </>
                         )}

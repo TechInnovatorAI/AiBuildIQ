@@ -9,6 +9,7 @@ const Hero = () => {
                 title="Blogs and Articles"
                 description="Exploring the latest trends, emerging topics, and valuable insights in AI and lending"
                 button=""
+                isShow={false}
             />
         </div>
     );

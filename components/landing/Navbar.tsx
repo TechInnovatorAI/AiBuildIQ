@@ -1,12 +1,17 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import Logo from "@/public/assets/Logo.jpg"
-import LogoTop from "@/public/assets/Logo_top.jpg"
-import LogoBottom from "@/public/assets/logo_bottom.jpg"
 import Image from "next/image"
 import { BotOff } from "lucide-react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -81,12 +86,6 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50">
       {/* Logo/Image Button - Fixed on top */}
 
-      {/* <div className="absolute top-0 left-1/4 -translate-x-1/2 z-10">
-        <button className="p-2 bg-white rounded-b-lg shadow-md">
-          <Image src={Logo} alt="Logo" height={128} width={128} className="w-auto" />
-        </button>
-      </div> */}
-
       {/* First Layer - White Background */}
       <div className="bg-white border-b flex ">
         <div className="py-2 mx-auto justify-start ">
@@ -102,7 +101,7 @@ const Navbar = () => {
           >
           </div>
         </div>
-        <div className="mx-auto flex justify-end items-center py-2">
+        <div className="flex justify-end items-center py-2 mr-[10%] w-1/2">
           {/* Right side - Links and Search */}
           {!isMobile && (
             <div className="flex items-center space-x-6">
@@ -110,28 +109,19 @@ const Navbar = () => {
                 <div key={link.name} className="relative">
                   <Link
                     href={link.href}
-                    className={`text-gray-600 hover:text-gray-900 transition-colors duration-200 ${activeLink === link.name ? 'text-blue-300 underline' : ''}`}
+                    className={`text-gray-600 hover:text-[#004F8F] transition-colors duration-200 ${activeLink === link.name ? 'text-blue-300 underline' : ''}`}
                     onMouseEnter={() => setActiveLink(link.name)}
                     onMouseLeave={() => setActiveLink("")}
                   >
                     {link.name}
                   </Link>
-
-                  {/* {activeLink === link.name && (
-                    <motion.div
-                      className="absolute bottom-0 left-0 w-full h-0.5 bg-gray-900"
-                      initial={{ width: 0 }}
-                      animate={{ width: "100%" }}
-                      transition={{ duration: 0.3 }}
-                    />
-                  )} */}
                 </div>
               ))}
               <div className="relative">
                 <input
                   type="search"
                   placeholder="Search..."
-                  className="px-4 py-1 border rounded-lg focus:outline-none focus:ring-2"
+                  className="px-4 py-1 border rounded-full focus:outline-none focus:ring-2"
                 />
               </div>
             </div>
@@ -140,9 +130,9 @@ const Navbar = () => {
       </div>
 
       {/* Second Layer - Gray Background */}
-      <div className="bg-[#004F8F] border-b flex ">
+      <div className="bg-[#004F8F] border-b flex items-center">
         <div
-          className="py-8 mx-auto justify-start w-[130px] h-full bg-white mix-blend-screen"
+          className="py-8 mx-[16%] w-[130px] h-full bg-white mix-blend-screen"
           style={{
             clipPath: 'polygon(0% 25%, 100% 25%, 100% 70%, 0% 70%)',
             background: 'url("assets/logo_bottom.jpg")',
@@ -151,35 +141,40 @@ const Navbar = () => {
             filter: 'invert(1) brightness(2)', // Invert colors and increase brightness
           }}
         ></div>
-        <div className="mx-auto flex justify-end items-center py-2">
+        <div className="w-1/2 flex justify-end items-center py-2 mr-[10%]">
 
           {/* Right side - Navigation Links */}
           {!isMobile && (
-            <div className="flex space-x-6">
+            <div className="flex space-x-6 items-center">
               {bottomNavLinks.map((link) => (
                 <div key={link.name} className="relative"
-                onMouseEnter={() => { setActiveLink(link.name); setIsToggled(link.name); }}
+                  onMouseEnter={() => { setActiveLink(link.name); setIsToggled(link.name); }}
                 >
                   {link.href ? (
                     <Link
                       href={link.href}
-                      className={`text-white hover:text-white transition-colors duration-200 p-2 ${activeLink === link.name ? 'bg-[#003662] rounded-lg' : ''}`}
+                      className={`text-white text-xl hover:text-white transition-colors duration-200 p-2 ${activeLink === link.name ? 'bg-[#003662] rounded-lg' : ''}`}
                       onMouseLeave={() => setActiveLink("")}
                     >
                       {link.name}
                     </Link>
                   ) : (
+
                     <div
                       className="dropdown relative"
                     >
-                      <button
-                        className="text-white hover:text-white transition-colors duration-200"
-                      >
-                        {link.name}&#11206;
-                      </button>
-                      <div 
-                      className={`dropdown-content absolute w-48 mt-2 bg-white shadow-lg rounded-md py-2 ${isToggled === link.name ? 'show' : 'hidden'}`}
-                      onMouseLeave={() => { setActiveLink(""); setIsToggled(""); }}
+                      <NavigationMenu>
+                        <NavigationMenuList>
+                          <NavigationMenuItem>
+                            <NavigationMenuTrigger className="bg-[#004F8F] text-xl text-white hover:bg-[#004F8F] hover:text-white">
+                              {link.name}
+                            </NavigationMenuTrigger>
+                          </NavigationMenuItem>
+                        </NavigationMenuList>
+                      </NavigationMenu>
+                      <div
+                        className={`dropdown-content absolute w-48 mt-2 bg-white shadow-lg rounded-md py-2 ${isToggled === link.name ? 'show' : 'hidden'}`}
+                        onMouseLeave={() => { setActiveLink(""); setIsToggled(""); }}
                       >
                         {Array.isArray(link.sub) && link.sub.map((subLink) => (
                           <Link
@@ -195,14 +190,6 @@ const Navbar = () => {
                       </div>
                     </div>
                   )}
-                  {/* {activeLink === link.name && (
-                    <motion.div
-                      className="absolute bottom-0 left-0 w-full h-0.5 bg-gray-900"
-                      initial={{ width: 0 }}
-                      animate={{ width: "100%" }}
-                      transition={{ duration: 0.3 }}
-                    />
-                  )} */}
                 </div>
               ))}
             </div>
@@ -213,7 +200,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMobile && (
         <button
-          className="fixed top-4 left-4 z-50 p-2 bg-gray-100 rounded-lg"
+          className="fixed top-4 right-4 z-50 p-2 bg-gray-100 rounded-lg"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? "Close" : "Menu"}
@@ -222,7 +209,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isMobile && isMenuOpen && (
-        <div className="w-[40%] right-4 fixed inset-0 bg-white z-40 pt-16">
+        <div className="w-full right-4 fixed inset-0 bg-white z-40 pt-16">
           <div className="container mx-auto px-4">
             {[...topNavLinks].map((link) => (
               <Link
