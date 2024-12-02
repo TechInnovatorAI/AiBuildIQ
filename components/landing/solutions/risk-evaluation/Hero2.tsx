@@ -163,16 +163,16 @@ const Hero2 = () => {
                         See how we support and enhance your lending ecosystem
                     </button>
                 </div>
-                <div className="md:w-1/2 relative">
+                <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">
                     <Image
                         src={LeftImage.src}
                         alt="Risk evaluation"
                         width={500}
                         height={300}
-                        layout="fixed"
-                        className="h-[280px] float-right mr-8 rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer  border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
+                        style={{ height: '30vh', width: '100vw' }}
+                        className="rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
                     />
-                    <div className="absolute left-[25%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '230px', width: '73%' }}></div>
+                    <div className="absolute left-[15%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '26vh', width: '83%' }}></div>
                 </div>
             </div>
         </div>

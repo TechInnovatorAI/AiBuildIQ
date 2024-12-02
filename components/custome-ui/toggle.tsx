@@ -16,7 +16,7 @@ const Toggle: React.FC<ToggleProps> = ({ index, title, description, }) => {
       <div className="bg-gray-100 shadow-md rounded-lg overflow-hidden">
         <div className="p-4 flex items-center">
           <h1 className="text-2xl w-[5%] sm:w-[10%] font-bold text-blue-200">0{index + 1}</h1>
-          <h3 className="text-lg w-[90%] font-semibold mb-2">{title}</h3>
+          <h3 className="text-lg w-[80%] font-semibold mb-2">{title}</h3>
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="bg-white font-bold w-8 h-8 rounded-full transition duration-300 ml-4 flex items-center justify-center"

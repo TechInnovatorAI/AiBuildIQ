@@ -8,7 +8,7 @@ const Hero = () => {
                 subtitle="Risk Evaluation"
                 title="Intelligent, Inclusive, and Efficient AI-Driven Risk Evaluation"
                 description="Deep lending insights for accurate borrower assessments."
-                button="Request a proof of Concept"
+                button="Request a Proof of Concept"
             />
         </div>
     );

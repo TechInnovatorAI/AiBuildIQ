@@ -29,14 +29,28 @@ const LendingBox: React.FC<LendingBoxProps> = ({
                         </div>
                     ))}
                 </div>
-                <div className="md:w-1/2 ">
-                    <Image src={image} className="rounded-lg float-right mr-8 h-[280px]  border-2 border-white" alt="Avatar" layout="fixed" width={300} height={150} />
+                <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">
+                    <Image
+                        src={image}
+                        alt="Lending Analysis"
+                        width={500}
+                        height={300}
+                        style={{ height: '30vh', width: '100vw' }}
+                        className="rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
+                    />
                 </div>
             </>) :
                 (
                     <>
-                        <div className="md:w-1/2">
-                            <Image src={image} className="rounded-lg float-left ml-8 h-[280px]  border-2 border-white" alt="Avatar" layout="fixed" width={300} height={150} />
+                        <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">
+                            <Image
+                                src={image}
+                                alt="Lending Analysis"
+                                width={500}
+                                height={300}
+                                style={{ height: '30vh', width: '100vw' }}
+                                className="rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
+                            />
                         </div>
                         <div className="md:w-1/2 pl-8 py-8">
                             <p className="text-2xl text-[#004F8F] font-bold py-4">{title}</p>

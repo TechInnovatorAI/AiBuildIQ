@@ -36,7 +36,7 @@ const cards = [
 
 const Hero3 = () => {
     return (
-        <div>
+        <>
             <div className="items-center bg-gray-300 py-4">
                 <h1 className="text-[#004F8F] mx-auto text-4xl py-4 text-center md:w-1/3">Let the results <span className="text-black">speak for themselves</span></h1>
                 <div className="flex gap-2 px-[10%] py-4">
@@ -69,7 +69,7 @@ const Hero3 = () => {
                 description='Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt labore.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
                 btn='Send Message'
             />
-        </div>
+        </>
     );
 };
 

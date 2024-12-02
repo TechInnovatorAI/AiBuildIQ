@@ -42,7 +42,7 @@ const Hero3 = () => {
     return (
         <>
             <div className="bg-[#004F8F] py-16">
-                <div className="container w-1/2 text-white font-bold  text-center text-4xl py-2">
+                <div className="container sm:w-full md:w-1/2 text-white font-bold  text-center text-4xl py-2">
                     Achieve rapid results with effortless integrations and quick onboarding
                 </div>
                 <div className="container md:w-2/3">
@@ -65,13 +65,20 @@ const Hero3 = () => {
                     ))}
                 </div>
             </div>
-            <div className="md:flex container mx-auto justify-between items-center mt-8 py-8 bg-gray-300 rounded-lg">
+            <div className="md:flex sm:block container mx-auto justify-between items-center mt-8 py-8 bg-gray-300 rounded-lg">
                 <div className="md:w-1/2 pl-2 py-8">
                     <p className="text-2xl text-black font-bold py-4">A Focus on <span className="text-[#004F8F]">Compliance</span></p>
                     <p className="text-gray-500">AiBuildiQ is dedicated to shaping the future of AI in lending. With over 80 years of combined expertise in legal, compliance, and policy, our team is deeply involved in discussions that ensure AI remains transparent, secure, and fair for both lenders and their customers</p>
                 </div>
-                <div className="md:w-1/2 p-8">
-                    <Image src={LeftImage.src} className="float-right w-[80%] border-white border-2 mx-auto h-[280px] border-2 border-white rounded-lg " alt="Avatar" layout="fixed" width={300} height={150} />
+                <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">
+                    <Image
+                        src={LeftImage.src}
+                        alt="Analysis illustration"
+                        width={500}
+                        height={300}
+                        style={{ height: '30vh', width: '100vw' }}
+                        className="rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
+                    />
                 </div>
             </div>
             <div className="w-[70%] mx-auto bg-white px-[10%] py-8">

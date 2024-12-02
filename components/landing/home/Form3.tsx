@@ -106,7 +106,7 @@ const Form3 = () => {
                                             {card.letter}
                                         </span>
                                     </div>
-                                    <div className="absolute  md:left-[30%] md:-bottom-[30%] text-center uppercase text-[#004F8F] font-bold text-2xl">step {index + 1}</div>
+                                    <div className="absolute sm:left-[20%] sm:top-[40%] md:left-[30%] md:-bottom-[30%] text-center uppercase text-[#004F8F] font-bold text-2xl">step {index + 1}</div>
                                 </div>
                             </>
                         ) : (

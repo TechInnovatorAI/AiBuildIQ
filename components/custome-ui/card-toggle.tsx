@@ -19,19 +19,19 @@ const CardToggle: React.FC<CardToggleProps> = ({
     description,
     content,
 }) => {
-
     return (
-        <div className={`p-2 flex`}>
-            <div className="flex p-4 mr-8  mt-4 relative" >
-                <div className={`absolute ${isActive ? 'bottom-16 sm:-left-[50%] ' : 'md:pt-32 md:top-16 sm:pt-0 sm:top-0' }`}>
-                    <p className={`text-lg text-gray-300 font-bold flex ${isActive ? '-rotate-90' : 'md:-rotate-90'}  font-xl text-center`}  style={{
-                        // writingMode: "vertical-lr"
+        <div className={`p-2 flex md:h-[40vh]`}>
+            <div className="flex p-4 mr-8  mt-4 relative hover:cursor-pointer" >
+                <div className={`absolute bottom-4 ${isActive ? 'rotate-180' : 'sm:-rotate-90 sm:translate-y-[50%] sm:ml-[200%] sm:translate-x-[100%]  md:rotate-180 md:translate-y-0 md:ml-0 md:translate-x-0'} `}>
+                    <p className={`text-lg text-gray-300 font-bold flex `} style={{
+                        writingMode: "vertical-lr"
                     }}>
-                        {`0${number}`} <span className="text-[#004F8F] font-bold" style={{ display: 'inline' }}>{title}</span>
+                        {`0${number}`}
+                        <span className="text-[#004F8F] font-bold">{' '}{title}</span>
                     </p>
                 </div>
             </div>
-            {isActive && <div className={`pl-8 mx-auto mr-[10%] py-16 ${isActive ? 'border-l border-gray-200' : ''}`}>
+            {isActive && <div className={`pl-8 mx-auto mr-[10%] py-8 ${isActive ? 'border-l border-gray-200' : ''}`}>
                 <div className="p-4">
                     {image}
                     {subtitle && <p className="text-2xl">{subtitle}</p>}
