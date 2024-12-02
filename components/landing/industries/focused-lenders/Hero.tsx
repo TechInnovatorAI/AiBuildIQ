@@ -9,6 +9,7 @@ const Hero = () => {
                 title="Innovative, Fair, and Efficient Lending for Focused Lenders"
                 description="Stay ahead of the competition and enhance customer experience using proven AI."
                 button="Get a Custom Analysis"
+                isShow={true}
             />
         </div>
     );

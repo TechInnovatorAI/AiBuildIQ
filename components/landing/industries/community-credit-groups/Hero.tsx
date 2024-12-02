@@ -9,6 +9,7 @@ const Hero = () => {
                 title="Lending Made Smarter, More Inclusive, and Efficient for Community Credit Groups"
                 description="Serve members better with AI that stands the test of time"
                 button=" Get a Custom Analysis"
+                isShow={true}
             />
         </div>
     );

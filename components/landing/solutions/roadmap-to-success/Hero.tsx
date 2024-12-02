@@ -9,6 +9,7 @@ const Hero = () => {
                 title="Your Roadmap to AI-Driven Lending Success"
                 description="Committed long-term partnership for continuous improvement"
                 button="Start your Journey to Success"
+                isShow={true}
             />
         </div>
     );

@@ -9,6 +9,7 @@ const Hero = () => {
         title="Establishing Connections Across Your Ecosystem"
         description="Partnering with industry leaders to support innovative lending solutions"
         button=""
+        isShow={true}
       />
     </div>
   );

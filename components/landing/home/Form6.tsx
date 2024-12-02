@@ -25,14 +25,14 @@ const Form6 = () => {
   return (
     <>
       <div className="md:flex container items-center py-[5%]">
-        <div className="md:w-1/2 items-center mx-auto p-4">
-          <div className="relative py-16 relative justify-center  h-[45vh] rounded-lg" style={{ background: 'url("assets/home/AI Network Server Technology.jpg") no-repeat', backgroundSize: 'cover' }}>
-          <div className="absolute border border-gray-300 rounded-lg h-[45vh] w-full top-4 left-4 -z-10"></div>
+        <div className="md:w-1/3 items-center mx-auto p-4">
+          <div className="relative py-16 relative justify-center  h-[40vh] rounded-lg" style={{ background: 'url("assets/home/AI Network Server Technology.jpg") no-repeat', backgroundSize: 'cover' }}>
+          <div className="absolute border border-gray-300 rounded-lg h-[40vh] w-full top-6 left-6 -z-10"></div>
           </div>
         </div>
         <div className="md:w-1/2 p-4">
           <div className="py-4">
-            <h1 className="text-gray-300">Lorem Ipsum dolor</h1>
+            <h1 className="text-gray-300 uppercase">Lorem Ipsum dolor</h1>
             <h1 className="text-[#004F8F] font-bold text-2xl">AIBuild IQ is best at</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>

@@ -9,6 +9,7 @@ const Hero = () => {
                 title="Empowering Lenders with Advanced Tech"
                 description="AIBuildIQ combines AI algorithms, real-time data processing, and actionable insights to empower lenders with faster, more accurate decisions."
                 button=""
+                isShow={false}
             />
         </div>
     );

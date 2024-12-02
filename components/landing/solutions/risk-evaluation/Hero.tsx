@@ -9,6 +9,7 @@ const Hero = () => {
                 title="Intelligent, Inclusive, and Efficient AI-Driven Risk Evaluation"
                 description="Deep lending insights for accurate borrower assessments."
                 button="Request a Proof of Concept"
+                isShow={true}
             />
         </div>
     );

@@ -24,7 +24,7 @@ const TechBox: React.FC<TechBoxProps> = ({
                         <p className="text-gray-500 py-4">{description}</p>
                         <p className="text-[#004F8F]">Read More</p>
                     </div>
-                    <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative ">
+                    <div className="md:w-[40%] mb-8 md:mb-0 p-8 relative ">
                         <Image
                             src={image}
                             alt="Analysis illustration"
@@ -40,7 +40,7 @@ const TechBox: React.FC<TechBoxProps> = ({
                 (
                     <>
                         <div className="container px-[3%] flex flex-col md:flex-row items-center mb-16 gap-16">
-                            <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">
+                            <div className="md:w-[40%] mb-8 md:mb-0 p-8 relative">
                                 <Image
                                     src={image}
                                     alt="Analysis illustration"

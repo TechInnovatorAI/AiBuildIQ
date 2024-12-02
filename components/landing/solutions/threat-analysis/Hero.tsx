@@ -9,6 +9,7 @@ const Hero = () => {
                 title="Smart, Fair, and Efficient AI-Automated Threat Detection and Analysis"
                 description="Strengthen your lending confidence with the security of AiBuildiQ Protect."
                 button="Request a Proof of Concept"
+                isShow={true}
             />
         </div>
     );

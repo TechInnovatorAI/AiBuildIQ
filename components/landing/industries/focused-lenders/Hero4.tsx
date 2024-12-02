@@ -8,11 +8,11 @@ const Hero4 = () => {
         <>
             <div className="md:flex container mx-auto justify-between items-center mt-8 py-8 rounded-lg">
                 <div className="md:w-1/2 pl-2 py-8">
-                    <h1 className="text-md  text-gray-300 font-bold mb-4">Lorem Ipsum dolor</h1>
+                    <h1 className="text-md  text-gray-300 font-bold mb-4 uppercase">Lorem Ipsum dolor</h1>
                     <h2 className="text-4xl font-bold mb-4">Focused Lenders, <span className="text-[#004F8F]">Prepared to Succeed?</span></h2>
                     <p className="text-md font-light mb-4">Request a no-obligation, custom proof of concept to see the real benefits and opportunities for your lending organization and members.</p>
                     <button className="bg-[#004F8F] text-white px-6 py-3 rounded-full font-bold">
-                        Lets connect
+                        Let's connect
                     </button>
                 </div>
                 <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">

@@ -9,6 +9,7 @@ const Hero = () => {
         title="Working together for wider access, less bias, and greater transparency"
         description="The Crossroads of Purpose and Technology"
         button=""
+        isShow={true}
       />
     </div>
   );
