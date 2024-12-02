@@ -140,12 +140,12 @@ const Hero2 = () => {
                 </div>
             </div>
             <div className="w-full bg-white px-[10%] py-8">
-                <div className="mx-auto w-[40%] my-8">
-                    <h3 className="text-center text-2xl text-[#004F8F]">Assistance Whenever and However
+                <div className="mx-auto sm:w-[80vw] md:w-[40%] my-8">
+                    <h3 className="text-center text-2xl text-[#004F8F]">Assistance Whenever and However{' '}
                         <span className="text-black">you need it</span></h3>
                     <h2 className="text-gray-300 text-center">24/7 support with no ticketing systems or 1-800 numbers—just genuine human assistance.</h2>
                 </div>
-                <div className="flex items-center justify-center py-16">
+                <div className="flex items-center justify-center py-16 ">
                     {Assistance.map((assist, index) => (
                         (index + 1) % 2 ? (
                             <div className="relative mr-[-3%]">
@@ -171,7 +171,7 @@ const Hero2 = () => {
                     <h2 className="text-4xl font-bold py-4">Top-tier AI expertise, ready to support you</h2>
                     <p className="text-md">Get US-based, industry experts as an extension of your team. Tap into the best AI lending strategy consultants, business analysts, data scientists, engineers, compliance, and fair lending leaders around.</p>
                 </div>
-                <div className="container w-[80%] grid grid-cols-2 gap-4 py-4 ">
+                <div className="container sm:w-[90vw] md:w-[80%] grid grid-cols-2 gap-4 py-4 ">
                     {supportList.map((box, index) => (
                         <div key={index} className="md:flex bg-gray-200 bg-opacity-[20%] p-4 items-center  rounded-lg">
                             <h3 className="text-4xl bg-gray-300 bg-opacity-[20%] p-4 mr-4 font-semibold">{box.success}</h3>

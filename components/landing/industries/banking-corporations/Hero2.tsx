@@ -151,7 +151,7 @@ const Hero2 = () => {
                     <Image src={LeftImage.src} className="float-right w-[80%] border-white border-2 mx-auto h-[280px] border-2 border-white rounded-lg " alt="Avatar" layout="fixed" width={300} height={150} />
                 </div>
             </div>
-            <div className="w-[70%] mx-auto bg-white px-[10%] py-8">
+            <div className="sm:w-[80%] md:w-[70%] mx-auto bg-white px-[10%] py-8">
                 <div className="text-center py-2">
                     <p className="text-2xl text-black">Innovation that <span className="text-[#004F8F]">Drives Policy Forward</span></p>
                 </div>

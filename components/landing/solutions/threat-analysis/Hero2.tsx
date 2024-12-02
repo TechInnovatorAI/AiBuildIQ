@@ -163,29 +163,29 @@ const Hero2 = () => {
                         <p className="text-2xl text-[#004F8F] font-bold py-4 w-1/2">Exposed <span className="text-black">Identity</span></p>
                         <p className="text-gray-500 py-4">Safeguard your customers and your lending business from identity theft. Utilize thorough checks against applicant PII, analyze key identity elements, and leverage consortium data to verify your borrowers’ true identity</p>
                     </div>
-                    <div className="md:w-1/2 relative">
+                    <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">
                         <Image
                             src={FirstImage.src}
-                            alt="Risk evaluation"
+                            alt="Threat Analysis"
                             width={500}
                             height={300}
-                            layout="fixed"
-                            className="h-[280px] float-right mr-8 rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer  border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
+                            style={{ height: '30vh', width: '100vw' }}
+                            className="rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
                         />
-                        <div className="absolute left-[25%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '230px', width: '73%' }}></div>
+                        <div className="absolute left-[15%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '26vh', width: '83%' }}></div>
                     </div>
                 </div>
                 <div className="md:flex container mx-auto justify-between items-center py-8">
-                    <div className="md:w-1/2 relative">
+                    <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">
                         <Image
                             src={SecondImage.src}
-                            alt="Risk evaluation"
+                            alt="Threat Analysis"
                             width={500}
                             height={300}
-                            layout="fixed"
-                            className="h-[280px] float-left ml-8 rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer  border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
+                            style={{ height: '30vh', width: '100vw' }}
+                            className="rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
                         />
-                        <div className="absolute left-[10%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '230px', width: '73%' }}></div>
+                        <div className="absolute left-[15%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '26vh', width: '83%' }}></div>
                     </div>
                     <div className="md:w-1/2 pl-8 py-8">
                         <p className="text-2xl text-[#004F8F] font-bold py-4 w-1/2">Deceptive <span className="text-black">Behavior</span></p>
@@ -197,16 +197,16 @@ const Hero2 = () => {
                         <p className="text-2xl text-[#004F8F] font-bold py-4 w-1/2">Income <span className="text-[#004F8F]">Mismatch</span></p>
                         <p className="text-gray-500 py-4">Lend with confidence based on accurate income data. Gain insights into discrepancies between reported and actual income across regions, professions, employment status, and more.</p>
                     </div>
-                    <div className="md:w-1/2 relative">
+                    <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">
                         <Image
                             src={ThirdImage.src}
-                            alt="Risk evaluation"
+                            alt="Threat Analysis"
                             width={500}
                             height={300}
-                            layout="fixed"
-                            className="h-[280px] float-right mr-8 rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer  border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
+                            style={{ height: '30vh', width: '100vw' }}
+                            className="rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
                         />
-                        <div className="absolute left-[25%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '230px', width: '73%' }}></div>
+                        <div className="absolute left-[15%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '26vh', width: '83%' }}></div>
                     </div>
                 </div>
                 <div className="w-[70%] mx-auto bg-white px-[10%] py-8">

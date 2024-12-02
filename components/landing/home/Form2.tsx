@@ -73,7 +73,6 @@ const Form2 = () => {
                     </div>
                 </div>
 
-
                 {/* Second Layer - White Background */}
                 <div className="py-8">
                     {/* Cards Section */}
@@ -102,7 +101,7 @@ const Form2 = () => {
                             </div>
 
                             {/* Right Side - Content */}
-                            <div className="lg:w-1/2">
+                            <div className="lg:w-1/2 sm:w-3/4">
                                 <h3 className="text-xl text-gray-300 mb-4 ">
                                     Revolutionizing lending
                                 </h3>

@@ -18,7 +18,7 @@ const AiSolutionCard: React.FC<AiSolutionCardProps> = ({
     detail
 }) => {
     return (
-        <div className="relative p-[5%] text-white rounded-lg bg-[#004F8F] h-[45vh]">
+        <div className="relative p-[5%] text-white rounded-lg bg-[#004F8F] sm:h-[40vh] md:h-[80vh] lg:h-[45vh]">
             {image && <div>{image}</div>}
             {title && <h2 className="text-2xl font-bold">{title}</h2>}
             {subtitle && <h2 className="text-lg mb-2">{subtitle}</h2>}

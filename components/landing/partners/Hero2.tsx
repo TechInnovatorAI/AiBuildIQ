@@ -46,7 +46,7 @@ const Hero2 = () => {
                     {/* Cards Section */}
                     <div className="container mx-auto w-[70%] bg-gray-200 rounded-lg p-4">
                         {[...Array(3)].map((_, i) => (
-                            <div key={i} className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-2">
+                            <div key={i} className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
                                 {itemData.sort(() => Math.random() - 0.5).map((item, index) => (
                                     <div key={index} className={`p-6 `}>
                                         <div className="items-center border mx-auto  rounded-lg p-2 mb-4">

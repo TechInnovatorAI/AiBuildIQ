@@ -160,7 +160,7 @@ const Hero2 = () => {
                                 transition={{ duration: 0.5, delay: 0.2 }}
                             >
                                 <div className="text-black text-4xl font-bold mb-2" dangerouslySetInnerHTML={{ __html: faq.title }}></div>
-                                <h2 className="text-md w-1/2 justify-center text-gray-900 dark:text-white">
+                                <h2 className="text-md sm:w-full md:w-1/2 justify-center text-gray-900 dark:text-white">
                                     {faq.description}
                                 </h2>
                             </motion.div>

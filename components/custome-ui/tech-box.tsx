@@ -24,7 +24,7 @@ const TechBox: React.FC<TechBoxProps> = ({
                         <p className="text-gray-500 py-4">{description}</p>
                         <p className="text-[#004F8F]">Read More</p>
                     </div>
-                    <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">
+                    <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative ">
                         <Image
                             src={image}
                             alt="Analysis illustration"
@@ -33,7 +33,7 @@ const TechBox: React.FC<TechBoxProps> = ({
                             style={{ height: '30vh', width: '85vw' }}
                             className="rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
                         />
-                        <div className="absolute left-[15%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '30vh', width: '85%' }}></div>
+                        <div className="absolute left-[15%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '26vh', width: '83%' }}></div>
                     </div>
                 </div>
             </>) :
@@ -49,7 +49,7 @@ const TechBox: React.FC<TechBoxProps> = ({
                                     style={{ height: '30vh', width: '85vw' }}
                                     className="rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
                                 />
-                                <div className="absolute left-[15%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '30vh', width: '85%' }}></div>
+                                <div className="absolute left-[15%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '26vh', width: '83%' }}></div>
                             </div>
                             <div className="md:w-1/2">
                                 <p className="text-2xl text-[#004F8F] font-bold py-4">{title}</p>

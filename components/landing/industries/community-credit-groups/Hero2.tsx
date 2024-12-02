@@ -133,8 +133,15 @@ const Hero2 = () => {
                 </div>
             </div>
             <div className="md:flex container mx-auto justify-center items-center mt-8 py-8 rounded-lg">
-                <div className="md:w-1/2 w-full p-8">
-                    <Image src={LeftImage.src} className="float-left w-[80%] border-white border-2 mx-auto h-[280px] border-2 border-white rounded-lg " alt="Avatar" layout="fixed" width={300} height={150} />
+                <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">
+                    <Image
+                        src={LeftImage.src}
+                        alt="Analysis illustration"
+                        width={500}
+                        height={300}
+                        style={{ height: '30vh', width: '100vw' }}
+                        className="rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
+                    />
                 </div>
                 <div className="md:w-1/2 w-full pl-8 py-8">
                     <h2 className="text-md font-bold text-gray-200">Lorem Ipsum dolor</h2>

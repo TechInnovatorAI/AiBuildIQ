@@ -25,7 +25,7 @@ const Hero3 = () => {
                         opts={{
                             align: "start",
                         }}
-                        className="w-[90%]"
+                        className="w-[100%]"
                     >
                         <CarouselContent>
                             {cards.map((card, index) => (

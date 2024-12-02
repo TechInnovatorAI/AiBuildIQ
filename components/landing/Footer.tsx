@@ -57,7 +57,7 @@ const Footer = () => {
         <footer className="bg-[#003662] text-white px-[10%]">
             <div className="mx-auto px-4 py-8">
                 <div className="flex flex-wrap justify-between">
-                    <div className="w-3/4">
+                    <div className="md:w-3/4 sm:w-full">
                         <div className="flex flex-wrap justify-between">
                             {columns.map((column, index) => (
                                 <div key={index} className="w-1/3 p-4">
@@ -68,7 +68,7 @@ const Footer = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className="mt-4 w-1/2">
+                        <div className="mt-4 md:w-1/2 sm:w-full">
                             <label htmlFor="subscribe" className="block text-sm font-medium text-gray-300">Subscribe to our newsletter</label>
                             <div className="mt-1 flex rounded-md shadow-sm items-center relative">
                                 <input type="text" name="subscribe" id="subscribe" className=" flex-1 form-input block w-full min-w-0 rounded-full border-2 border-gray-300 bg-[#003662] py-3 px-3 text-gray-900 shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" placeholder="Enter your Email" />
@@ -76,7 +76,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-1/4 p-4">
+                    <div className="md:w-1/4 sm:w-full  p-4">
                         <h3 className="text-lg font-bold mb-2">{rightContent.title}</h3>
                         {rightContent.subtitles.map((subtitle, index) => (
                             <div key={index} className="mb-2">

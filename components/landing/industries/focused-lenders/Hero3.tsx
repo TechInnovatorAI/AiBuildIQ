@@ -18,14 +18,14 @@ const Hero3 = () => {
 
     return (
         <div className="items-center bg-gray-300 py-4">
-            <h1 className="text-[#004F8F] mx-auto text-4xl py-4 text-center md:w-1/3">Create a Thriving Lending Ecosystem <span className="text-black">with Best-in-Class AI Solutions</span></h1>
+            <h1 className="text-[#004F8F] mx-auto text-4xl py-4 text-center md:w-1/3 sm:w-1/2">Create a Thriving Lending Ecosystem <span className="text-black">with Best-in-Class AI Solutions</span></h1>
             <div className="flex gap-2 px-[10%] py-4">
                 <div className="mx-auto">
                     <Carousel
                         opts={{
                             align: "start",
                         }}
-                        className="w-[90%]"
+                        className="w-[100%]"
                     >
                         <CarouselContent>
                             {cards.map((card, index) => (
