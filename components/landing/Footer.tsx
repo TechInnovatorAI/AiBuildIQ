@@ -98,11 +98,11 @@ const Footer = () => {
                     <div className="md:w-3/4 sm:w-full">
                         <div className="grid grid-cols-2 md:grid-cols-3 justify-between">
                             {columns.map((column, index) => (
-                                <div key={index} className="w-1/3 p-4">
+                                <div key={'column'+index} className="w-1/3 p-4">
                                     <h3 className="text-lg font-bold mb-2">{column.title}</h3>
-                                    {column.subtitles.map((subtitle, index) => (
-                                        <p className="mb-1 py-2" >
-                                            <Link key={index} href={subtitle.link}>{subtitle.letter}</Link>
+                                    {column.subtitles.map((subtitle, indx) => (
+                                        <p key={'subtitle'+indx} className="mb-1 py-2" >
+                                            <Link href={subtitle.link}>{subtitle.letter}</Link>
                                         </p>
                                     ))}
                                 </div>
@@ -127,7 +127,7 @@ const Footer = () => {
                         <h3 className="text-lg font-bold mb-2">Follow Us On</h3>
                         <div className="flex items-center rounded-lg">
                             {follows.map((follow, index) => (
-                                <Link key={index} href={follow.link} target="_blank" rel="noopener noreferrer" className="mr-4">
+                                <Link key={'follow'+index} href={follow.link} target="_blank" rel="noopener noreferrer" className="mr-4">
                                     {follow.letter}
                                 </Link>
                             ))}

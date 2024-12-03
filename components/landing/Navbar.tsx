@@ -225,7 +225,7 @@ const Navbar = () => {
             {[...bottomNavLinks].map((link) => (
               link.sub ? (
                 <div key={link.name} className="block py-2 text-gray-600 hover:text-gray-900 transition-colors duration-200" >
-                  <p className="" onClick={() => setIsToggled(link.name)}>{link.name}&#11206;</p>
+                  <p onClick={() => setIsToggled(link.name)}>{link.name}&#11206;</p>
                   <div className={`${isToggled === link.name ? 'show' : 'hidden'}`}>
                     {Array.isArray(link.sub) && link.sub.map((subLink) => (
                       <Link

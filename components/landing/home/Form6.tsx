@@ -37,7 +37,7 @@ const Form6 = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>
           {letters.map((letter, index) => (
-            <div key={index} className="">
+            <div key={index}>
               <li className="font-bold">{letter.title}</li>
               <p>{letter.description}</p>
             </div>

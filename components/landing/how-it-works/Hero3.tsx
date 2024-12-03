@@ -8,7 +8,7 @@ const Hero3 = () => {
     <section>
 
       {/* Third Column */}
-      <div className="">
+      <div>
         <div className="container md:flex items-center mb-16 gap-16">
           <div className="md:w-1/2">
             <h3 className="text-2xl text-[#004F8F] font-bold mb-2">Step 3:</h3>

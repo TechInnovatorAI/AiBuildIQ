@@ -9,6 +9,7 @@ import Vector4 from "@/public/assets/partners/4.svg"
 import Vector5 from "@/public/assets/partners/5.svg"
 import Vector6 from "@/public/assets/partners/6.svg"
 
+
 const itemData = [
     {svg: Vector1},
     {svg: Vector2},

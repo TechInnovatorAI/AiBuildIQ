@@ -5,10 +5,18 @@ import Image from "next/image"
 
 const Form = () => {
   return (
-    < div className="">
+    <>
       <div className="mt-24"></div>
       <div className="relative flex items-center justify-center h-[90vh]">
-        <Image src={topImage} alt="Logo" className="absolute inset-0 -z-10 w-full " style={{ objectFit: 'cover', height: '100%' }} />
+        <Image
+          src={topImage}
+          alt="Logo"
+          className="absolute inset-0 -z-10 w-full"
+          width={500}
+          height={300}
+          priority={true}
+          style={{ objectFit: 'cover', height: '100%' }}
+        />
         <div className="text-center max-w-4xl mx-auto px-4 py-16">
           <h1 className="text-white text-2xl md:text-3xl mb-6  ">
             Transforming Real estate lending
@@ -55,7 +63,7 @@ const Form = () => {
           </svg>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
