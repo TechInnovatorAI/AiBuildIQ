@@ -29,7 +29,7 @@ const Form = () => {
             Revolutionizing how brokers and borrowers seamlessly navigate the lending process with AI-powered precision.
           </p>
 
-          <div className="sm:flex gap-4 justify-center items-center">
+          <div className="flex flex-col lg:flex-row gap-4 justify-center items-center">
             <Link
               href="/funding-request"
               className="px-8 py-3 bg-[#004F8F] border rounded-full hover:bg-white-800 text-white transition-colors duration-200"
