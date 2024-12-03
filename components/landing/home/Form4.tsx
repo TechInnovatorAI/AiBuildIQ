@@ -3,8 +3,8 @@ import rightImage from "@/public/assets/home/Logo_16.jpg"
 
 const Form4 = () => {
     return (
-        <div className="lg:px-[10%] py-16 lg:flex justify-center items-center rounded-lg ">
-            <div className="flex justify-center items-start p-16">
+        <div className="lg:px-[10%] py-16 md:flex justify-center items-center rounded-lg ">
+            <div className=" justify-center items-start p-16">
                 <h1 className="text-md text-gray-300 font-bold mb-4 uppercase">Lorem Ipsum dolor</h1>
                 <h2 className="text-4xl font-bold mb-4"><span className="text-[#004F8F]">Securing your Ideal Home</span> has Never been Easier</h2>
                 <p className="text-md font-light mb-4">AiBuildiQ leverages cutting-edge AI to simplify the home loan process, eliminating uncertainties and streamlining every step. </p>
