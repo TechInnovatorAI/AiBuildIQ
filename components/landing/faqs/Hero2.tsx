@@ -141,8 +141,8 @@ const Hero2 = () => {
         <div>
             {FAQs.map((faq, index) => (
                 <div className={`w-full ${index % 2 === 0 ? 'bg-white' : 'bg-gray-300'} px-[10%] `}>
-                    <div className="mx-auto py-8  px-4 sm:px-6 lg:px-8 ">
-                        <div className="container">
+                    <div className="mx-auto py-8  px-2 sm:px-6 lg:px-8 ">
+                        <div className="md:container">
                             <motion.div
                                 className="mb-12"
                                 initial={{ opacity: 0, y: 50 }}

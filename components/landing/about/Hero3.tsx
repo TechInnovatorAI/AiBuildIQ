@@ -31,8 +31,8 @@ const itemData = [
 const Hero3 = () => {
     return (
         <>
-            <div className="container py-8 md:flex  justify-center items-center rounded-lg ">
-                <div className="flex-1  flex flex-col justify-center items-start p-16">
+            <div className="md:container py-8 md:flex  justify-center items-center rounded-lg ">
+                <div className="flex-1 flex flex-col justify-center items-start p-16">
                     <h1 className="text-md text-gray-300 font-bold mb-4 uppercase">Lorem Ipsum dolor</h1>
                     <h2 className="text-4xl font-bold mb-4">We trust that AI can promote <span className="text-[#004F8F]">Greater Economic Equality.</span></h2>
                     <p className="text-md font-light mb-4">AiBuildIQ, a technology company based in the Philippines with headquarters in Manila, is powered by a team of driven, collaborative, and compassionate professionals. We’re committed to advancing economic equity by harnessing AI’s positive potential, ensuring that lending decisions reflect the inherent worth of every individual.</p>
@@ -49,10 +49,10 @@ const Hero3 = () => {
                     <div className="absolute left-[15%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '26vh', width: '83%' }}></div>
                 </div>
             </div>
-            <div className="container mx-auto w-[70%] bg-gray-200 rounded-lg py-4">
-                <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 gap-2">
+            <div className="md:container mx-auto w-[70%] bg-gray-200 rounded-lg py-4">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
                     {itemData.map((item, index) => (
-                        <div key={index} className={`p-6 ${index > 0 ? 'lg:border-l md: border-t border-gray-300' : ''}`}>
+                        <div key={index} className={`p-6 ${index > 0 ? 'lg:border-l md:border-t lg:border-t-0 border-gray-300' : ''}`}>
                             <div className="relative mb-4 p-2">
                                 {item.image}
                             </div>

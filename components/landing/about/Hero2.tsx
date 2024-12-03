@@ -40,7 +40,7 @@ const Hero2 = () => {
                     <div className="container mx-auto w-[70%] bg-gray-200 rounded-lg p-4">
                         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-2">
                             {itemData.map((item, index) => (
-                                <div key={index} className={`p-6 sm:flex md:block ${index > 0 ? 'md:border-l md:border-gray-400' : ''}`}>
+                                <div key={index} className={`p-6 sm:flex md:block ${index>0 && index%2==0 ? 'lg:border-l border-gray-400' : ''} ${index > 0 && index % 2 == 1 ? 'md:border-l border-gray-400' : ''} `}>
                                     <div className="bg-white border sm:w-1/4 md:w-full rounded-lg p-2 sm:text-xl md:text-2xl mb-4 text-center text-[#004F8F] font-bold">
                                         {item.title}
                                     </div>

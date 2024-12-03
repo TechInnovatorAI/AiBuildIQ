@@ -34,7 +34,7 @@ const Hero3 = () => {
     return (
         <div className="items-center bg-gray-300 py-4">
             <h1 className="text-[#004F8F] mx-auto text-4xl py-4 text-center md:w-1/3 sm:w-1/2 font-bold">Create a Thriving Lending Ecosystem <span className="text-black">with Best-in-Class AI Solutions</span></h1>
-            <div className="flex gap-2 px-[10%] py-4">
+            <div className="gap-2 px-[10%] py-4">
                 <div className="mx-auto">
                     <Carousel
                         opts={{
@@ -44,7 +44,7 @@ const Hero3 = () => {
                     >
                         <CarouselContent>
                             {cards.map((card, index) => (
-                                <CarouselItem key={index} className="sm:basis-1/1 md:basis-1/2 lg:basis-1/3">
+                                <CarouselItem key={index} className="lg:basis-1/2 xl:basis-1/3">
                                     <div className="py-16 px-8">
                                         <CardContent className="flex my-8 items-center justify-center p-2">
                                             <SolutionCard key={index} title={card.title} image="" subtitle="" description={card.description} result={card.result} detail={card.detail} />
@@ -53,8 +53,8 @@ const Hero3 = () => {
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious className="text-[#004F8F] w-[50px] h-[50px]" />
-                        <CarouselNext className="text-[#004F8F] w-[50px] h-[50px]" />
+                        <CarouselPrevious className="text-[#004F8F]  md:w-[50px] md:h-[50px]" />
+                        <CarouselNext className="text-[#004F8F]  md:w-[50px] md:h-[50px]" />
                     </Carousel>
                 </div>
             </div>

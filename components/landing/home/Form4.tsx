@@ -22,7 +22,7 @@ const Form4 = () => {
                     style={{ height: '30vh', width: '100vw' }}
                     className="rounded-lg transition-opacity duration-300 hover:opacity-80 cursor-pointer  border-4 border-white shadow-lg shadow-gray-300/50 backdrop-blur-sm"
                 />
-                <div className="absolute left-[15%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '28vh', width: '79%' }}></div>
+                <div className="absolute left-[16%] top-1/4 -z-10 rounded-lg border-2 border-gray-300" style={{ height: '28vh', width: '75%' }}></div>
             </div>
         </div>
     );

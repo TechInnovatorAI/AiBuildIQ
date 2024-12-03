@@ -16,7 +16,7 @@ const Hero2 = () => {
             <section >
                 {/* First Column */}
                 <div className="">
-                    <div className="container flex flex-col md:flex-row items-center mb-16 gap-16">
+                    <div className="container md:flex  items-center mb-16 gap-16">
                         <div className="md:w-1/2">
                             <h3 className="text-2xl text-[#004F8F] font-bold mb-2">Step 1:</h3>
                             <h3 className="text-2xl text-black font-bold mb-2">Input Borrower Details</h3>
@@ -40,7 +40,7 @@ const Hero2 = () => {
 
                 {/* Second Column */}
                 <div className="bg-gray-200 py-4">
-                    <div className="container flex flex-col md:flex-row items-center mb-16 gap-16 ">
+                    <div className="container md:flex items-center mb-16 gap-16 ">
                         <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative z-10">
                             <Image
                                 src={step2.src}

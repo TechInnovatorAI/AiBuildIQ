@@ -25,13 +25,13 @@ const ReadyEvaluate: React.FC<ReadyEvaluateProps> = ({
                 </svg>
 
                 {/* Content placeholder */}
-                <div className="flex bg-[#004F8F] rounded-lg items-center px-[3%]">
-                    <div className="p-16 sm:w-[80%] md:w-[70%]">
+                <div className="md:flex bg-[#004F8F] rounded-lg items-center px-[3%]">
+                    <div className="p-4 md:p-16 w-full md:w-[70%]">
                         <h1 className="text-white text-2xl">Ready to Elevate your Lending Process</h1>
                         <p className="text-gray-300 py-4 w-2/3">Discover how our AI-powered solutions can transform your loan processing, enhance risk management, and deliver personalized customer experiences.</p>
                         <button className="bg-white rounded-full p-2 px-8 text-[#004F8F]">{btn}</button>
                     </div>
-                    <div>
+                    <div className="hidden md:block">
                         <Image src={rightImage} alt="Image" layout="fixed" width={200} height={200} />
                     </div>
                 </div>
