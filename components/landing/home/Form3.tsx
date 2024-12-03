@@ -102,7 +102,7 @@ const Form3 = () => {
                                     <div className="absolute mx-auto ring-right ">{ring.right}</div>
                                     <div className="mx-auto bg-[#004F8F] rounded-full w-48 h-48 flex flex-col items-center justify-center z-10">
                                         {card.svg}
-                                        <span className="text-white text-xl  font-bold mt-2">
+                                        <span className="text-white text-xl text-center font-bold mt-2">
                                             {card.letter}
                                         </span>
                                     </div>
@@ -115,7 +115,7 @@ const Form3 = () => {
                                     <div className="absolute step-left md:-top-1/4 md:left-[30%] sm:left-[70%] sm:top-[40%]  uppercase text-[#004F8F] font-bold text-2xl">step {index + 1}</div>
                                     <div className="mx-auto bg-[#004F8F] rounded-full w-48 h-48 flex flex-col items-center justify-center z-10">
                                         {card.svg}
-                                        <span className="text-white text-xl  font-bold mt-2">
+                                        <span className="text-white text-center text-xl  font-bold mt-2">
                                             {card.letter}
                                         </span>
                                     </div>

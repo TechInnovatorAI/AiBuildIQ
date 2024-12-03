@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
 import Image from "next/image"
+import Link from 'next/link'
 import rightImage from "@/public/assets/home/ac4ae482ba5eed6c0825bcf34417c0d6.png"
 
 interface ReadyEvaluateProps {
@@ -29,7 +30,7 @@ const ReadyEvaluate: React.FC<ReadyEvaluateProps> = ({
                     <div className="p-4 md:p-16 w-full md:w-[70%]">
                         <h1 className="text-white text-2xl">Ready to Elevate your Lending Process</h1>
                         <p className="text-gray-300 py-4 w-2/3">Discover how our AI-powered solutions can transform your loan processing, enhance risk management, and deliver personalized customer experiences.</p>
-                        <button className="bg-white rounded-full p-2 px-8 text-[#004F8F]">{btn}</button>
+                        <Link href="/contact-us" className="bg-white rounded-full p-2 px-8 text-[#004F8F]">{btn}</Link>
                     </div>
                     <div className="hidden md:block">
                         <Image src={rightImage} alt="Image"  width={200} height={200} />

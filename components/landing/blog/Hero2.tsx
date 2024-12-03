@@ -115,7 +115,7 @@ const Hero2 = () => {
 
             <div className="items-center bg-gray-100 py-4">
                 <h1 className="text-[#004F8F] mx-auto text-4xl py-4 px-2 text-center md:w-1/3 font-bold">Recently Uploaded <span className="text-black">Blogs and Articles</span></h1>
-                <div className="w-[90%] gap-4 container ">
+                <div className="md:w-[90%] gap-4 md:container ">
                     <div className="mx-auto">
                         <Carousel
                             opts={{
@@ -142,8 +142,8 @@ const Hero2 = () => {
                                     )
                                 ))}
                             </CarouselContent>
-                            <CarouselPrevious className="text-[#004F8F] w-[50px] h-[50px]" />
-                            <CarouselNext className="text-[#004F8F] w-[50px] h-[50px]" />
+                            <CarouselPrevious className="text-[#004F8F] md:w-[50px] md:h-[50px]" />
+                            <CarouselNext className="text-[#004F8F] md:w-[50px] md:h-[50px]" />
                         </Carousel>
                     </div>
                     <div className='flex justify-center pb-4'>
