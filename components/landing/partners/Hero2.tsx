@@ -24,8 +24,8 @@ const Hero2 = () => {
             <div className="w-full bg-white">
                 {/* First Layer - Gray Background with Letters */}
                 <div className="py-8">
-                    <div className="container mx-auto text-center">
-                        <h2 className="text-3xl font-bold mb-4 w-[60%] mx-auto">
+                    <div className="md:container mx-auto text-center">
+                        <h2 className="text-xl md:text-3xl font-bold mb-4 w-[60%] mx-auto">
                             Empowering smarter lending through an expanding <span className="text-[#004F8F]">Network of Innovative Solutions, Providers, & Partners</span>
                         </h2>
                     </div>

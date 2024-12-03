@@ -38,7 +38,7 @@ const Form = () => {
             </Link>
           </div>
         </div>
-        <div className="absolute right-8">
+        <div className="absolute right-2 md:right-8">
           <svg width="13" height="109" viewBox="0 0 13 109" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="6.58079" cy="5.92845" r="5.72533" fill="white" />
             <circle opacity="0.3" cx="6.58079" cy="30.2136" r="5.72533" fill="white" />

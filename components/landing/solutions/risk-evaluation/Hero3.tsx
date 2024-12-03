@@ -47,20 +47,20 @@ const Hero3 = () => {
                 </div>
                 <div className="container md:w-2/3">
                     {onboarding.map((board, index) => (
-                        <div className="flex mt-2 bg-gray-200 bg-opacity-[10%] rounded-lg border-gray-200 relative p-2 items-center">
-                            <div className=" font-bold px-2 w-[10%] md:w-[5%] text-xl text-center text-white">{board.number}</div>
-                            <div className="text-white w-[70%] border-l border-gray-200 border-opacity-[50%] pl-4 text-opacity-[50%] p-2">{board.title}</div>
-                            <div className="absolute w-[30%] md:w-[20%] right-2 bg-gray-300 bg-opacity-[10%]  text-center text-white rounded-md p-2">{board.week}</div>
+                        <div className="flex mt-2 bg-gray-200 bg-opacity-[10%] rounded-lg border-gray-200 relative p-2 py-4 items-center">
+                            <div className=" font-bold px-2 w-[10%] lg:w-[5%] text-xl text-center text-white">{board.number}</div>
+                            <div className="text-white w-[60%] border-l border-gray-200 border-opacity-[50%] pl-4 text-opacity-[50%] p-2">{board.title}</div>
+                            <div className="absolute w-[30%] lg:w-[20%] right-2 bg-gray-300 bg-opacity-[10%]  text-center text-white rounded-md p-2">{board.week}</div>
                         </div>
                     ))}
                 </div>
                 <p className="container w-2/3 text-white font-bold py-2 text-2xl mt-4">Ongoing Assistance & Analysis</p>
                 <div className="container md:w-2/3">
                     {ongoing.map((board, index) => (
-                        <div className="flex mt-2 bg-gray-200 bg-opacity-[10%] rounded-lg border-gray-200 relative p-2 items-center">
-                            <div className="font-bold px-2 w-[10%] md:w-[5%] text-center text-white">{board.number}</div>
-                            <div className="text-white w-[70%] border-l border-gray-200 border-opacity-[50%] pl-4 text-opacity-[50%] p-2">{board.title}</div>
-                            <div className="absolute w-[30%] md:w-[20%] right-2 bg-gray-300 bg-opacity-[10%]  text-center text-white rounded-md p-2">{board.week}</div>
+                        <div className="flex mt-2 bg-gray-200 bg-opacity-[10%] rounded-lg border-gray-200 relative p-4 items-center">
+                            <div className="font-bold px-2 w-[10%] lg:w-[5%] text-center text-white">{board.number}</div>
+                            <div className="text-white w-[60%] border-l border-gray-200 border-opacity-[50%] pl-4 text-opacity-[50%] p-2">{board.title}</div>
+                            <div className="absolute w-[30%] lg:w-[20%] right-2 bg-gray-300 bg-opacity-[10%]  text-center text-white rounded-md p-2">{board.week}</div>
                         </div>
                     ))}
                 </div>
@@ -70,7 +70,7 @@ const Hero3 = () => {
                     <p className="text-2xl text-black font-bold py-4">A Focus on <span className="text-[#004F8F]">Compliance</span></p>
                     <p className="text-gray-500">AiBuildiQ is dedicated to shaping the future of AI in lending. With over 80 years of combined expertise in legal, compliance, and policy, our team is deeply involved in discussions that ensure AI remains transparent, secure, and fair for both lenders and their customers</p>
                 </div>
-                <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">
+                <div className="md:w-1/2 mb-8 md:mb-0 md:p-8 relative">
                     <Image
                         src={LeftImage.src}
                         alt="Analysis illustration"

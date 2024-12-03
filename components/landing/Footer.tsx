@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import Link from "next/link"
 
@@ -29,9 +30,46 @@ const follows = [
     }
 ]
 const columns = [
-    { title: "Solutions", subtitles: ["Credit Underwritting", "Fraud Detection", "Lending Intelligence", "Your Success Plan"] },
-    { title: "OTHERS", subtitles: ["Technologies", "Industries", "How it works"] },
-    { title: "Company", subtitles: ["About Us", "Blogs & Articles", "FAQs", "Contact Us"] },
+    {
+        title: "Solutions",
+        subtitles: [
+            { letter: "Credit Underwritting", link: "/" },
+            { letter: "Fraud Detection", link: "/" },
+            { letter: "Lending Intelligence", link: "/" },
+            { letter: "Your Success Plan", link: "/" }
+        ]
+    },
+    {
+        title: "OTHERS",
+        subtitles: [
+            {
+                letter: "Technologies", link: "/technologies"
+            },
+            {
+                letter: "Industries", link: ""
+            },
+            {
+                letter: "How it works", link: "/how-it-works"
+            }
+        ]
+    },
+    {
+        title: "Company",
+        subtitles: [
+            {
+                letter: "About Us", link: "/about-us"
+            },
+            {
+                letter: "Blogs & Articles", link: "/blog"
+            },
+            {
+                letter: "FAQs", link: "/faqs"
+            },
+            {
+                letter: "Contact Us", link: "/contact-us"
+            }
+        ]
+    },
 ];
 
 const rightContent = {
@@ -58,20 +96,22 @@ const Footer = () => {
             <div className="mx-auto px-4 py-8">
                 <div className="flex flex-wrap justify-between">
                     <div className="md:w-3/4 sm:w-full">
-                        <div className="flex flex-wrap justify-between">
+                        <div className="grid grid-cols-2 md:grid-cols-3 justify-between">
                             {columns.map((column, index) => (
                                 <div key={index} className="w-1/3 p-4">
                                     <h3 className="text-lg font-bold mb-2">{column.title}</h3>
                                     {column.subtitles.map((subtitle, index) => (
-                                        <p key={index} className="mb-1 py-2">{subtitle}</p>
+                                        <p className="mb-1 py-2" >
+                                            <Link key={index} href={subtitle.link}>{subtitle.letter}</Link>
+                                        </p>
                                     ))}
                                 </div>
                             ))}
                         </div>
-                        <div className="mt-4 md:w-1/2 sm:w-full">
+                        <div className="my-4 md:w-1/2 sm:w-full">
                             <label htmlFor="subscribe" className="block text-sm font-medium text-gray-300">Subscribe to our newsletter</label>
                             <div className="mt-1 flex rounded-md shadow-sm items-center relative">
-                                <input type="text" name="subscribe" id="subscribe" className=" flex-1 form-input block w-full min-w-0 rounded-full border-2 border-gray-300 bg-[#003662] py-3 px-3 text-gray-900 shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500 sm:text-sm" placeholder="Enter your Email" />
+                                <input type="text" name="subscribe" id="subscribe" className="flex-1 form-input block w-full min-w-0 rounded-full border-2 border-gray-300 bg-[#003662] py-3 px-3 text-gray-900 shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500 text-sm" placeholder="Enter your Email" />
                                 <button type="button" className="absolute right-2  border-gray-300 inline-flex items-center px-4 py-2 border  border-transparent text-sm font-medium rounded-full shadow-sm text-[#003662] bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Subscribe</button>
                             </div>
                         </div>
@@ -95,14 +135,14 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr className="my-4 border-t border-gray-700 w-full" />
-                <div className="flex justify-between">
-                    <div className="w-1/2 p-4">
+                <div className="md:flex justify-between">
+                    <div className="md:w-1/2 p-4">
                         <p>&copy; 2020 - 2024 All Rights Reserved. <Link href="https://aibuildaq.com" className="underline text-gray-200 hover:text-gray-300">aibuildaq.com</Link></p>
                     </div>
-                    <div className="w-1/2 p-4 text-right lg:flex justify-end gap-4">
-                        <div><Link href="/terms-and-conditions" className="md:w-full text-gray-200 hover:text-gray-300">Terms and Conditions</Link></div>
-                        <div><Link href="/privacy-policy" className="text-gray-200 hover:text-gray-300">Privacy Policy</Link></div>
-                        <div><Link href="/cookie-policy" className="text-gray-200 hover:text-gray-300">Cookie Policy</Link></div>
+                    <div className="md:w-1/2 p-4 text-right lg:flex justify-end gap-4">
+                        <div><Link href="/terms-and-conditions" className="md:w-full py-4 text-gray-200 hover:text-gray-300">Terms and Conditions</Link></div>
+                        <div><Link href="/privacy-policy" className="text-gray-200 py-4 hover:text-gray-300">Privacy Policy</Link></div>
+                        <div><Link href="/cookie-policy" className="text-gray-200 py-4 hover:text-gray-300">Cookie Policy</Link></div>
                     </div>
                 </div>
             </div>

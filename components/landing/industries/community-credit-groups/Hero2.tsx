@@ -101,11 +101,11 @@ const Hero2 = () => {
     return (
         <div>
             <div className="w-full bg-white px-[10%] py-8">
-                <div className="mx-auto md:w-[40%]">
+                <div className="mx-auto w-[80%] md:w-[40%]">
                     <h3 className="text-center text-2xl font-bold">Intelligent, Automated AI Lending Now Accessible to<span className="text-[#004F8F]"> Community Credit Groups of Any Size</span></h3>
                 </div>
                 <div className="items-top items-center container ">
-                    <div className="gap-4 md:flex">
+                    <div className="gap-4 lg:flex">
                         {Groups.map((card, index) => (
                             <div className={`bg-[#F2F4F5] my-4 rounded-lg mx-auto `} onClick={() => setIsActiveCard(index + 1)}>
                                 <CardToggle

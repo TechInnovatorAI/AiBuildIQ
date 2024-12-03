@@ -84,7 +84,7 @@ const Hero2 = () => {
     return (
         <div className="pt-16">
             {/* Navigation Buttons */}
-            <div className="md:flex container w-[80%] items-center justify-center mb-8 border-t border-b  p-4 gap-4">
+            <div className="md:flex container md:w-[80%] items-center justify-center mb-8 border-t border-b  p-4 gap-4">
                 <label className="uppercase font-bold">Topics: </label>
                 {CategoryList.map((category, index) => (
                     <button onClick={() => setActiveCategory(category)} className={`${category === activeCategory ? 'bg-gray-100 text-[#004F8F] font-bold' : ''}  text-sm py-2 px-4 rounded-lg`}>
@@ -94,7 +94,7 @@ const Hero2 = () => {
             </div>
 
             {/* Card Boxes */}
-            <div className="container w-[80%]">
+            <div className="md:container md:w-[80%]">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 py-4">
                     {BlogList.map((blog, index) => (
                         <Blog
@@ -112,7 +112,7 @@ const Hero2 = () => {
             </div>
 
             <div className="items-center bg-gray-100 py-4">
-                <h1 className="text-[#004F8F] mx-auto text-4xl py-4 text-center w-1/2 md:w-1/3 font-bold">Recently Uploaded <span className="text-black">Blogs and Articles</span></h1>
+                <h1 className="text-[#004F8F] mx-auto text-4xl py-4 px-2 text-center md:w-1/3 font-bold">Recently Uploaded <span className="text-black">Blogs and Articles</span></h1>
                 <div className="w-[90%] gap-4 container ">
                     <div className="mx-auto">
                         <Carousel

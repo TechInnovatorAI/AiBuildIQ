@@ -47,14 +47,14 @@ const Form5 = () => {
             <div className="px-[10%] py-8 bg-gray-100">
                 <div className="text-center items-center p-8 mx-auto">
                     <h1 className="font-bold text-2xl p-2">Streamlined <span className="text-[#004F8F]">Solutions for Financing</span></h1>
-                    <h2 className="p-2 w-[80%] mx-auto text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h2>
+                    <h2 className="p-2 md:w-[80%] mx-auto text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h2>
                 </div>
-                <div className="flex justify-center p-4 items-center">
+                <div className="md:flex justify-center p-4 items-center">
                     <Carousel
                         opts={{
                             align: "start",
                         }}
-                        className="w-[80%]"
+                        className="w-[100%]"
                     >
                         <CarouselContent>
                             {cards.map((card, index) => (

@@ -9,7 +9,7 @@ const Hero3 = () => {
 
       {/* Third Column */}
       <div className="">
-        <div className="container flex flex-col md:flex-row items-center mb-16 gap-16">
+        <div className="container md:flex items-center mb-16 gap-16">
           <div className="md:w-1/2">
             <h3 className="text-2xl text-[#004F8F] font-bold mb-2">Step 3:</h3>
             <h3 className="text-2xl text-black font-bold mb-2">Instant Loan Matches</h3>
@@ -33,7 +33,7 @@ const Hero3 = () => {
 
       {/* Fourth Column */}
       <div className="bg-gray-200 py-4">
-        <div className="container  flex flex-col md:flex-row items-center mb-8 gap-16">
+        <div className="container  md:flex items-center mb-8 gap-16">
           <div className="md:w-1/2 mb-8 md:mb-0 p-8 relative">
             <Image
               src={step4.src}

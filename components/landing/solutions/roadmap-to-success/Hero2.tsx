@@ -157,11 +157,11 @@ const Hero2 = () => {
                     <path opacity="0.05" d="M922.536 122.773C1326.16 -97.0133 1702.34 29.191 1839.97 119.766V281.15C1839.97 292.195 1831.02 301.15 1819.97 301.15H20.0262C8.98059 301.15 0.0262451 292.195 0.0262451 281.15V77.8821C139.353 184.424 518.912 342.56 922.536 122.773Z" />
                     <path opacity="0.05" d="M922.536 162.77C1326.16 -57.0172 1702.34 69.1871 1839.97 159.763V281.168C1839.97 292.214 1831.02 301.168 1819.97 301.168H20.0262C8.98059 301.168 0.0262451 292.214 0.0262451 281.168V117.878C139.353 224.42 518.912 382.556 922.536 162.77Z" />
                 </svg>
-                <div className="mx-auto w-1/2 text-center py-4 ">
+                <div className="mx-auto w-[80%] md:w-1/2 text-center py-4 ">
                     <h2 className="text-4xl font-bold py-4">Top-tier AI expertise, ready to support you</h2>
                     <p className="text-md">Get US-based, industry experts as an extension of your team. Tap into the best AI lending strategy consultants, business analysts, data scientists, engineers, compliance, and fair lending leaders around.</p>
                 </div>
-                <div className="container sm:w-[90vw] md:w-[80%] grid grid-cols-2 gap-4 py-4 ">
+                <div className="container sm:w-[90vw] md:w-[80%] grid grid-cols-1 sm:grid-cols-2 gap-4 py-4 ">
                     {supportList.map((box, index) => (
                         <div key={index} className="md:flex bg-gray-200 bg-opacity-[20%] p-4 items-center border-gray-100 border-opacity-[20%] border-2 rounded-lg">
                             <h3 className="text-4xl bg-gray-300 bg-opacity-[20%] p-4 mr-4 font-semibold">{box.success}</h3>
