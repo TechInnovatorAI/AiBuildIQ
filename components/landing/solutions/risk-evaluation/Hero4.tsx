@@ -52,17 +52,10 @@ const Hero4 = () => {
                                 {cards.map((card, index) => (
                                     <CarouselItem key={index} className="lg:basis-1/2 xl:basis-1/3">
                                         <div className="p-1">
-                                            {/* <Card> */}
                                             <CardContent className="flex aspect-square items-center justify-center p-6">
-                                            <SolutionCard key={index} title="" image={card.image} subtitle={card.subtitle} description={card.description} result={card.result} detail={card.detail} />
-                                            </CardContent>
-                                            {/* </Card> */}
-                                        </div>
-                                        {/* <div className="flex py-16 px-2 lg:px-8">
-                                            <CardContent className=" my-8 items-center justify-start p-2">
                                                 <SolutionCard key={index} title="" image={card.image} subtitle={card.subtitle} description={card.description} result={card.result} detail={card.detail} />
                                             </CardContent>
-                                        </div> */}
+                                        </div>
                                     </CarouselItem>
                                 ))}
                             </CarouselContent>

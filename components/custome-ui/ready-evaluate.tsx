@@ -32,7 +32,7 @@ const ReadyEvaluate: React.FC<ReadyEvaluateProps> = ({
                         <button className="bg-white rounded-full p-2 px-8 text-[#004F8F]">{btn}</button>
                     </div>
                     <div className="hidden md:block">
-                        <Image src={rightImage} alt="Image" layout="fixed" width={200} height={200} />
+                        <Image src={rightImage} alt="Image"  width={200} height={200} />
                     </div>
                 </div>
             </div>

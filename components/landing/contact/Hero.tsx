@@ -9,7 +9,15 @@ const Hero = () => {
             <div className="lg:flex items-stretch">
                 <div className="left lg:w-1/2 h-full">
                     <div className="relative items-center py-16 justify-center h-full ">
-                        <Image src={LeftImage} alt="Logo" className="absolute inset-0 -z-10 w-full h-[136%] rounded-t-lg lg:rounded-l-lg lg:rounded-t-0" style={{ objectFit: 'cover' }} />
+                        <Image
+                            src={LeftImage}
+                            alt="Logo"
+                            width={500}
+                            height={300}
+                            priority={true}
+                            className="absolute inset-0 -z-10 w-full h-[136%] rounded-t-lg lg:rounded-l-lg lg:rounded-t-0"
+                            style={{ objectFit: 'cover' }}
+                        />
                         <div className="text-left max-w-4xl mx-auto px-4 py-14">
                             <h1 className="text-white px-[15%] text-2xl lg:text-4xl mb-6 ">
                                 AI that drives success in a thriving lending ecosystem
@@ -53,7 +61,7 @@ const Hero = () => {
                         <textarea placeholder="Type you Message or Query Here......." className="w-full p-2 rounded-2xl border border-gray-400 bg-white" />
                     </div>
                     <div className="px-4 py-4">
-                    By submitting your information, you agree to receive communications from Zest AI. You may opt-out at any time.
+                        By submitting your information, you agree to receive communications from Zest AI. You may opt-out at any time.
                     </div>
                     <div className="layer5 px-4">
                         <button className="bg-[#004F8F] text-white p-2 px-4 lg:w-1/3 rounded-full">Schedule a Call</button>

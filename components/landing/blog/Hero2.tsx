@@ -87,7 +87,7 @@ const Hero2 = () => {
             <div className="md:flex container md:w-[80%] items-center justify-center mb-8 border-t border-b  p-4 gap-4">
                 <label className="uppercase font-bold">Topics: </label>
                 {CategoryList.map((category, index) => (
-                    <button onClick={() => setActiveCategory(category)} className={`${category === activeCategory ? 'bg-gray-100 text-[#004F8F] font-bold' : ''}  text-sm py-2 px-4 rounded-lg`}>
+                    <button key={'category'+index} onClick={() => setActiveCategory(category)} className={`${category === activeCategory ? 'bg-gray-100 text-[#004F8F] font-bold' : ''}  text-sm py-2 px-4 rounded-lg`}>
                         {category}
                     </button>
                 ))}
@@ -97,13 +97,15 @@ const Hero2 = () => {
             <div className="md:container md:w-[80%]">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 py-4">
                     {BlogList.map((blog, index) => (
-                        <Blog
-                            image={blog.image}
-                            category={blog.category}
-                            title={blog.title}
-                            description={blog.description}
-                            link={blog.link}
-                        />
+                        <div key={'blog' + index}>
+                            <Blog
+                                image={blog.image}
+                                category={blog.category}
+                                title={blog.title}
+                                description={blog.description}
+                                link={blog.link}
+                            />
+                        </div>
                     ))}
                 </div>
                 <div className="flex justify-end py-4">
@@ -124,11 +126,10 @@ const Hero2 = () => {
                             <CarouselContent>
                                 {recentBlog.map((recent, index) => (
                                     BlogList.find(blog => blog.id === recent) && (
-                                        <CarouselItem key={index} className="sm:basis-1/1 md:basis-1/2 lg:basis-1/3">
+                                        <CarouselItem key={'recent' + index} className="sm:basis-1/1 md:basis-1/2 lg:basis-1/3">
                                             <div className="py-16 px-8">
                                                 <CardContent className="flex my-8 items-center justify-center p-2">
                                                     <Blog
-                                                        key={index}
                                                         image={BlogList.find(blog => blog.id === recent)?.image || ''}
                                                         category={BlogList.find(blog => blog.id === recent)?.category || []}
                                                         title={BlogList.find(blog => blog.id === recent)?.title || ''}

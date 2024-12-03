@@ -117,7 +117,7 @@ const Hero2 = () => {
                 <div className="items-top items-center container ">
                     <div className="gap-4 lg:flex">
                         {Groups.map((card, index) => (
-                            <div className={`bg-[#F2F4F5] my-4 rounded-lg mx-auto `} onClick={() => setIsActiveCard(index + 1)}>
+                            <div key={'group' + index} className={`bg-[#F2F4F5] my-4 rounded-lg mx-auto `} onClick={() => setIsActiveCard(index + 1)}>
                                 <CardToggle
                                     isActive={isActiveCard === index + 1}
                                     title={card.title}
@@ -134,13 +134,15 @@ const Hero2 = () => {
             </div>
             <div>
                 {LendingBoxes.map((lending, index) => (
-                    <LendingBox
-                        title={lending.title}
-                        description={lending.description}
-                        content={lending.content}
-                        image={lending.image}
-                        ltr={lending.ltr}
-                    />
+                    <div key={'lending' + index}>
+                        <LendingBox
+                            title={lending.title}
+                            description={lending.description}
+                            content={lending.content}
+                            image={lending.image}
+                            ltr={lending.ltr}
+                        />
+                    </div>
                 ))}
                 <div className="w-[70%] mx-auto bg-white px-[10%] py-8">
                     <div className="text-center">

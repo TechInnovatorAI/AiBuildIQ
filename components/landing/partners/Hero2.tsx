@@ -41,7 +41,7 @@ const Hero2 = () => {
                                 {itemData.sort(() => Math.random() - 0.5).map((item, index) => (
                                     <div key={index} className={`p-6 `}>
                                         <div className="items-center border mx-auto  rounded-lg p-2 mb-4">
-                                            <Image src={item.svg} alt="image" width={100} height={150} style={{ objectFit: 'cover' }}/>
+                                            <Image src={item.svg.src} alt="image" width={100} height={150} style={{ objectFit: 'cover' }}/>
                                         </div>
                                     </div>
                                 ))}
