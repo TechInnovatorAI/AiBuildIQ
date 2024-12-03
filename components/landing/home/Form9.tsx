@@ -30,7 +30,7 @@ const FAQs = [
 const Form9 = () => {
   return (
     <motion.section
-      className="py-16 bg-gray-50 dark:bg-gray-800"
+      className="py-16 bg-gray-50"
       id="products"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ const Form9 = () => {
           <p className="text-black text-4xl text-center font-bold mb-2">
           Frequently Asked <span className="text-[#004F8F]">Questions</span>
           </p>
-          <h2 className="text-md w-1/2 justify-center mx-auto text-center text-gray-900 dark:text-white">
+          <h2 className="text-md w-1/2 justify-center mx-auto text-center text-gray-900">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
           </h2>
         </motion.div>

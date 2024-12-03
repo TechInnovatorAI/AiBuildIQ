@@ -19,7 +19,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
             <div className="md:flex items-stretch">
                 <div className="left md:w-1/2 md:h-[70vh]">
                     <div className="relative items-center py-16 justify-center h-full">
-                        <Image src={LeftImage} alt="Logo" className="absolute inset-0 -z-10 w-full h-[70vh]" style={{ objectFit: 'cover' }} />
+                        <Image src={LeftImage} alt="Logo" className="absolute inset-0 -z-10 w-full h-[70vh]" width={500} height={300} style={{ objectFit: 'cover' }} />
                         <div className="text-left max-w-4xl mx-auto px-4 py-14">
                             <h1 className="text-white px-[15%] lg:text-6xl sm:text-2xl md:text-4xl mb-6 uppercase ">
                                 {title}

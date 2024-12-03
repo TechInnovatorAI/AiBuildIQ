@@ -47,7 +47,7 @@ const Hero3 = () => {
                 </div>
                 <div className="container md:w-2/3">
                     {onboarding.map((board, index) => (
-                        <div className="flex mt-2 bg-gray-200 bg-opacity-[10%] rounded-lg border-gray-200 relative p-2 py-4 items-center">
+                        <div key={'onboard'+index} className="flex mt-2 bg-gray-200 bg-opacity-[10%] rounded-lg border-gray-200 relative p-2 py-4 items-center">
                             <div className=" font-bold px-2 w-[10%] lg:w-[5%] text-xl text-center text-white">{board.number}</div>
                             <div className="text-white w-[60%] border-l border-gray-200 border-opacity-[50%] pl-4 text-opacity-[50%] p-2">{board.title}</div>
                             <div className="absolute w-[30%] lg:w-[20%] right-2 bg-gray-300 bg-opacity-[10%]  text-center text-white rounded-md p-2">{board.week}</div>

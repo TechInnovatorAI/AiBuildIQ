@@ -13,6 +13,9 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
+import Logo_Top from '@/public/assets/Logo_top.jpg'
+import Logo_Bottom from '@/public/assets/Logo_bottom.jpg'
+
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("");
   const [isMobile, setIsMobile] = useState(false);
@@ -93,7 +96,7 @@ const Navbar = () => {
             className="h-1/4 w-[80px] rounded-full"
             style={{
               clipPath: 'polygon(0% 0, 100% 0, 100% 100%, 0% 100%)',
-              background: 'url("assets/Logo_top.jpg")',
+              background: `url(${Logo_Top.src})`,
               backgroundSize: '100% 113%',
               backgroundPosition: 'top',
               padding: '30px'
@@ -135,10 +138,10 @@ const Navbar = () => {
           className="py-8 mx-[16%] w-[130px] h-full bg-white mix-blend-screen"
           style={{
             clipPath: 'polygon(0% 25%, 100% 25%, 100% 70%, 0% 70%)',
-            background: 'url("assets/logo_bottom.jpg")',
+            background: `url(${Logo_Bottom.src})`,
             backgroundSize: '110% 200%',
             backgroundPosition: 'center',
-            filter: 'invert(1) brightness(2)', // Invert colors and increase brightness
+            filter: 'invert(1) brightness(2)',
           }}
         ></div>
         <div className="w-1/2 flex justify-end items-center py-2 mr-[10%]">
@@ -225,7 +228,7 @@ const Navbar = () => {
             {[...bottomNavLinks].map((link) => (
               link.sub ? (
                 <div key={link.name} className="block py-2 text-gray-600 hover:text-gray-900 transition-colors duration-200" >
-                  <p className="" onClick={() => setIsToggled(link.name)}>{link.name}&#11206;</p>
+                  <p onClick={() => setIsToggled(link.name)}>{link.name}&#11206;</p>
                   <div className={`${isToggled === link.name ? 'show' : 'hidden'}`}>
                     {Array.isArray(link.sub) && link.sub.map((subLink) => (
                       <Link

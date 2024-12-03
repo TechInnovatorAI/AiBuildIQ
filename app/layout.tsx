@@ -43,17 +43,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     <body className={clashDisplayFont.variable}>
-        <ThemeProvider
+      {/* className={clashDisplayFont.variable} */}
+      <body >
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        >
-          <Navbar />
-          <main className="relative overflow-hidden "> {children}</main>
-          <Footer />
-        </ThemeProvider>
+        > */}
+        <Navbar />
+        <main className="relative"> {children}</main>
+        <Footer />
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );

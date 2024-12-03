@@ -117,7 +117,7 @@ const Hero2 = () => {
                 <div className="items-top items-center container ">
                     <div className="gap-4 lg:flex">
                         {Groups.map((card, index) => (
-                            <div className={`bg-[#F2F4F5] my-4 rounded-lg mx-auto `} onClick={() => setIsActiveCard(index + 1)}>
+                            <div key={'group'+index} className={`bg-[#F2F4F5] my-4 rounded-lg mx-auto `} onClick={() => setIsActiveCard(index + 1)}>
                                 <CardToggle
                                     isActive={isActiveCard === index + 1}
                                     title={card.title}
@@ -138,7 +138,7 @@ const Hero2 = () => {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-2/3 mx-auto ">
                     {smartList.map((smart, index) => (
-                        <div className="flex bg-white p-4 border-gray-300 rounded-lg items-center">
+                        <div key={'smart'+index} className="flex bg-white p-4 border-gray-300 rounded-lg items-center">
                             <div className="p-2 font-bold text-gray-200 border-r border-gray-200 text-2xl">{index + 1}</div>
                             <div className="p-2 font-bold">{smart.text}</div>
                         </div>

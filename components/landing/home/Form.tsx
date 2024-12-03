@@ -5,10 +5,17 @@ import Image from "next/image"
 
 const Form = () => {
   return (
-    < div className="">
+    <>
       <div className="mt-24"></div>
       <div className="relative flex items-center justify-center h-[90vh]">
-        <Image src={topImage} alt="Logo" className="absolute inset-0 -z-10 w-full " style={{ objectFit: 'cover', height: '100%' }} />
+        <Image
+          src={topImage}
+          alt="Logo"
+          className="absolute inset-0 -z-10 w-full"
+          width={500}
+          height={300}
+          style={{ objectFit: 'cover', height: '100%' }}
+        />
         <div className="text-center max-w-4xl mx-auto px-4 py-16">
           <h1 className="text-white text-2xl md:text-3xl mb-6  ">
             Transforming Real estate lending
@@ -22,7 +29,7 @@ const Form = () => {
             Revolutionizing how brokers and borrowers seamlessly navigate the lending process with AI-powered precision.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="sm:flex gap-4 justify-center items-center">
             <Link
               href="/funding-request"
               className="px-8 py-3 bg-[#004F8F] border rounded-full hover:bg-white-800 text-white transition-colors duration-200"
@@ -49,13 +56,13 @@ const Form = () => {
         </div>
         <div className="absolute bottom-4">
           <svg width="38" height="51" viewBox="0 0 38 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path opacity="0.7" d="M1.0625 31.6328L18.9898 49.3917L36.9349 31.6328" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-            <path opacity="0.5" d="M1.0625 16.4883L18.9898 34.2472L36.9349 16.4883" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-            <path opacity="0.2" d="M1.0625 1.3457L18.9898 19.1046L36.9349 1.3457" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path opacity="0.7" d="M1.0625 31.6328L18.9898 49.3917L36.9349 31.6328" stroke="white" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+            <path opacity="0.5" d="M1.0625 16.4883L18.9898 34.2472L36.9349 16.4883" stroke="white" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+            <path opacity="0.2" d="M1.0625 1.3457L18.9898 19.1046L36.9349 1.3457" stroke="white" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

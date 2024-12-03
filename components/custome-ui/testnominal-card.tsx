@@ -17,7 +17,7 @@ const TestNominalCard: React.FC<TestNominalCardProps> = ({
     return (
         <div className="py-[5%] text-center items-center bg-white relative ml-2 px-4 rounded-lg">
             <div className="avatar mx-auto absolute left-1/2 -translate-x-1/2 -top-[7vh]">
-                <Image src={avatar} className="mx-auto rounded-full border-2 border-white" alt="Avatar" layout="fixed" width={100} height={100} />
+                <Image src={avatar} className="mx-auto rounded-full border-2 border-white" alt="Avatar"  width={100} height={100} />
             </div>
             <div className="stars pt-4 gap-2">
                 {Array.from({ length: stars }, (_, i) => (

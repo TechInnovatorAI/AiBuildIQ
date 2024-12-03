@@ -63,7 +63,7 @@ const Form5 = () => {
                                         <Card className="h-[30vh]">
                                             <CardContent className="my-4 items-center justify-center p-2">
                                                 <div className="mx-auto h-[30vh]">
-                                                    <Image src={card.image} className="rounded-lg mx-auto h-[20vh] border-2 border-white w-[90%]" alt="Avatar" layout="fixed" width={300} height={150} />
+                                                    <Image src={card.image} className="rounded-lg mx-auto h-[20vh] border-2 border-white w-[90%]" alt="Avatar"  width={300} height={150} />
                                                     <div className="title p-4 text-center text-[#004F8F] font-bold h-1/2">
                                                         <p>{card.title}</p>
                                                     </div>

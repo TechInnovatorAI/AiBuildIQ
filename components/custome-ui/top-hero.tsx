@@ -19,7 +19,7 @@ const TopHero: React.FC<TopHeroProps> = ({
 }) => {
     return (
         <>
-            <div className="relative mt-[14vh] rounded-lg h-[50vh] w-full overflow-hidden bg-[#004F8F]">
+            <div className="relative mt-[16vh] md:mt-[14vh] rounded-lg h-[50vh] md:h-[50vh] w-full  bg-[#004F8F]">
                 {/* Upper wave */}
                 <svg className="absolute top-0 left-0 w-full" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" >
                     <path fill="white" fillOpacity="0.05" d="M200,0Q400,150,600,0" />
@@ -32,13 +32,13 @@ const TopHero: React.FC<TopHeroProps> = ({
                 </svg>
 
                 {/* Content placeholder */}
-                <div className="relative z-10 flex items-center justify-center h-[50vh]">
+                <div className="relative z-10 flex items-center justify-center ">
                     <div className="text-center max-w-6xl mx-auto px-4 py-16">
                         <h1 className="text-white uppercase text-sm mb-6 opacity-50">
                             {subtitle}
                         </h1>
 
-                        <h2 className="text-white text-5xl py-4 md:text-6xl font-semibold mb-4  ">
+                        <h2 className="text-white text-3xl py-4 md:text-6xl font-semibold mb-4  ">
                             {title}
                         </h2>
 

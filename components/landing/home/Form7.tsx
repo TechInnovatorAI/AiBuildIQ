@@ -41,7 +41,7 @@ const Form7 = () => {
     return (
         <div className="bg-gray-100">
             <div className="p-4 py-[5%]">
-                <div className="">
+                <div>
                     <div className="py-4 justify-center mx-auto">
                         <h1 className="text-2xl font-bold text-center">Client’s <span className="text-[#004F8F]">Testimonials</span></h1>
                         <p className="text-md text-center md:w-1/3 justify-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
