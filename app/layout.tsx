@@ -52,7 +52,7 @@ export default function RootLayout({
           disableTransitionOnChange
         > */}
         <Navbar />
-        <main className="relative"> {children}</main>
+        <main className="relative overflow-hidden"> {children}</main>
         <Footer />
         {/* </ThemeProvider> */}
       </body>
