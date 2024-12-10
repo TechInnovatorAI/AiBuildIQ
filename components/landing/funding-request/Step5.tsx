@@ -9,6 +9,7 @@ const FormList = [
     required: true,
     type: 3,
     sub: [],
+    sub2: [],
     placeholder: "Select the Closing Date or Purchased Date",
     width: "w-full"
   },
@@ -24,6 +25,7 @@ const FormList = [
       { option: "75%~89%" },
       { option: "90%~100%" },
     ],
+    sub2: [],
     placeholder: "",
     width: "w-full"
   },
@@ -33,6 +35,7 @@ const FormList = [
     required: false,
     type: 4,
     sub: [],
+    sub2: [],
     placeholder: "Enter answer",
     width: "w-full"
   },

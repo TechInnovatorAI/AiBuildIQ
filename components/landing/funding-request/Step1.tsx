@@ -8,13 +8,15 @@ const FormList = [
     name: "type_of_project",
     required: true,
     type: 1,
-    sub: [
-      { option: "Fix and Flip / Rehab" },
+    sub2: [
+      { option: "Fix and Flip/Rehab" },
       { option: "Bridge Purchase" },
       { option: "Bridge Refinance" },
       { option: "Ground-Up Construction SF (1-4 Units)" },
       { option: "DSCR (Long Term Rentals)" },
-      { option: "Ground-Up Construction MF (5 Units or More)" },
+    ],
+    sub:[
+      { option: "5 Units or More" },
       { option: "Bridge (12-24 Months)" },
       { option: "Other" },
     ],
@@ -27,6 +29,7 @@ const FormList = [
     required: true,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "Enter Address of Property",
     width: "w-full"
   },
@@ -39,6 +42,7 @@ const FormList = [
       { option: "Own" },
       { option: "Purchasing" },
     ],
+    sub2: [],
     placeholder: "",
     width: "w-full"
   },
@@ -58,7 +62,7 @@ const Step1: React.FC<Step1Props> = ({
   error,
 }) => {
   return (
-    <div className="flex flex-wrap md:w-[50%] lg:w-full gap-x-[4%] gap-y-4 py-4 ">
+    <div className="flex flex-wrap md:w-[50%] lg:w-full gap-y-4 py-4 gap-x-4" >
       {FormList.map((form, index) => (
         <div key={'question' + index + 1} className={`${form.width === 'w-1/2' ? 'lg:w-[48%] w-full' : 'w-full'}`}>
           <FormElement 

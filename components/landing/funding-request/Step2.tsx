@@ -12,6 +12,7 @@ const FormList = [
       { option: "Borrower" },
       { option: "Broker" },
     ],
+    sub2: [],
     placeholder: "",
     width: "w-full"
   },
@@ -21,6 +22,7 @@ const FormList = [
     required: false,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "Enter Name of Borrower",
     width: "w-1/2"
   },
@@ -30,6 +32,7 @@ const FormList = [
     required: false,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "Enter Name of Entity",
     width: "w-1/2"
   },
@@ -39,6 +42,7 @@ const FormList = [
     required: true,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "Please enter a number greater than 600",
     width: "w-full"
   },
@@ -48,6 +52,7 @@ const FormList = [
     required: true,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "The value must be a Number",
     width: "w-full"
   },
@@ -63,7 +68,10 @@ const FormList = [
       { option: "3" },
       { option: "4" },
       { option: "5 or More" },
-    ]
+    ],
+    sub2: [],
+    placeholder: "",
+    width: "w-full"
   },
 ]
 
@@ -85,7 +93,7 @@ const Step2: React.FC<Step2Props> = ({
       {FormList.map((form, index) => (
         <div key={'question' + index + 1} className={`${form.width === 'w-1/2' ? 'lg:w-[48%] w-full' : 'w-full'}`}>
           <FormElement
-            questionForm={form as { question: string; name: string; required: boolean; type: number; sub: { option: string; }[]; placeholder: string; width: string; }}
+            questionForm={form}
             init={3}
             index={index}
             formData={formData}

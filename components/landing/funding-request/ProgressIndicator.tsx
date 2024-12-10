@@ -30,8 +30,8 @@ export default function ProgressIndicator({ currentStep, totalSteps, steps }: Pr
   const isIncreasing = currentStep >= prevStep
 
   return (
-    <div className="mb-8">
-      <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-2 border border-white rounded-xl border-2 p-4">
+    <div className="mb-8 border border-white rounded-xl border-2 p-4">
+      <div className="flex lg:mx-16 px-8 flex-col lg:flex-row lg:items-center justify-between mb-2">
         {steps.map((step, index) => (
           <div key={index} className="flex flex-col items-center flex-1 last:flex-none">
             <div className="flex flex-col lg:flex-row items-start w-full">
@@ -44,9 +44,9 @@ export default function ProgressIndicator({ currentStep, totalSteps, steps }: Pr
                     transition: { duration: 0.2 }
                   }}
                 >
-                  { index <= currentStep ? stepButton(1) : stepButton(0.5)}
+                  {index <= currentStep ? stepButton(1) : stepButton(0.5)}
                 </motion.div>
-                <span className={`text-lg ${index <= currentStep ? 'text-[#004F8F]' : 'text-[#004F8F] opacity-[50%]' } mt-2 text-center `}>{step.title}</span>
+                <span className={`text-lg lg:hidden ${index <= currentStep ? 'text-[#004F8F]' : 'text-[#004F8F] opacity-[50%]' } mt-2`}>{step.title}</span>
               </div>
               {index < totalSteps - 1 && (
                 <div className={`lg:flex-1 h-[5vh] w-0.5 lg:w-full lg:h-0.5 ml-6 lg:mx-2 bg-[#004F8F] ${index < currentStep ? 'opacity-[100%]' : 'opacity-[50%]'} overflow-hidden lg:mt-6`}>
@@ -58,7 +58,7 @@ export default function ProgressIndicator({ currentStep, totalSteps, steps }: Pr
                   />
                   <motion.div
                     className="w-full bg-[#004F8F] lg:hidden"
-                    initial={isIncreasing ? { height: '0%' } : {height: '100%' }}
+                    initial={isIncreasing ? { height: '0%' } : { height: '100%' }}
                     animate={index < currentStep ? { height: '100%' } : { height: '0%' }}
                     transition={{ duration: 0.3 }}
                   />
@@ -66,6 +66,11 @@ export default function ProgressIndicator({ currentStep, totalSteps, steps }: Pr
               )}
             </div>
           </div>
+        ))}
+      </div>
+      <div className="hidden lg:grid  lg:grid-cols-5 justify-between">
+        {steps.map((step, index) => (
+          <span className={`text-lg ${index <= currentStep ? 'text-[#004F8F]' : 'text-[#004F8F] opacity-[50%]'} mt-2 text-center `}>{step.title}</span>
         ))}
       </div>
     </div>
