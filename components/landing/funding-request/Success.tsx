@@ -1,23 +1,20 @@
 "use client"
 
 import Link from "next/link"
-import * as React from "react"
+import React, { useEffect, useState }from "react"
 
-interface SuccessProps {
-  // id:number
-}
+const Success = () => {
 
-const Success: React.FC<SuccessProps> = ({
-  // id
-}) => {
+  const [fundingRequestId, setFundingRequestId] = useState<string | null>(null);
 
-  const id = window.sessionStorage.getItem("fundingRequestId");
-  if (id) {
-    console.log("Retrieved ID:", id);
-    // Use the ID as needed
-  } else {
-    console.error("No ID found in session storage.");
-  }
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+    const request_id = window.sessionStorage.getItem("fundingRequestId");
+    setFundingRequestId(request_id);
+    }
+  }, []);
+  
+  const id = fundingRequestId
 
   const download_pdf = async () => {
     try {
