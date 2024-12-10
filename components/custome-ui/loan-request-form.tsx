@@ -99,7 +99,7 @@ const FormElement: React.FC<FormElementProps> = ({
                                     setDate(newDate);
                                     handleInputChange
                                     ({
-                                        target: { name: questionForm.name, value: newDate?.toISOString() },
+                                        target: { name: questionForm.name, value: newDate?.toISOString() || '' },
                                     });
                                 }}
                                 initialFocus
