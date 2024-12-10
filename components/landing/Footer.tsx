@@ -33,29 +33,32 @@ const columns = [
     {
         title: "Solutions",
         subtitles: [
-            { letter: "Credit Underwritting", link: "/" },
-            { letter: "Fraud Detection", link: "/" },
-            { letter: "Lending Intelligence", link: "/" },
-            { letter: "Your Success Plan", link: "/" }
+            { letter: "Risk Evaluation", link: "/solutions/risk-evaluation" },
+            { letter: "Threat Analysis", link: "/solutions/threat-analysis" },
+            { letter: "Lending Analysis", link: "/solutions/lending-analysis" },
+            { letter: "Loadmap to Success", link: "/solutions/loadmap-to-success" }
         ]
     },
     {
-        title: "OTHERS",
+        title: "Industries",
         subtitles: [
             {
-                letter: "Technologies", link: "/technologies"
+                letter: "Comnunity Credit Groups", link: "/industries/community-credit-groups"
             },
             {
-                letter: "Industries", link: ""
+                letter: "Banking Corporations", link: "/industries/banking-corporation"
             },
             {
-                letter: "How it works", link: "/how-it-works"
+                letter: "Focused Lenders", link: "/industries/focused-lender"
             }
         ]
     },
     {
         title: "Company",
         subtitles: [
+            {
+                letter: "How it works", link: "/how-it-works"
+            },
             {
                 letter: "About Us", link: "/about-us"
             },
@@ -98,7 +101,7 @@ const Footer = () => {
                     <div className="md:w-3/4 sm:w-full">
                         <div className="grid grid-cols-2 md:grid-cols-3 justify-between">
                             {columns.map((column, index) => (
-                                <div key={'column'+index} className="w-1/3 p-4">
+                                <div key={'column'+index} className=" p-4">
                                     <h3 className="text-lg font-bold mb-2">{column.title}</h3>
                                     {column.subtitles.map((subtitle, indx) => (
                                         <p key={'subtitle'+indx} className="mb-1 py-2" >
@@ -109,7 +112,7 @@ const Footer = () => {
                             ))}
                         </div>
                         <div className="my-4 md:w-1/2 sm:w-full">
-                            <label htmlFor="subscribe" className="block text-sm font-medium text-gray-300">Subscribe to our newsletter</label>
+                            <label htmlFor="subscribe" className="block text-sm font-medium text-gray-300">Subscribe to Newsletter</label>
                             <div className="mt-1 flex rounded-md shadow-sm items-center relative">
                                 <input type="text" name="subscribe" id="subscribe" className="flex-1 form-input block w-full min-w-0 rounded-full border-2 border-gray-300 bg-[#003662] py-3 px-3 text-gray-900 shadow-sm focus:outline-none focus:ring-gray-500 focus:border-gray-500 text-sm" placeholder="Enter your Email" />
                                 <button type="button" className="absolute right-2  border-gray-300 inline-flex items-center px-4 py-2 border  border-transparent text-sm font-medium rounded-full shadow-sm text-[#003662] bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Subscribe</button>
