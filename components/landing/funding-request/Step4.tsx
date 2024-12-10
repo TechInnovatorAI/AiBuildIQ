@@ -9,6 +9,7 @@ const FormList = [
     required: false,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "Enter your answer",
     width: "w-full"
   },
@@ -23,6 +24,7 @@ const FormList = [
       { option: "MF (5+Units Portfolio)" },
       { option: "Short Term" },
     ],
+    sub2: [],
     placeholder: "",
     width: "w-full"
   },
@@ -32,6 +34,7 @@ const FormList = [
     required: false,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "Enter your answer",
     width: "w-1/2"
   },
@@ -41,6 +44,7 @@ const FormList = [
     required: false,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "Enter your answer",
     width: "w-1/2"
   },
@@ -50,6 +54,7 @@ const FormList = [
     required: false,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "Enter your answer",
     width: "w-1/2"
   },
@@ -59,6 +64,7 @@ const FormList = [
     required: false,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "Enter your answer",
     width: "w-1/2"
   },

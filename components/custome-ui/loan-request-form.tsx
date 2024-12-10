@@ -24,6 +24,7 @@ interface FormElementProps {
         required: boolean
         type: number
         sub: { option: string }[]
+        sub2: {option: string} []
         placeholder: string
         width: string
     }
@@ -55,15 +56,23 @@ const FormElement: React.FC<FormElementProps> = ({
             </Label>
             {questionForm.type === 1 ? (
                 <RadioGroup
-                    className="flex flex-col sm:flex-row md:flex-wrap gap-x-8 gap-y-4 py-4"
+                    className="flex flex-col lg:flex-row lg:flex-wrap gap-x-8 gap-y-4 py-4"
                     value={formData[questionForm.name] || ''}
                     onValueChange={(value) => handleInputChange({ target: { name: questionForm.name, value } })}
                     name={questionForm.name}
                 >
-                    {questionForm.sub.map((que, index) => (
-                        <div key={'radio' + index} className="flex space-x-2">
+                    <div className="w-full justify-between flex flex-col lg:flex-row lg:flex-wrap gap-x-8 gap-y-4 ">
+                    {questionForm.sub2.map((que, index) => (
+                        <div key={'radio' + index} className="flex space-x-2 items-center ">
                             <RadioGroupItem value={que.option} className={`accent-accentColor ${formData[questionForm.name] === que.option ? 'text-[#004F8F] border-[#004F8F]' : 'text-gray-700'}`} />
-                            <Label className={`${formData[questionForm.name] === que.option ? 'text-[#004F8F]' : 'text-gray-700'}`}>{que.option}</Label>
+                            <Label className={`text-lg ${formData[questionForm.name] === que.option ? 'text-[#004F8F]' : 'text-gray-700'}`}>{que.option}</Label>
+                        </div>
+                    ))}                        
+                    </div>
+                    {questionForm.sub.map((que, index) => (
+                        <div key={'radio' + index} className="flex space-x-2 items-center">
+                            <RadioGroupItem value={que.option} className={`accent-accentColor ${formData[questionForm.name] === que.option ? 'text-[#004F8F] border-[#004F8F]' : 'text-gray-700'}`} />
+                            <Label className={`text-lg ${formData[questionForm.name] === que.option ? 'text-[#004F8F]' : 'text-gray-700'}`}>{que.option}</Label>
                         </div>
                     ))}
                 </RadioGroup>

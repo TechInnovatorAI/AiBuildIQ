@@ -9,6 +9,7 @@ const FormList = [
     required: true,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "The value must be a number",
     width: "w-1/2"
   },
@@ -18,6 +19,7 @@ const FormList = [
     required: false,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "Enter your answer",
     width: "w-1/2"
   },
@@ -27,6 +29,7 @@ const FormList = [
     required: true,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "The value must be a number",
     width: "w-1/2"
   },
@@ -36,6 +39,7 @@ const FormList = [
     required: true,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "The value must be a number",
     width: "w-1/2"
   },
@@ -45,6 +49,7 @@ const FormList = [
     required: true,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "The value must be a number",
     width: "w-1/2"
   },
@@ -54,6 +59,7 @@ const FormList = [
     required: true,
     type: 2,
     sub: [],
+    sub2: [],
     placeholder: "The value must be a number",
     width: "w-1/2"
   },
@@ -74,10 +80,10 @@ const Step3: React.FC<Step3Props> = ({
 }) => {
   return (
     <div className="flex flex-wrap md:w-[50%] lg:w-full gap-x-[4%] gap-y-4 py-4">
-      {FormList.map((questionForm, index) => (
-        <div key={'question' + index + 1} className={`${questionForm.width === 'w-1/2' ? 'lg:w-[48%] w-full' : 'w-full'}`}>
+      {FormList.map((form, index) => (
+        <div key={'question' + index + 1} className={`${form.width === 'w-1/2' ? 'lg:w-[48%] w-full' : 'w-full'}`}>
           <FormElement
-            questionForm={questionForm}
+            questionForm={form}
             init={9}
             index={index}
             formData={formData}
