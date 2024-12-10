@@ -22,6 +22,7 @@ const config = {
         "clash-display": ["var(--font-clash-display)"],
       },
       colors: {
+        accentColor: "#004F8F",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

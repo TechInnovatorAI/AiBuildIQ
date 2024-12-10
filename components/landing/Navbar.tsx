@@ -24,7 +24,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1024);
+      setIsMobile(window.innerWidth <= 1024);
     };
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -134,8 +134,9 @@ const Navbar = () => {
 
       {/* Second Layer - Gray Background */}
       <div className="bg-[#004F8F] border-b flex items-center">
-        <div
-          className="py-8 mx-[16%] w-[130px] h-full bg-white mix-blend-screen"
+        <div className="py-2 mx-auto justify-start ">
+          <div
+          className="py-8 mx-[16%] md:w-[130px] h-full bg-white mix-blend-screen"
           style={{
             clipPath: 'polygon(0% 25%, 100% 25%, 100% 70%, 0% 70%)',
             background: `url(${Logo_Bottom.src})`,
@@ -144,11 +145,12 @@ const Navbar = () => {
             filter: 'invert(1) brightness(2)',
           }}
         ></div>
+        </div>        
         <div className="w-1/2 flex justify-end items-center py-2 mr-[10%]">
 
           {/* Right side - Navigation Links */}
           {!isMobile && (
-            <div className="flex space-x-6 items-center">
+            <div className="flex space-x-2 items-center">
               {bottomNavLinks.map((link) => (
                 <div key={link.name} className="relative"
                   onMouseEnter={() => { setActiveLink(link.name); setIsToggled(link.name); }}
